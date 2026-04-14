@@ -11,8 +11,9 @@ from matplotlib import font_manager
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_FILE = ROOT / "data" / "analysis_ready" / "kobis_korean_movies_analysis_ready_2016_2025.csv"
-OUTPUT_DIR = ROOT / "outputs" / "visuals" / "assignment1"
+DATA_FILE = ROOT / "data" / "analysis_ready_audience_over_100" / "kobis_korean_movies_analysis_ready_2016_2025_audience_over_100.csv"
+OUTPUT_DIR = ROOT / "outputs" / "visuals" / "assignment1_audience_over_100"
+FILTER_DESCRIPTION = "total_audience_count > 100"
 
 NUMERIC_COLUMNS = [
     "total_sales_amount",
@@ -95,6 +96,8 @@ def save_null_summary(df: pd.DataFrame) -> pd.DataFrame:
 
 def save_overview_text(df: pd.DataFrame, basic_stats: pd.DataFrame, null_summary: pd.DataFrame) -> None:
     lines = [
+        f"source_file={DATA_FILE}",
+        f"filter_condition={FILTER_DESCRIPTION}",
         f"row_count={len(df)}",
         f"column_count={len(df.columns)}",
         "columns=" + ", ".join(df.columns),

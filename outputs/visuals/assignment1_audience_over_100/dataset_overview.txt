@@ -1,0 +1,20 @@
+source_file=C:\Dev\study\python\DS_PBL\data\analysis_ready_audience_over_100\kobis_korean_movies_analysis_ready_2016_2025_audience_over_100.csv
+filter_condition=total_audience_count > 100
+row_count=1435
+column_count=24
+columns=movie_id, movie_name, open_date, genre, rating, director, production_company, distributor_meta, distributor_boxoffice, distributor_final, rep_nation, nation, total_sales_amount, total_audience_count, screen_count_peak, show_count_total, sales_share_peak, boxoffice_year_count, boxoffice_years, match_status, match_strategy, open_year, open_month, genre_main
+
+[top_null_columns]
+director: 84건 (5.85%)
+production_company: 41건 (2.86%)
+genre: 16건 (1.11%)
+movie_id: 5건 (0.35%)
+rating: 5건 (0.35%)
+distributor_meta: 5건 (0.35%)
+movie_name: 0건 (0.0%)
+open_date: 0건 (0.0%)
+distributor_boxoffice: 0건 (0.0%)
+distributor_final: 0건 (0.0%)
+
+[numeric_columns]
+total_sales_amount, total_audience_count, screen_count_peak, show_count_total, sales_share_peak, boxoffice_year_count
