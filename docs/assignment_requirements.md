@@ -1,4 +1,4 @@
-# Requirements
+# Assignment Requirements
 
 ## 1차 과제 해석
 - 데이터 분석에 필요한 데이터를 구한다.
@@ -6,20 +6,18 @@
 - 데이터 파일을 업로드할 수 있는 형태로 정리한다.
 - 분석 주체는 1개로 정한다.
 - 해당 주체의 목적은 4개 이상 제시한다.
-- 1차는 EDA 중심으로 데이터 구조와 특성을 설명하는 데 집중한다.
-- 발표용 그래프와 해석 문장을 준비한다.
+- 1차는 EDA 중심으로 데이터 구조와 특성을 설명한다.
 
 ## 2차 과제 요구사항
 - 목적에 맞는 피처 또는 변환된 애트리뷰트와 종속변수의 관계를 분석한다.
 - 적합한 피처를 2개 이상 선택한다.
 - 분석 방법은 분포도와 상관계수를 기본으로 사용한다.
 - 필요하면 그룹으로 데이터를 분할할 수 있다.
-- 선택한 피처와 선택 이유를 설명한다.
+- 선택한 피처와 그 이유를 설명한다.
 - 필요하면 추가 데이터를 확보하거나 피처를 가공할 수 있다.
-- 실패할 경우 다른 목적으로 변경해 진행할 수 있다.
 
 ## 학습 내용 제출
-- 강의자료와 더불어 스스로 방법을 찾으며 학습한 내용을 정리한다.
+- 강의자료 외에 스스로 찾은 방법을 정리한다.
 - 정리 방식은 노션 또는 블로그 링크 제출을 기준으로 한다.
 
 ## 결과 제출
@@ -30,8 +28,20 @@
 
 ## 현재 프로젝트 반영 상태
 - 분석 주체: 배급사
-- 목적: 5개 설정 완료
+- 세부 분석 질문: 5개 설정 완료
 - 데이터 범위: 한국 일반영화
 - 분석 기간: 2016~2025
-- 원본 데이터 확보: 완료
-- 분석용 통합 데이터셋 생성: 완료
+- 원본 보관 구조: `data/source_original/`
+- 작업용 CSV 구조: `data/raw/`
+- 최종 분석용 구조: `data/analysis_ready/`
+- 1차 시각화 초안 생성: 완료
+
+## 현재 제출 후보 파일
+### 데이터 파일
+- `data/source_original/kobis_boxoffice_yearly_2016.xls` ~ `data/source_original/kobis_boxoffice_yearly_2025.xls`
+- `data/source_original/kobis_korean_movie_metadata_2016_2025.csv`
+- `data/analysis_ready/kobis_korean_movies_analysis_ready_2016_2025.csv`
+
+### 참고 파일
+- `data/analysis_ready/kobis_korean_movies_unmatched_2016_2025.csv`
+- `outputs/visuals/assignment1/`

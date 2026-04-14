@@ -2,18 +2,18 @@
 
 ## 기록 원칙
 - 결정은 이유와 함께 기록한다.
-- 원본 데이터와 가공 데이터를 구분한다.
-- 수치, 날짜, 파일명, 출처는 가능한 한 구체적으로 남긴다.
-- 발표용 문장과 작업 메모는 분리해서 기록한다.
+- 원본 다운로드 파일과 작업용 CSV를 구분한다.
+- 최종 분석용 데이터셋은 별도 단계로 관리한다.
+- 파일 구조 변경이 있으면 문서 경로도 함께 갱신한다.
 
 ## 현재 상태
 - 주제: 영화
 - 분석 주체: 배급사
-- 데이터 범위: 한국 일반영화
-- 기간 범위: 2016~2025
+- 분석 범위: 한국 일반영화
+- 분석 기간: 2016~2025
 - 시기 구간: 2016~2019 / 2020~2022 / 2023~2025
 - 데이터 소스: KOBIS 우선 사용
-- 현재 단계: 1차 과제용 통합 데이터셋 생성 완료
+- 현재 단계: analysis-ready 데이터셋 정리 완료, assignment1 시각화 생성 완료
 
 ## Source Record
 ### 2026-04-14 / KOBIS 연도별 박스오피스 원본
@@ -21,7 +21,7 @@
 - 종류: 웹페이지 엑셀 다운로드
 - URL 또는 로컬 경로:
   - `https://www.kobis.or.kr/kobis/business/stat/offc/findYearlyBoxOfficeList.do`
-  - `data/raw/kobis_boxoffice_yearly_2016.xls` ~ `data/raw/kobis_boxoffice_yearly_2025.xls`
+  - `data/source_original/kobis_boxoffice_yearly_2016.xls` ~ `data/source_original/kobis_boxoffice_yearly_2025.xls`
 - 수집 날짜: 2026-04-14
 - 범위:
   - 2016~2025
@@ -40,19 +40,17 @@
   - 국적
   - 배급사
 - 비고:
-  - 파일 확장자는 `.xls`이지만 실제 내부 포맷은 HTML 테이블 다운로드 형태
-  - 분석 대상 기준 테이블로 사용
+  - 파일 확장자는 `.xls`이지만 실제 내부 포맷은 HTML 기반 다운로드 형태
 
 ### 2026-04-14 / KOBIS 영화 메타정보 원본
 - 이름: `kobis_korean_movie_metadata_2016_2025.csv`
 - 종류: CSV / KOBIS 영화정보 기반 수집본
 - URL 또는 로컬 경로:
   - `https://www.kobis.or.kr/kobis/business/mast/mvie/searchMovieList.do`
-  - `data/raw/kobis_korean_movie_metadata_2016_2025.csv`
+  - `data/source_original/kobis_korean_movie_metadata_2016_2025.csv`
 - 수집 날짜: 2026-04-14
 - 범위:
   - 파일명 기준 2016~2025 한국영화 메타정보
-  - 일반영화 여부는 연도별 박스오피스 원본과 조인한 뒤 분석 대상에 포함
 - 주요 컬럼:
   - 영화코드
   - 영화명
@@ -63,27 +61,13 @@
   - 제작사
   - 배급사
   - 국적
-- 비고:
-  - 장르, 관람등급, 영화코드, 감독, 제작사 보강용
-  - 일부 영화는 감독 공란, 다중 장르(`|`) 포함
 
 ## 결정 로그
 ### 2026-04-14 / 주제와 주체
 - 결정: 주제는 영화, 분석 주체는 배급사로 확정
 - 이유:
   - 배급사 관점이 KOBIS 데이터 구조와 가장 잘 맞는다.
-  - 장르, 개봉 시기, 관람등급, 스크린 수, 상영 횟수와 흥행 성과를 하나의 흐름으로 묶기 쉽다.
-
-### 2026-04-14 / 목적 구성
-- 결정: 목적 5개를 모두 사용
-- 목적:
-  - 장르와 흥행 성과
-  - 개봉 시기와 흥행 성과
-  - 관람등급과 흥행 성과
-  - 스크린 수/상영 횟수와 흥행 성과
-  - 시기 구간별 흥행 패턴 변화
-- 이유:
-  - 1차에서는 넓게 EDA를 하고, 2차에서 이 중 하나를 더 깊게 확장하기 좋다.
+  - 1차 EDA와 2차 확장 모두에 연결하기 좋다.
 
 ### 2026-04-14 / 데이터 범위
 - 결정: 한국 일반영화
@@ -94,7 +78,6 @@
 - 이유:
   - 비교 집단이 더 균질하다.
   - 배급사 관점의 상업 배급 전략과 더 잘 맞는다.
-  - 데이터 관리와 발표 메시지가 안정적이다.
 
 ### 2026-04-14 / 기간 범위
 - 결정: 2016~2025
@@ -104,56 +87,68 @@
   - 2023~2025
 - 이유:
   - 10년 범위라 프로젝트 규모가 충분하다.
-  - 최신 완결 연도인 2025까지 포함한다.
-  - 산업 변화와 회복 정체를 비교 설명하기 좋다.
+  - 코로나 전후 비교가 가능하다.
 
-### 2026-04-14 / 데이터 소스 전략
-- 결정: KOBIS만 우선 사용
+### 2026-04-14 / 문서 구조 변경
+- 결정:
+  - `docs/project_plan.md`
+  - `docs/assignment_requirements.md`
+  - `docs/learning_notes.md`
+  - `docs/worklog.md`
 - 이유:
-  - 현재 목적 5개를 설명하는 데 필요한 핵심 변수를 KOBIS에서 확보할 수 있다.
-  - 초기 병합 복잡도를 줄이고 EDA 완성도에 집중할 수 있다.
+  - 현재 과제 진행에 필요한 문서만 남기고 이름을 더 직관적으로 맞추기 위해
+
+### 2026-04-14 / 데이터 구조 변경
+- 결정:
+  - `data/source_original/` 원본 다운로드 보관
+  - `data/raw/` 작업용 CSV 정리본
+  - `data/analysis_ready/` 최종 분석용 CSV
+- 이유:
+  - 원본 보관과 실제 작업 파일을 분리하기 위해
+  - 설명과 제출에서 어떤 파일이 최종 분석용인지 바로 보이게 하기 위해
 
 ## 세션 로그
-### 2026-04-14 / raw 파일 정리
+### 2026-04-14 / 원본 보관과 작업용 CSV 분리
 - 작업 내용:
-  - 연도별 박스오피스 원본 파일명을 ASCII 기준으로 통일
-  - 메타정보 파일을 `data/raw/`에 추가
-  - raw 폴더는 깊게 나누지 않고 단순하게 유지
+  - KOBIS 원본 다운로드 파일을 `data/source_original/`로 이동
+  - 연도별 박스오피스 `.xls` 파일을 `data/raw/` CSV 10개로 정리
+  - 메타정보 CSV를 `data/raw/`에 별도 보관
+- 이유:
+  - 실제 분석과 설명을 CSV 기준으로 단순하게 가져가기 위해
 
-### 2026-04-14 / KOBIS 데이터 통합
+### 2026-04-14 / analysis-ready 데이터셋 구성
 - 작업 내용:
-  - `src/prepare_kobis_master.js` 작성
-  - 연도별 박스오피스 10개 파일 통합
+  - 박스오피스 CSV 10개 통합
   - 메타정보 CSV 정리
   - `영화명 + 개봉일` 기준 매칭
-  - 개봉일 기준 분석 범위 필터링
+  - 분석 범위 기준 필터링
 - 결과:
   - 박스오피스 집계 범위 통합 영화 수: `9815`
   - 분석 범위(2016~2025 개봉작) 영화 수: `5176`
   - 메타데이터 매칭 성공: `5171`
   - 미매칭: `5`
-- 생성 파일:
-  - `data/processed/kobis_boxoffice_yearly_combined_2016_2025.csv`
-  - `data/processed/kobis_boxoffice_aggregated_2016_2025.csv`
-  - `data/processed/kobis_boxoffice_aggregated_release_2016_2025.csv`
-  - `data/processed/kobis_metadata_2016_2025.csv`
-  - `data/processed/kobis_master_boxoffice_scope_2016_2025.csv`
-  - `data/processed/kobis_master_2016_2025.csv`
-  - `data/processed/kobis_unmatched_movies_boxoffice_scope_2016_2025.csv`
-  - `data/processed/kobis_unmatched_movies_2016_2025.csv`
-  - `data/processed/kobis_processing_summary_2016_2025.json`
+- 현재 파일:
+  - `data/analysis_ready/kobis_korean_movies_analysis_ready_2016_2025.csv`
+  - `data/analysis_ready/kobis_korean_movies_unmatched_2016_2025.csv`
 
-### 2026-04-14 / 집계 범위와 분석 범위 차이 확인
-- 확인 사항:
-  - 연도별 박스오피스 원본은 해당 연도 매출 발생 영화 전체를 포함한다.
-  - 따라서 재개봉작과 구작이 함께 섞여 있다.
-  - 실제 1차 분석은 개봉일 기준 `20160101 ~ 20251231`만 남긴 파일을 사용한다.
+### 2026-04-14 / assignment1 시각화 생성
+- 작업 내용:
+  - 결측치 요약표 생성
+  - 기초 통계표 생성
+  - 데이터셋 개요 텍스트 생성
+  - 시각화 9종 생성
+- 저장 위치:
+  - `outputs/visuals/assignment1/`
+
+### 2026-04-14 / 코드 진입점 단순화
+- 작업 내용:
+  - `src/load_analysis_ready_data.py`를 기준 분석 스크립트로 사용
+  - `main.py`에서 해당 스크립트를 호출하는 구조로 단순화
 
 ## 다음 액션
-- `kobis_master_2016_2025.csv` 기준 결측치 확인
-- 장르, 개봉 시기, 관람등급, 스크린 수/상영 횟수 EDA 진행
-- 발표용 그래프 5~7개 선정
-- 미매칭 5개 수동 보완 여부 판단
+- assignment1 시각화별 해석 문장 작성
+- 발표 슬라이드 구성
+- 필요하면 미매칭 5개 수동 보완 여부 판단
 
 ## Source Record Template
 - 이름:
@@ -173,7 +168,6 @@
 - 선택 이유:
 - 기대 효과:
 - 고려 사항:
-- 비교 대상:
 - 추가 확인 필요:
 - 비고:
 
@@ -182,7 +176,7 @@
 - 작업명:
 - 목표:
 - 수행 내용:
-- 새로 확인한 정보:
 - 생성 파일:
+- 결과:
 - 문제 또는 이슈:
 - 다음 액션:

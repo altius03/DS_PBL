@@ -1,0 +1,18 @@
+row_count=5176
+column_count=24
+columns=movie_id, movie_name, open_date, genre, rating, director, production_company, distributor_meta, distributor_boxoffice, distributor_final, rep_nation, nation, total_sales_amount, total_audience_count, screen_count_peak, show_count_total, sales_share_peak, boxoffice_year_count, boxoffice_years, match_status, match_strategy, open_year, open_month, genre_main
+
+[top_null_columns]
+director: 720건 (13.91%)
+production_company: 239건 (4.62%)
+genre: 90건 (1.74%)
+distributor_meta: 6건 (0.12%)
+movie_id: 5건 (0.1%)
+rating: 5건 (0.1%)
+distributor_boxoffice: 1건 (0.02%)
+distributor_final: 1건 (0.02%)
+movie_name: 0건 (0.0%)
+open_date: 0건 (0.0%)
+
+[numeric_columns]
+total_sales_amount, total_audience_count, screen_count_peak, show_count_total, sales_share_peak, boxoffice_year_count
