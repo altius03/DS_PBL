@@ -1,0 +1,13 @@
+{
+  "aggregated_movie_count": 9815,
+  "metadata_row_count": 6400,
+  "exact_match_count": 5171,
+  "name_only_match_count": 25,
+  "unmatched_count": 4619,
+  "metadata_duplicate_exact_key_count": 0,
+  "analysis_period_start": "20160101",
+  "analysis_period_end": "20251231",
+  "aggregated_movie_count_in_analysis_period": 5176,
+  "matched_count_in_analysis_period": 5171,
+  "unmatched_count_in_analysis_period": 5
+}
