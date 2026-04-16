@@ -1,0 +1,101 @@
+movie_name,open_date,genre,rating,distributor,worldwide_gross_usd,domestic_gross_usd,foreign_gross_usd,opening_gross_usd,opening_theaters,widest_release_theaters,running_time,chart_year,rank
+Barbie,"Jul 21, 2023",Adventure|Comedy|Fantasy,PG-13,Warner Bros.,1447138421,636238421,810900000,162022044,4243,4337,1 hr 54 min,2023,1
+The Super Mario Bros. Movie,"Apr 5, 2023",Adventure|Animation|Comedy|Family|Fantasy,PG,Universal Pictures,1360650924,574934330,785716594,146361865,4343,4371,1 hr 32 min,2023,2
+Oppenheimer,"Jul 21, 2023",Biography|Drama|History,R,Universal Pictures,975811333,330078895,645732438,82455420,3610,3761,3 hr,2023,3
+Guardians of the Galaxy Vol. 3,"May 5, 2023",Action|Adventure|Comedy|Fantasy|Sci-Fi,PG-13,Walt Disney Studios Motion Pictures,845555777,358995815,486559962,118414021,4450,4450,2 hr 30 min,2023,4
+Fast X,"May 19, 2023",Action|Adventure|Crime|Mystery|Thriller,PG-13,Universal Pictures,704875015,146126015,558749000,67017410,4046,4088,2 hr 21 min,2023,5
+Spider-Man: Across the Spider-Verse,"Jun 2, 2023",Action|Adventure|Animation|Family|Fantasy|Sci-Fi,PG,Columbia Pictures,690542303,381311319,309230984,120663589,4313,4332,2 hr 20 min,2023,6
+Full River Red,"Jan 22, 2023",Comedy|Drama|History|Mystery,,,670491959,,670491959,,,,2 hr 39 min,2023,7
+Wonka,"Dec 15, 2023",Adventure|Comedy|Family|Fantasy|Musical,PG,Warner Bros.,634502312,218402312,416100000,39005800,4203,4213,1 hr 56 min,2023,8
+The Wandering Earth II,"Jan 22, 2023",Action|Adventure|Drama|Sci-Fi,,Well Go USA Entertainment,615023132,5023132,610000000,,,172,2 hr 53 min,2023,9
+Mission: Impossible - Dead Reckoning Part One,"Jul 12, 2023",Action|Adventure|Thriller,PG-13,Paramount Pictures,571125435,172640980,398484455,54688347,4327,4327,2 hr 43 min,2023,10
+The Little Mermaid,"May 26, 2023",Adventure|Family|Fantasy|Musical|Romance,PG,Walt Disney Studios Motion Pictures,569626289,298172056,271454233,95578040,4320,4320,2 hr 15 min,2023,11
+No More Bets,,,,,532600264,,532600264,,,,,2023,12
+Elemental,"Jun 16, 2023",Adventure|Animation|Comedy|Family|Fantasy|Romance,PG,Walt Disney Studios Motion Pictures,496444308,154426697,342017611,29602429,4035,4035,1 hr 41 min,2023,13
+Lost in the Stars,"Jul 7, 2023",Crime|Drama|Mystery,,CMC Pictures,487637474,1721446,485916028,806815,,,2 hr 1 min,2023,14
+Ant-Man and the Wasp: Quantumania,"Feb 17, 2023",Action|Adventure|Comedy|Sci-Fi,PG-13,Walt Disney Studios Motion Pictures,476071180,214504909,261566271,106109650,4345,4345,2 hr 4 min,2023,15
+John Wick: Chapter 4,"Mar 24, 2023",Action|Crime|Thriller,R,Lionsgate,447142521,187131806,260010715,73817950,3855,3855,2 hr 49 min,2023,16
+Transformers: Rise of the Beasts,"Jun 9, 2023",Action|Adventure|Sci-Fi,PG-13,Paramount Pictures,441656550,157341749,284314801,61045464,3678,3680,2 hr 7 min,2023,17
+Aquaman and the Lost Kingdom,"Dec 22, 2023",Action|Adventure|Fantasy|Sci-Fi,PG-13,Warner Bros.,440181226,124481226,315700000,27686211,3706,3787,2 hr 4 min,2023,18
+Meg 2: The Trench,"Aug 4, 2023",Action|Adventure|Horror|Sci-Fi|Thriller,PG-13,Warner Bros.,398500317,82600317,315900000,30002735,3503,3604,1 hr 56 min,2023,19
+Indiana Jones and the Dial of Destiny,"Jun 30, 2023",Action|Adventure|Sci-Fi,PG-13,Walt Disney Studios Motion Pictures,383963057,174480468,209482589,60368101,4600,4600,2 hr 34 min,2023,20
+Creation of the Gods I: Kingdom of Storms,"Sep 22, 2023",Action|Adventure|Drama|Fantasy,,Well Go USA Entertainment,373044244,1706355,371337889,931140,115,115,2 hr 28 min,2023,21
+The Hunger Games: The Ballad of Songbirds & Snakes,"Nov 17, 2023",Action|Adventure|Drama|Sci-Fi|Thriller|War,PG-13,Lionsgate,347628052,166350594,181277458,44607143,3776,3776,2 hr 37 min,2023,22
+Never Say Never,,,,,301957043,,301957043,,,,,2023,23
+Migration,"Dec 22, 2023",Adventure|Animation|Comedy|Family,PG,Universal Pictures,300187799,127630880,172556919,12453275,3761,3839,1 hr 23 min,2023,24
+Five Nights at Freddy's,"Oct 27, 2023",Horror|Mystery|Thriller,PG-13,Universal Pictures,291493620,137275620,154218000,80001720,3675,3789,1 hr 49 min,2023,25
+The Boy and the Heron,"Dec 8, 2023",Adventure|Animation|Drama|Fantasy,PG-13,GKIDS,282996427,46832867,236163560,13011722,2205,2325,2 hr 4 min,2023,26
+Creed III,"Mar 3, 2023",Action|Drama|Sport,PG-13,United Artists Releasing,276148615,156248615,119900000,58370007,4007,4007,1 hr 56 min,2023,27
+The Flash,"Jun 16, 2023",Action|Adventure|Fantasy|Sci-Fi,PG-13,Warner Bros.,271433313,108133313,163300000,55043679,4234,4256,2 hr 24 min,2023,28
+The Nun II,"Sep 8, 2023",Horror|Mystery|Thriller,R,Warner Bros.,269667073,86267073,183400000,32603336,3728,3743,1 hr 50 min,2023,29
+Taylor Swift: The Eras Tour,"Oct 13, 2023",Documentary|Music|Musical,PG-13,AMC Theatres,261656269,180756269,80900000,93224755,3855,3855,2 hr 49 min,2023,30
+Wish,"Nov 22, 2023",Adventure|Animation|Comedy|Family|Fantasy|Musical,PG,Walt Disney Studios Motion Pictures,254997360,63973821,191023539,19698228,3900,3900,1 hr 35 min,2023,31
+Sound of Freedom,"Jul 4, 2023",Biography|Crime|Drama|History|Thriller,PG-13,Angel,250570396,184178046,66392350,19680879,2852,3411,2 hr 11 min,2023,32
+Chang An,,,,,250318788,,250318788,,,,,2023,33
+Napoleon,"Nov 22, 2023",Action|Adventure|Biography|Drama|History|War,R,Columbia Pictures,222435664,61524375,160911289,20638887,3500,3500,2 hr 38 min,2023,34
+Anyone But You,"Dec 22, 2023",Comedy|Romance,R,Columbia Pictures,220332985,88319668,132013317,6000344,3055,3055,1 hr 43 min,2023,35
+Boonie Bears: Guardian Code,,,,,218069789,,218069789,,,,,2023,36
+Trolls Band Together,"Nov 17, 2023",Adventure|Animation|Comedy|Family|Fantasy|Musical,PG,Universal Pictures,209646030,103270155,106375875,30002525,3870,3893,1 hr 31 min,2023,37
+The Marvels,"Nov 10, 2023",Action|Adventure|Sci-Fi,PG-13,Walt Disney Studios Motion Pictures,206136825,84500223,121636602,46110859,4030,4030,1 hr 45 min,2023,38
+Dungeons & Dragons: Honor Among Thieves,"Mar 31, 2023",Action|Adventure|Comedy|Fantasy,PG-13,Paramount Pictures,205460387,93549650,111910737,37205784,3855,3856,2 hr 14 min,2023,39
+PAW Patrol: The Mighty Movie,"Sep 29, 2023",Action|Adventure|Animation|Comedy|Crime|Family|Fantasy|Sci-Fi,PG,Paramount Pictures,205098869,65343309,139755560,22764354,3989,4027,1 hr 28 min,2023,40
+The Equalizer 3,"Sep 1, 2023",Action|Crime|Thriller,R,Columbia Pictures,191067560,92373751,98693809,34604229,3965,3965,1 hr 49 min,2023,41
+Under the Light,,,,,189404720,,189404720,,,,,2023,42
+Insidious: The Red Door,"Jul 7, 2023",Horror|Mystery|Thriller,PG-13,Screen Gems,189086877,82156962,106929915,33013036,3188,3188,1 hr 47 min,2023,43
+Teenage Mutant Ninja Turtles: Mutant Mayhem,"Aug 2, 2023",Action|Adventure|Animation|Comedy|Crime|Family|Fantasy|Sci-Fi,PG,Paramount Pictures,181935518,118700272,63235246,28007544,3858,3950,1 hr 39 min,2023,44
+Scream VI,"Mar 10, 2023",Horror|Mystery|Thriller,R,Paramount Pictures,166577232,108391107,58186125,44447270,3675,3676,2 hr 2 min,2023,45
+Godspeed,,,,,165276468,,165276468,,,,,2023,46
+Johnny Keep Walking!,,,,,159776483,,159776483,,,,,2023,47
+Killers of the Flower Moon,"Oct 20, 2023",Crime|Drama|History|Western,R,Paramount Pictures,158772599,68035488,90737111,23253655,3628,3786,3 hr 26 min,2023,48
+Evil Dead Rise,"Apr 21, 2023",Horror,R,Warner Bros.,147133054,67233054,79900000,24504315,3402,3417,1 hr 36 min,2023,49
+The Ex-Files 4: Marriage Plan,,,,,141589956,,141589956,,,,,2023,50
+Hidden Blade,"Feb 17, 2023",Drama|History|Thriller,,Well Go USA Entertainment,136784593,803189,135981404,296337,62,62,2 hr 8 min,2023,51
+The Exorcist: Believer,"Oct 6, 2023",Horror,R,Universal Pictures,136294607,65537395,70757212,26497600,3663,3684,1 hr 51 min,2023,52
+Shazam! Fury of the Gods,"Mar 17, 2023",Action|Adventure|Comedy|Fantasy|Sci-Fi,PG-13,Warner Bros.,134138006,57638006,76500000,30111158,4071,4071,2 hr 10 min,2023,53
+Deep Sea,"Nov 24, 2023",Adventure|Animation|Drama|Family|Fantasy,PG-13,Viva Pictures,133607631,9575,133598056,5763,10,10,1 hr 52 min,2023,54
+Blue Beetle,"Aug 18, 2023",Action|Adventure|Sci-Fi|Thriller,PG-13,Warner Bros.,130788072,72488072,58300000,25030225,3871,3871,2 hr 7 min,2023,55
+One and Only,,,,,128818285,,128818285,,,,,2023,56
+A Haunting in Venice,"Sep 15, 2023",Crime|Drama|Horror|Mystery|Thriller,PG-13,20th Century Studios,122290456,42471412,79819044,14279529,3305,3305,1 hr 43 min,2023,57
+Gran Turismo,"Aug 25, 2023",Action|Adventure|Drama|Sport,PG-13,Sony Pictures Releasing,122076738,44428554,77648184,17410552,3856,3856,2 hr 14 min,2023,58
+The Volunteers: To the War,,,,,118779552,,118779552,,,,,2023,59
+Poor Things,"Dec 8, 2023",Comedy|Drama|Romance|Sci-Fi,R,Searchlight Pictures,117625455,34553225,83072230,661230,9,2300,2 hr 21 min,2023,60
+Haunted Mansion,"Jul 28, 2023",Comedy|Drama|Family|Fantasy|Horror|Mystery,PG-13,Walt Disney Studios Motion Pictures,117449790,67653287,49796503,24082475,3740,3740,2 hr 3 min,2023,61
+Born to Fly,"Apr 28, 2023",Action|Drama,,Well Go USA Entertainment,117141585,277011,116864574,193927,74,74,2 hr 8 min,2023,62
+Godzilla Minus One,"Dec 1, 2023",Action|Adventure|Drama|Horror|Sci-Fi,PG-13,Toho International,113820494,57144669,56675825,11419975,2308,2622,2 hr 4 min,2023,63
+Saw X,"Sep 29, 2023",Horror|Mystery|Thriller,R,Lionsgate,112820254,53607898,59212356,18309301,3262,3262,1 hr 58 min,2023,64
+Pathaan,"Jan 25, 2023",Action|Adventure|Thriller,,Yash Raj Films USA Inc.,112583450,17487476,95095974,6892182,695,697,2 hr 26 min,2023,65
+Detective Conan: Black Iron Submarine,,,,,106771806,,106771806,,,,,2023,66
+The Creator,"Sep 29, 2023",Action|Adventure|Drama|Sci-Fi|Thriller,PG-13,20th Century Studios,104272136,40774679,63497457,14079512,3680,3680,2 hr 13 min,2023,67
+12.12: The Day,,,,,97476565,,97476565,,,,,2023,68
+Animal,"Dec 1, 2023",Action|Crime|Drama|Thriller,,,92850291,15004482,77845809,6524534,698,698,3 hr 24 min,2023,69
+Talk to Me,"Jul 28, 2023",Horror|Thriller,R,A24,91959188,48299436,43659752,10431720,2340,2379,1 hr 35 min,2023,70
+Air,"Apr 5, 2023",Drama|Sport,R,Amazon MGM Studios,90060106,52460106,37600000,14456279,3507,3507,1 hr 51 min,2023,71
+Cocaine Bear,"Feb 24, 2023",Comedy|Crime|Thriller,R,Universal Pictures,88314672,64670240,23644432,23260790,3534,3571,1 hr 35 min,2023,72
+No Hard Feelings,"Jun 23, 2023",Comedy|Romance,R,Sony Pictures Releasing,87256407,50452282,36804125,15002770,3208,3208,1 hr 43 min,2023,73
+The Roundup: No Way Out,"Jun 2, 2023",Action|Crime|Thriller,,Capelight Pictures,83410298,909411,82500887,192568,41,41,1 hr 45 min,2023,74
+The Pope's Exorcist,"Apr 14, 2023",Horror|Thriller,R,Screen Gems,76987621,20009380,56978241,9006368,3178,3178,1 hr 43 min,2023,75
+Plane,"Jan 13, 2023",Action|Adventure|Thriller,R,Lionsgate,74515586,32111181,42404405,10265326,3023,3060,1 hr 47 min,2023,76
+Titanic 25 Year Anniversary,"Feb 10, 2023",Drama|Romance,PG-13,Paramount Pictures,70219746,15096069,55123677,6714684,2464,2464,3 hr 14 min,2023,77
+Romancham,,,,,69929632,,69929632,,,,,2023,78
+The Color Purple,"Dec 25, 2023",Drama|Musical,PG-13,Warner Bros.,68919191,60619191,8300000,11737072,3203,3218,2 hr 21 min,2023,79
+The Boogeyman,"Jun 2, 2023",Horror|Mystery|Thriller,PG-13,20th Century Studios,67307243,43244282,24062961,12356486,3205,3205,1 hr 38 min,2023,80
+65,"Mar 10, 2023",Action|Adventure|Sci-Fi|Thriller,PG-13,Sony Pictures Releasing,60730568,32062904,28667664,12328361,3405,3405,1 hr 33 min,2023,81
+Spy x Family Code: White,"Apr 19, 2024",Action|Animation|Comedy|Thriller,PG-13,Crunchyroll,59629242,8110042,51519200,4824993,2009,2009,1 hr 50 min,2023,82
+Magic Mike's Last Dance,"Feb 10, 2023",Comedy|Drama,R,Warner Bros.,57105156,26005156,31100000,8305317,1496,3034,1 hr 52 min,2023,83
+Demon Slayer: Kimetsu No Yaiba - To the Swordsmith Village,"Mar 3, 2023",Action|Adventure|Animation|Fantasy|Thriller,R,Crunchyroll,56319794,10117806,46201988,10117806,1774,1774,1 hr 50 min,2023,84
+One Life,"Mar 15, 2024",Biography|Drama|History|War,PG,Bleecker Street Media,56308105,5716885,50591220,1713505,983,1009,1 hr 49 min,2023,85
+The Boys in the Boat,"Dec 25, 2023",Biography|Drama|History|Sport,PG-13,Amazon MGM Studios,55501365,52641306,2860059,8400548,2557,2687,2 hr 3 min,2023,86
+Knock at the Cabin,"Feb 3, 2023",Horror|Mystery|Thriller,R,Universal Pictures,54760947,35397980,19362967,14127170,3643,3657,1 hr 40 min,2023,87
+Mummies,"Feb 24, 2023",Adventure|Animation|Comedy|Crime|Family|Fantasy|Musical|Romance,PG,Warner Bros.,54475970,4275970,50200000,422183,225,384,1 hr 28 min,2023,88
+Jesus Revolution,"Feb 24, 2023",Biography|Drama|History,PG-13,Lionsgate,54293684,52102987,2190697,15882067,2475,2575,2 hr,2023,89
+Asteroid City,"Jun 16, 2023",Comedy|Drama|Romance|Sci-Fi,PG-13,Focus Features,53857743,28153025,25704718,853382,6,1901,1 hr 45 min,2023,90
+The Zone of Interest,"Dec 8, 2023",Drama|History|War,PG-13,A24,52693249,8659464,44033785,,,598,1 hr 45 min,2023,91
+BTS: Yet to Come in Cinemas,"Feb 1, 2023",Documentary|Music,,Trafalgar Releasing,51603764,8481053,43122711,8022774,1210,1210,1 hr 44 min,2023,92
+There's Still Tomorrow,"Feb 28, 2025",Comedy|Drama|History,,Greenwich Entertainment,50307517,180426,50127091,3936,1,111,1 hr 58 min,2023,93
+Operation Fortune: Ruse de Guerre,"Mar 3, 2023",Action|Adventure|Comedy|Thriller,R,Lionsgate,48983306,6496125,42487181,3140214,2168,2168,1 hr 54 min,2023,94
+Missing,"Jan 20, 2023",Drama|Mystery|Thriller,PG-13,Sony Pictures Releasing,48767848,32502025,16265823,9154695,3025,3025,1 hr 51 min,2023,95
+Thanksgiving,"Nov 17, 2023",Horror|Mystery|Thriller,R,TriStar Pictures,46553280,31908884,14644396,10306272,3204,3204,1 hr 46 min,2023,96
+Asterix & Obelix: The Middle Kingdom,,,,,46497678,,46497678,,,,,2023,97
+The Holdovers,"Oct 27, 2023",Comedy|Drama,R,Focus Features,45969871,20355375,25614496,211093,6,1601,2 hr 13 min,2023,98
+Ruby Gillman: Teenage Kraken,"Jun 30, 2023",Action|Adventure|Animation|Comedy,PG,DreamWorks,45657745,15753600,29904145,5500990,3400,3408,1 hr 31 min,2023,99
+The Iron Claw,"Dec 22, 2023",Biography|Drama|Sport,R,A24,45204449,35070296,10134153,4868370,2774,2794,2 hr 12 min,2023,100

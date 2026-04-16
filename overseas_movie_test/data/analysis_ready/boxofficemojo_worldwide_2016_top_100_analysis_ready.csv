@@ -1,0 +1,101 @@
+movie_name,open_date,genre,rating,distributor,worldwide_gross_usd,domestic_gross_usd,foreign_gross_usd,opening_gross_usd,opening_theaters,widest_release_theaters,running_time,chart_year,rank
+Captain America: Civil War,"May 6, 2016",Action|Sci-Fi,PG-13,Walt Disney Studios Motion Pictures,1153296293,408084349,745211944,179139142,4226,4226,2 hr 27 min,2016,1
+Rogue One: A Star Wars Story,"Dec 16, 2016",Action|Adventure|Sci-Fi,PG-13,Walt Disney Studios Motion Pictures,1056057273,532177324,523879949,155081681,4157,4157,2 hr 13 min,2016,2
+Finding Dory,"Jun 17, 2016",Adventure|Animation|Comedy|Family|Fantasy|Mystery,PG,Walt Disney Studios Motion Pictures,1028570889,486295561,542275328,135060273,4305,4305,1 hr 37 min,2016,3
+Zootopia,"Mar 4, 2016",Action|Adventure|Animation|Comedy|Crime|Family|Mystery,PG,Walt Disney Studios Motion Pictures,1023784195,341268248,682515947,75063401,3827,3959,1 hr 48 min,2016,4
+The Jungle Book,"Apr 15, 2016",Action|Adventure|Animation|Drama|Family|Fantasy|Musical,PG,Walt Disney Studios Motion Pictures,966550600,364001123,602549477,103261464,4028,4144,1 hr 46 min,2016,5
+The Secret Life of Pets,"Jul 8, 2016",Adventure|Animation|Comedy|Family,PG,Universal Pictures,875697467,368623860,507073607,104352905,4370,4381,1 hr 26 min,2016,6
+Batman v Superman: Dawn of Justice,"Mar 25, 2016",Action|Adventure|Sci-Fi,PG-13,Warner Bros.,874360194,330360194,544000000,166007347,4242,4256,2 hr 31 min,2016,7
+Fantastic Beasts and Where to Find Them,"Nov 18, 2016",Adventure|Family|Fantasy,PG-13,Warner Bros.,816037575,234037575,582000000,74403387,4144,4144,2 hr 12 min,2016,8
+Deadpool,"Feb 12, 2016",Action|Comedy|Sci-Fi,R,Twentieth Century Fox,782612155,363070709,419541446,132434639,3558,3856,1 hr 48 min,2016,9
+Suicide Squad,"Aug 5, 2016",Action|Adventure|Fantasy|Sci-Fi,PG-13,Warner Bros.,749200054,325100054,424100000,133682248,4255,4255,2 hr 3 min,2016,10
+Doctor Strange,"Nov 4, 2016",Action|Adventure|Fantasy|Sci-Fi,PG-13,Walt Disney Studios Motion Pictures,677718395,232641920,445076475,85058311,3882,3882,1 hr 55 min,2016,11
+Moana,"Nov 23, 2016",Adventure|Animation|Comedy|Family|Fantasy|Musical,PG,Walt Disney Studios Motion Pictures,643331111,248757044,394574067,56631401,3875,3875,1 hr 47 min,2016,12
+Sing,"Dec 21, 2016",Animation|Comedy|Family|Musical,PG,Universal Pictures,634151679,270395425,363756254,35258145,4022,4029,1 hr 48 min,2016,13
+The Mermaid,"Feb 19, 2016",Comedy|Drama|Fantasy|Romance,R,Sony Pictures Releasing,553810228,3232685,550577543,985052,35,106,1 hr 34 min,2016,14
+X-Men: Apocalypse,"May 27, 2016",Action|Adventure|Sci-Fi,PG-13,Twentieth Century Fox,543934105,155442489,388491616,65769562,4150,4153,2 hr 24 min,2016,15
+Kung Fu Panda 3,"Jan 29, 2016",Action|Adventure|Animation|Comedy|Family|Fantasy,PG,Twentieth Century Fox,521170825,143528619,377642206,41282042,3955,3987,1 hr 35 min,2016,16
+La La Land,"Dec 9, 2016",Comedy|Drama|Music|Musical|Romance,PG-13,Lionsgate,447407695,151101803,296305892,881104,5,3236,2 hr 8 min,2016,17
+Warcraft,"Jun 10, 2016",Action|Adventure|Fantasy,PG-13,Universal Pictures,439048914,47365290,391683624,24166110,3400,3406,2 hr 3 min,2016,18
+Jason Bourne,"Jul 29, 2016",Action|Thriller,PG-13,Universal Pictures,415484914,162434410,253050504,59215365,4026,4039,2 hr 3 min,2016,19
+Ice Age: Collision Course,"Jul 22, 2016",Action|Adventure|Animation|Comedy|Family|Sci-Fi,PG,Twentieth Century Fox,408579038,64063008,344516030,21373064,3992,3997,1 hr 34 min,2016,20
+Independence Day: Resurgence,"Jun 24, 2016",Action|Adventure|Sci-Fi,PG-13,Twentieth Century Fox,389681935,103144286,286537649,41039944,4130,4130,2 hr,2016,21
+Your Name.,"Apr 7, 2017",Animation|Drama|Fantasy|Romance,PG,FUNimation Entertainment,357986087,5017246,352968841,1813781,311,311,1 hr 46 min,2016,22
+The Legend of Tarzan,"Jul 1, 2016",Action|Adventure|Drama|Fantasy|Romance,PG-13,Warner Bros.,357243061,126643061,230600000,38527856,3561,3591,1 hr 50 min,2016,23
+The Angry Birds Movie,"May 20, 2016",Action|Adventure|Animation|Comedy|Family,PG,Sony Pictures Releasing,352333929,107509366,244824563,38155177,3932,3932,1 hr 37 min,2016,24
+Trolls,"Nov 4, 2016",Adventure|Animation|Comedy|Family|Fantasy|Music,PG,Twentieth Century Fox,347013487,153856089,193157398,46581142,4060,4066,1 hr 32 min,2016,25
+Star Trek Beyond,"Jul 22, 2016",Action|Adventure|Sci-Fi|Thriller,PG-13,Paramount Pictures,343471816,158848340,184623476,59253211,3928,3928,2 hr 2 min,2016,26
+The Great Wall,"Feb 17, 2017",Action|Adventure|Fantasy|Thriller,PG-13,Universal Pictures,334933831,45540830,289393001,18469620,3326,3328,1 hr 43 min,2016,27
+Now You See Me 2,"Jun 10, 2016",Action|Adventure|Comedy|Crime|Mystery|Thriller,PG-13,Lionsgate,334897606,65075540,269822066,22383146,3232,3232,2 hr 9 min,2016,28
+The Conjuring 2,"Jun 10, 2016",Horror|Mystery|Thriller,R,Warner Bros.,321370008,102470008,218900000,40406314,3343,3356,2 hr 14 min,2016,29
+Resident Evil: The Final Chapter,"Jan 27, 2017",Action|Horror|Sci-Fi|Thriller,R,Screen Gems,312242626,26830068,285412558,13601682,3104,3104,1 hr 47 min,2016,30
+Dangal,"Dec 21, 2016",Action|Biography|Drama|Sport,,UTV Motion Pictures,303726694,12391761,291334933,3248481,331,338,2 hr 41 min,2016,31
+Passengers,"Dec 21, 2016",Drama|Romance|Sci-Fi|Thriller,PG-13,Sony Pictures Releasing,303144152,100014699,203129453,14869736,3478,3478,1 hr 56 min,2016,32
+Alice Through the Looking Glass,"May 27, 2016",Adventure|Family|Fantasy|Mystery,PG,Walt Disney Studios Motion Pictures,299457024,77041381,222415643,26858726,3763,3763,1 hr 53 min,2016,33
+Miss Peregrine's Home for Peculiar Children,"Sep 30, 2016",Adventure|Drama|Family|Fantasy|Thriller,PG-13,Twentieth Century Fox,296482446,87242834,209239612,28871140,3522,3835,2 hr 7 min,2016,34
+Teenage Mutant Ninja Turtles: Out of the Shadows,"Jun 3, 2016",Action|Adventure|Animation|Comedy|Crime|Fantasy|Sci-Fi,PG-13,Paramount Pictures,245623848,82051601,163572247,35316382,4071,4071,1 hr 52 min,2016,35
+Sully,"Sep 9, 2016",Biography|Drama|History,PG-13,Warner Bros.,243870033,125070033,118800000,35028301,3525,3955,1 hr 36 min,2016,36
+Assassin's Creed,"Dec 21, 2016",Action|Adventure|Sci-Fi,PG-13,Twentieth Century Fox,240697856,54647948,186049908,10278225,2970,2996,1 hr 55 min,2016,37
+Hidden Figures,"Dec 25, 2016",Biography|Drama|History,PG,Twentieth Century Fox,235956898,169607287,66349611,515499,25,3416,2 hr 7 min,2016,38
+Ghostbusters,"Jul 15, 2016",Action|Comedy|Fantasy|Sci-Fi,PG-13,Sony Pictures Releasing,229147509,128350574,100796935,46018755,3963,3963,1 hr 57 min,2016,39
+Inferno,"Oct 28, 2016",Action|Adventure|Crime|Drama|Mystery|Thriller,PG-13,Sony Pictures Releasing,220021259,34343574,185677685,14860425,3576,3576,2 hr 1 min,2016,40
+Central Intelligence,"Jun 17, 2016",Action|Comedy|Crime,PG-13,Warner Bros.,216940871,127440871,89500000,35535250,3508,3508,1 hr 47 min,2016,41
+Bridget Jones's Baby,"Sep 16, 2016",Comedy|Drama|Romance,R,Universal Pictures,211952420,24252420,187700000,8571785,2927,2930,2 hr 3 min,2016,42
+Me Before You,"Jun 3, 2016",Drama|Romance,PG-13,Warner Bros.,208445075,56245075,152200000,18723269,2704,2762,1 hr 50 min,2016,43
+London Has Fallen,"Mar 4, 2016",Action|Thriller,R,Focus Features,205754447,62524260,143230187,21635601,3490,3492,1 hr 39 min,2016,44
+Arrival,"Nov 11, 2016",Drama|Mystery|Sci-Fi,PG-13,Paramount Pictures,203388186,100546139,102842047,24074047,2317,3115,1 hr 56 min,2016,45
+The BFG,"Jul 1, 2016",Adventure|Family|Fantasy,PG,Walt Disney Studios Motion Pictures,194655614,55483770,139171844,18775350,3357,3392,1 hr 57 min,2016,46
+The Monkey King 2,"Feb 5, 2016",Action|Adventure|Fantasy,,China Lion Film Distribution,193678298,709982,192968316,166391,38,38,1 hr 59 min,2016,47
+Bad Moms,"Jul 29, 2016",Comedy,R,STX Entertainment,183936074,113257297,70678777,23817340,3215,3215,1 hr 40 min,2016,48
+Storks,"Sep 23, 2016",Adventure|Animation|Comedy|Family|Fantasy,PG,Warner Bros.,183679278,72679278,111000000,21311407,3922,3922,1 hr 27 min,2016,49
+From Vegas to Macau III,,,,,181732879,,181732879,,,,,2016,50
+Hacksaw Ridge,"Nov 4, 2016",Biography|Drama|History|War,R,Lionsgate,180563636,67209615,113354021,15190758,2886,2971,2 hr 19 min,2016,51
+The Divergent Series: Allegiant,"Mar 18, 2016",Action|Adventure|Fantasy|Mystery|Sci-Fi|Thriller,PG-13,Lionsgate,179246868,66184051,113062817,29027348,3740,3740,2 hr,2016,52
+Operation Mekong,"Sep 30, 2016",Action|Adventure|Crime|Drama|History|Thriller,,Well Go USA Entertainment,173839072,800012,173039060,85082,25,29,2 hr 4 min,2016,53
+The Girl on the Train,"Oct 7, 2016",Crime|Drama|Mystery|Thriller,R,Universal Pictures,173185859,75395035,97790824,24536265,3144,3241,1 hr 52 min,2016,54
+The Huntsman: Winter's War,"Apr 22, 2016",Action|Adventure|Drama|Fantasy|Romance|War,PG-13,Universal Pictures,164989338,48390190,116599148,19445035,3791,3802,1 hr 54 min,2016,55
+The Magnificent Seven,"Sep 23, 2016",Action|Adventure|Drama|Western,PG-13,Sony Pictures Releasing,162360636,93432655,68927981,34703397,3674,3696,2 hr 12 min,2016,56
+Jack Reacher: Never Go Back,"Oct 21, 2016",Action|Thriller,PG-13,Paramount Pictures,162146076,58697076,103449000,22872490,3780,3780,1 hr 58 min,2016,57
+Don't Breathe,"Aug 26, 2016",Crime|Horror|Thriller,R,Screen Gems,157761002,89217875,68543127,26411706,3051,3384,1 hr 28 min,2016,58
+The Accountant,"Oct 14, 2016",Action|Crime|Drama|Thriller,R,Warner Bros.,155560045,86260045,69300000,24710273,3332,3402,2 hr 8 min,2016,59
+Lights Out,"Jul 22, 2016",Horror|Mystery,PG-13,Warner Bros.,149368835,67268835,82100000,21688103,2818,2835,1 hr 21 min,2016,60
+Time Raiders,,,,,145819137,,145819137,,,,,2016,61
+Pete's Dragon,"Aug 12, 2016",Action|Adventure|Comedy|Drama|Family|Fantasy,PG,Walt Disney Studios Motion Pictures,143695338,76233151,67462187,21514095,3702,3702,1 hr 42 min,2016,62
+Sausage Party,"Aug 12, 2016",Adventure|Animation|Comedy|Fantasy,R,Sony Pictures Releasing,140705322,97685686,43019636,34263534,3103,3135,1 hr 29 min,2016,63
+Lion,"Nov 25, 2016",Biography|Drama,PG-13,The Weinstein Company,140312928,51738905,88574023,123360,4,1802,1 hr 58 min,2016,64
+Skiptrace,,,,,136579287,,136579287,,,,,2016,65
+Mechanic: Resurrection,"Aug 26, 2016",Action|Adventure|Thriller,R,Lionsgate,125729635,21218403,104511232,7456525,2258,2258,1 hr 38 min,2016,66
+Deepwater Horizon,"Sep 30, 2016",Action|Drama|History|Thriller,PG-13,Lionsgate,121790373,61433527,60356846,20223544,3259,3403,1 hr 47 min,2016,67
+Allied,"Nov 23, 2016",Action|Drama|Romance|Thriller|War,R,Paramount Pictures,119520023,40098064,79421959,12701743,3160,3160,2 hr 4 min,2016,68
+I Belonged to You,"Sep 30, 2016",Drama|Romance,,China Lion Film Distribution,119107580,744541,118363039,311738,50,50,1 hr 52 min,2016,69
+The Shallows,"Jun 24, 2016",Drama|Horror|Thriller,PG-13,Sony Pictures Releasing,119100758,55124043,63976715,16800868,2962,2962,1 hr 26 min,2016,70
+The Purge: Election Year,"Jul 1, 2016",Action|Horror|Sci-Fi|Thriller,R,Universal Pictures,118587880,79213375,39374505,31515110,2796,2821,1 hr 48 min,2016,71
+Why Him?,"Dec 23, 2016",Comedy,R,Twentieth Century Fox,118102725,60323786,57778939,11002986,2917,3008,1 hr 51 min,2016,72
+Book of Love,"Apr 29, 2016",Comedy|Romance,,China Lion Film Distribution,114679097,,114679097,,,,2 hr 12 min,2016,73
+Office Christmas Party,"Dec 9, 2016",Comedy,R,Paramount Pictures,114501299,54767494,59733805,16890204,3210,3210,1 hr 45 min,2016,74
+How to Be Single,"Feb 12, 2016",Comedy|Drama|Romance,R,Warner Bros.,112543513,46843513,65700000,17878911,3343,3357,1 hr 50 min,2016,75
+10 Cloverfield Lane,"Mar 11, 2016",Drama|Horror|Sci-Fi|Thriller,PG-13,Paramount Pictures,110216998,72082998,38134000,24727437,3391,3427,1 hr 43 min,2016,76
+Neighbors 2: Sorority Rising,"May 20, 2016",Comedy,R,Universal Pictures,108007109,55455765,52551344,21760405,3384,3416,1 hr 32 min,2016,77
+Cold War 2,"Jul 8, 2016",Action|Crime|Drama|Thriller,,Well Go USA Entertainment,103197501,560824,102636677,157385,22,23,1 hr 50 min,2016,78
+Railroad Tigers,"Jan 6, 2017",Action|Adventure|Comedy|Family|War,,Well Go USA Entertainment,102205175,218044,101987131,116211,43,43,2 hr 4 min,2016,79
+Some Like It Hot,"Jan 13, 2017",Comedy,,China Lion Film Distribution,95721752,100026,95621726,42230,10,10,1 hr 56 min,2016,80
+Dirty Grandpa,"Jan 22, 2016",Comedy,R,Lionsgate,94073028,35593113,58479915,11111875,2912,2912,1 hr 42 min,2016,81
+Ben-Hur,"Aug 19, 2016",Action|Adventure|Drama|Romance,PG-13,Paramount Pictures,94061311,26410477,67650834,11203815,3084,3084,2 hr 3 min,2016,82
+Money Monster,"May 13, 2016",Action|Crime|Drama|Mystery|Thriller,R,TriStar Pictures,93282604,41012075,52270529,14788157,3104,3104,1 hr 38 min,2016,83
+Train to Busan,"Jul 22, 2016",Action|Horror|Thriller,,Well Go USA Entertainment,92742323,2129768,90612555,284776,27,36,1 hr 58 min,2016,84
+My Big Fat Greek Wedding 2,"Mar 25, 2016",Comedy|Romance,PG-13,Universal Pictures,90632641,59689605,30943036,17861950,3133,3179,1 hr 34 min,2016,85
+Collateral Beauty,"Dec 16, 2016",Drama|Romance,PG-13,Warner Bros.,88616021,31016021,57600000,7102085,3028,3028,1 hr 37 min,2016,86
+Line Walker,,,,,88228755,,88228755,,,,,2016,87
+Sultan,"Jul 6, 2016",Action|Drama|Romance|Sport,,Yash Raj Films,87280000,6200000,81080000,2371100,282,283,2 hr 50 min,2016,88
+War Dogs,"Aug 19, 2016",Biography|Comedy|Crime|Drama|War,R,Warner Bros.,86434523,43034523,43400000,14685305,3258,3258,1 hr 54 min,2016,89
+Big Fish & Begonia,,,,,85409373,,85409373,,,,,2016,90
+Nerve,"Jul 27, 2016",Adventure|Crime|Drama|Thriller,PG-13,Lionsgate,85251425,38583626,46667799,9445456,2538,2538,1 hr 36 min,2016,91
+Leap!,"Feb 24, 2017",Adventure|Animation|Comedy|Family|Music,PG,Entertainment One,84197417,2844490,81352927,181091,77,237,1 hr 29 min,2016,92
+Ouija: Origin of Evil,"Oct 21, 2016",Drama|Horror|Mystery|Thriller,PG-13,Universal Pictures,81705746,35144505,46561241,14065500,3167,3168,1 hr 39 min,2016,93
+Underworld: Blood Wars,"Jan 6, 2017",Action|Fantasy|Thriller,R,Screen Gems,81093313,30353973,50739340,13688751,3070,3070,1 hr 31 min,2016,94
+Manchester by the Sea,"Nov 18, 2016",Drama,R,Roadside Attractions,78988148,47695371,31292777,256498,4,1213,2 hr 17 min,2016,95
+The Boss,"Apr 8, 2016",Comedy,R,Universal Pictures,78844582,63285885,15558697,23586645,3480,3495,1 hr 39 min,2016,96
+Shin Godzilla,"Oct 11, 2016",Action|Drama|Horror|Sci-Fi,PG-13,FUNimation Entertainment,77947607,1918403,76029204,458342,34,490,2 hr,2016,97
+Mike and Dave Need Wedding Dates,"Jul 8, 2016",Comedy|Romance,R,Twentieth Century Fox,77068246,46009673,31058573,16628170,2982,3008,1 hr 38 min,2016,98
+Kubo and the Two Strings,"Aug 19, 2016",Action|Adventure|Animation|Family|Fantasy,PG,Focus Features,76249438,48023088,28226350,12608372,3260,3279,1 hr 41 min,2016,99
+Quo vado?,,,,,75878701,,75878701,,,,,2016,100

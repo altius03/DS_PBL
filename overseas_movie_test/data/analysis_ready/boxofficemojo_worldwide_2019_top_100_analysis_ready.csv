@@ -1,0 +1,101 @@
+movie_name,open_date,genre,rating,distributor,worldwide_gross_usd,domestic_gross_usd,foreign_gross_usd,opening_gross_usd,opening_theaters,widest_release_theaters,running_time,chart_year,rank
+Avengers: Endgame,"Apr 26, 2019",Action|Adventure|Sci-Fi,PG-13,Walt Disney Studios Motion Pictures,2799439100,858373000,1941066100,357115007,4662,4662,3 hr 1 min,2019,1
+The Lion King,"Jul 19, 2019",Adventure|Animation|Drama|Family|Musical,PG,Walt Disney Studios Motion Pictures,1656943394,543638043,1113305351,191770759,4725,4802,1 hr 58 min,2019,2
+Frozen II,"Nov 22, 2019",Adventure|Animation|Comedy|Drama|Family|Fantasy|Musical,PG,Walt Disney Studios Motion Pictures,1450026933,477373578,972653355,130263358,4440,4440,1 hr 43 min,2019,3
+Spider-Man: Far from Home,"Jul 2, 2019",Action|Adventure|Comedy|Fantasy|Sci-Fi,PG-13,Sony Pictures Releasing,1131927996,390532085,741395911,92579212,4634,4634,2 hr 9 min,2019,4
+Captain Marvel,"Mar 8, 2019",Action|Adventure|Sci-Fi,PG-13,Walt Disney Studios Motion Pictures,1128274794,426829839,701444955,153433423,4310,4310,2 hr 3 min,2019,5
+Joker,"Oct 4, 2019",Crime|Drama|Thriller,R,Warner Bros.,1078751311,335451311,743300000,96202337,4374,4374,2 hr 2 min,2019,6
+Star Wars: Episode IX - The Rise of Skywalker,"Dec 20, 2019",Action|Adventure|Fantasy|Sci-Fi,PG-13,Walt Disney Studios Motion Pictures,1074144248,515202542,558941706,177383864,4406,4406,2 hr 21 min,2019,7
+Toy Story 4,"Jun 21, 2019",Adventure|Animation|Comedy|Family|Fantasy,G,Walt Disney Studios Motion Pictures,1073394593,434038008,639356585,120908065,4575,4575,1 hr 40 min,2019,8
+Aladdin,"May 24, 2019",Adventure|Comedy|Family|Fantasy|Musical|Romance,PG,Walt Disney Studios Motion Pictures,1050693953,355559216,695134737,91500929,4476,4476,2 hr 8 min,2019,9
+Jumanji: The Next Level,"Dec 13, 2019",Action|Adventure|Comedy|Fantasy,PG-13,Sony Pictures Releasing,801693929,320314960,481378969,59251543,4227,4227,2 hr 3 min,2019,10
+Fast & Furious Presents: Hobbs & Shaw,"Aug 2, 2019",Action|Adventure|Thriller,,Universal Pictures,760732926,173956935,586775991,60038950,4253,4344,2 hr 17 min,2019,11
+Ne Zha,"Aug 29, 2019",Action|Adventure|Animation|Fantasy|Thriller,,Well Go USA Entertainment,725920658,3695533,722225125,1015755,66,135,1 hr 50 min,2019,12
+The Wandering Earth,"Feb 5, 2019",Action|Adventure|Sci-Fi|Thriller,,CMC Pictures,699856699,5971413,693885286,1685287,64,129,2 hr 5 min,2019,13
+How to Train Your Dragon: The Hidden World,"Feb 22, 2019",Action|Adventure|Animation|Comedy|Drama|Family|Fantasy,PG,Universal Pictures,521799505,160799505,361000000,55022245,4259,4286,1 hr 44 min,2019,14
+Maleficent: Mistress of Evil,"Oct 18, 2019",Adventure|Drama|Family|Fantasy|Romance,PG,Walt Disney Studios Motion Pictures,491730089,113929605,377800484,36948713,3790,3820,1 hr 59 min,2019,15
+It: Chapter Two,"Sep 6, 2019",Drama|Fantasy|Horror,R,Warner Bros.,473093228,211593228,261500000,91062152,4570,4570,2 hr 49 min,2019,16
+"My People, My Country","Oct 1, 2019",Drama|History,,CMC Pictures,450064993,2356683,447708310,876001,67,83,2 hr 34 min,2019,17
+Pokémon: Detective Pikachu,"May 10, 2019",Adventure|Comedy|Family|Mystery,PG,Warner Bros.,433305346,144105346,289200000,54365242,4202,4248,1 hr 44 min,2019,18
+The Secret Life of Pets 2,"Jun 7, 2019",Adventure|Animation|Comedy|Family,PG,Universal Pictures,431164459,158980250,272184209,46652680,4561,4564,1 hr 26 min,2019,19
+The Captain,"Oct 18, 2019",Action|Adventure|Drama|Family|Thriller,,Well Go USA Entertainment,417863545,706572,417156973,324769,47,47,1 hr 51 min,2019,20
+Alita: Battle Angel,"Feb 14, 2019",Action|Adventure|Sci-Fi|Thriller,PG-13,Twentieth Century Fox,404980543,85838210,319142333,28525613,3790,3802,2 hr 2 min,2019,21
+Godzilla: King of the Monsters,"May 31, 2019",Action|Adventure|Fantasy|Sci-Fi,PG-13,Warner Bros.,387300138,110500138,276800000,47776293,4108,4108,2 hr 12 min,2019,22
+1917,"Dec 25, 2019",Action|Drama|War,R,Universal Pictures,384580017,159227644,225352373,576216,11,3987,1 hr 59 min,2019,23
+Once Upon a Time... in Hollywood,"Jul 26, 2019",Comedy|Drama,R,Sony Pictures Releasing,377426903,142502728,234924175,41082018,3659,3659,2 hr 41 min,2019,24
+Shazam!,"Apr 5, 2019",Action|Adventure|Comedy|Fantasy,PG-13,Warner Bros.,365971656,140371656,225600000,53505326,4217,4306,2 hr 12 min,2019,25
+Dumbo,"Mar 29, 2019",Adventure|Animation|Family|Fantasy,PG,Walt Disney Studios Motion Pictures,353284621,114766307,238518314,45990748,4259,4259,1 hr 52 min,2019,26
+John Wick: Chapter 3 - Parabellum,"May 17, 2019",Action|Crime|Drama|Thriller,R,Lionsgate,327777335,171015687,156761648,56818067,3850,3850,2 hr 10 min,2019,27
+Crazy Alien,,,,,327598891,,327598891,,,,,2019,28
+Knives Out,"Nov 27, 2019",Comedy|Crime|Drama|Mystery|Thriller,PG-13,Lionsgate,312897920,165363234,147534686,26769548,3461,3461,2 hr 10 min,2019,29
+Terminator: Dark Fate,"Nov 1, 2019",Action|Adventure|Sci-Fi,R,Paramount Pictures,261119292,62253077,198866215,29033832,4086,4086,2 hr 8 min,2019,30
+Parasite,"Oct 11, 2019",Drama|Thriller,R,Neon,258056063,53369749,204686314,393216,3,2001,2 hr 12 min,2019,31
+Us,"Mar 22, 2019",Horror|Mystery|Thriller,R,Universal Pictures,256022707,175084580,80938127,71117625,3741,3743,1 hr 56 min,2019,32
+Pegasus,,,,,255863112,,255863112,,,,,2019,33
+Men in Black: International,"Jun 14, 2019",Action|Adventure|Comedy|Sci-Fi,PG-13,Sony Pictures Releasing,253890701,80001807,173888894,30035838,4224,4224,1 hr 54 min,2019,34
+X-Men: Dark Phoenix,"Jun 7, 2019",Action|Adventure|Sci-Fi,PG-13,Twentieth Century Fox,252442974,65845974,186597000,32828348,3721,3721,1 hr 53 min,2019,35
+Glass,"Jan 18, 2019",Drama|Fantasy|Horror|Sci-Fi|Thriller,PG-13,Universal Pictures,246999039,111048468,135950571,40328920,3841,3844,2 hr 9 min,2019,36
+The Bravest,"Aug 9, 2019",Action|Drama,PG-13,Sony Pictures Releasing,245179562,290217,244889345,110375,150,150,1 hr 58 min,2019,37
+Annabelle Comes Home,"Jun 26, 2019",Horror|Mystery|Thriller,R,Warner Bros.,231252591,74152591,157100000,20269723,3613,3613,1 hr 46 min,2019,38
+Better Days,"Nov 8, 2019",Crime|Drama|Romance|Thriller,,Well Go USA Entertainment,227140557,1921657,225218900,989536,70,88,2 hr 15 min,2019,39
+Ford v Ferrari,"Nov 15, 2019",Action|Biography|Drama|Sport,PG-13,Twentieth Century Fox,225508210,117624357,107883853,31474958,3528,3746,2 hr 32 min,2019,40
+Little Women,"Dec 25, 2019",Drama|Romance,PG,Sony Pictures Releasing,220102679,108101214,112001465,16755310,3308,3308,2 hr 15 min,2019,41
+The Addams Family,"Oct 11, 2019",Animation|Comedy|Family|Fantasy|Horror,PG,United Artists Releasing,203044905,100044905,103000000,30300007,4007,4107,1 hr 26 min,2019,42
+Rocketman,"May 31, 2019",Biography|Drama|Music|Musical,R,Paramount Pictures,195320400,96368160,98952240,25725722,3610,3610,2 hr 1 min,2019,43
+Downton Abbey,"Sep 20, 2019",Drama|Romance,PG,Focus Features,194694725,96853865,97840860,31033665,3079,3548,2 hr 2 min,2019,44
+Weathering with You,"Jan 15, 2020",Animation|Drama|Fantasy|Romance,PG-13,GKIDS,192536812,8056636,184480176,1808533,486,1020,1 hr 52 min,2019,45
+The Lego Movie 2: The Second Part,"Feb 8, 2019",Adventure|Animation|Comedy|Family|Fantasy|Musical|Sci-Fi,PG,Warner Bros.,192306508,105806508,86500000,34115335,4303,4303,1 hr 47 min,2019,46
+Sheep Without a Shepherd,,,,,191602146,,191602146,,,,,2019,47
+The White Storm 2: Drug Lords,"Jul 12, 2019",Action|Crime,,CMC Pictures,189396380,609461,188786919,244795,54,54,1 hr 39 min,2019,48
+Abominable,"Sep 27, 2019",Adventure|Animation|Comedy|Family|Fantasy,PG,Universal Pictures,188623517,60716390,127907127,20612100,4242,4248,1 hr 37 min,2019,49
+Ip Man 4: The Finale,"Dec 25, 2019",Action|Biography|Drama|History,,Well Go USA Entertainment,176345966,3956031,172389935,737718,70,125,1 hr 47 min,2019,50
+Gemini Man,"Oct 11, 2019",Action|Sci-Fi|Thriller,PG-13,Paramount Pictures,173469516,48546770,124922746,20552372,3642,3642,1 hr 57 min,2019,51
+Spies in Disguise,"Dec 25, 2019",Action|Adventure|Animation|Comedy|Drama|Family|Sci-Fi|Thriller,PG,Twentieth Century Fox,171616764,66757013,104859751,13354798,3502,3502,1 hr 42 min,2019,52
+Hustlers,"Sep 13, 2019",Comedy|Crime|Drama,R,STX Entertainment,157563598,104963598,52600000,33181361,3250,3525,1 hr 50 min,2019,53
+The Climbers,"Sep 30, 2019",Action|Adventure|Drama|History,,Well Go USA Entertainment,156892866,487157,156405709,156096,102,102,2 hr 5 min,2019,54
+Escape Room,"Jan 4, 2019",Action|Adventure|Horror|Mystery|Sci-Fi|Thriller,PG-13,Sony Pictures Releasing,155712077,57005601,98706476,18238172,2717,2717,1 hr 39 min,2019,55
+Yesterday,"Jun 28, 2019",Comedy|Fantasy|Music|Romance,PG-13,Universal Pictures,154608856,73286650,81322206,17010050,2603,2755,1 hr 56 min,2019,56
+The Angry Birds Movie 2,"Aug 13, 2019",Action|Adventure|Animation|Comedy|Family,PG,Sony Pictures Releasing,147792047,41667116,106124931,10354073,3869,3869,1 hr 37 min,2019,57
+Angel Has Fallen,"Aug 23, 2019",Action|Thriller,R,Lionsgate,146661977,69030436,77631541,21380987,3286,3336,2 hr 1 min,2019,58
+Ad Astra,"Sep 20, 2019",Adventure|Drama|Mystery|Sci-Fi|Thriller,PG-13,Twentieth Century Fox,127461872,50188370,77273502,19001398,3460,3460,2 hr 3 min,2019,59
+Midway,"Nov 8, 2019",Action|Drama|History|War,PG-13,Lionsgate,127390389,56846802,70543587,17897419,3242,3242,2 hr 18 min,2019,60
+The Upside,"Jan 11, 2019",Comedy|Drama,PG-13,STX Entertainment,125852517,108252517,17600000,20355000,3080,3568,2 hr 6 min,2019,61
+Last Christmas,"Nov 8, 2019",Comedy|Drama|Fantasy|Romance,PG-13,Universal Pictures,123446172,35150750,88295422,11441055,3448,3454,1 hr 43 min,2019,62
+The Curse of La Llorona,"Apr 19, 2019",Horror|Mystery|Thriller,R,Warner Bros.,123233739,54733739,68500000,26347631,3372,3372,1 hr 33 min,2019,63
+Looking Up,"Jul 19, 2019",Drama,,China Lion Film Distribution,122994583,84267,122910316,36541,13,13,2 hr 27 min,2019,64
+Zombieland: Double Tap,"Oct 18, 2019",Action|Comedy|Horror,R,Sony Pictures Releasing,122810399,73123082,49687317,26803104,3468,3468,1 hr 39 min,2019,65
+Dora and the Lost City of Gold,"Aug 9, 2019",Action|Adventure|Comedy|Family|Fantasy|Mystery,PG,Paramount Pictures,120597108,60477943,60119165,17431588,3735,3735,1 hr 42 min,2019,66
+Extreme Job,"Jan 25, 2019",Action|Comedy|Crime,,CJ Entertainment,119932733,1565885,118366848,42587,2,26,1 hr 51 min,2019,67
+Wonder Park,"Mar 15, 2019",Adventure|Animation|Comedy|Drama|Family|Fantasy,PG,Paramount Pictures,119559110,45216793,74342317,15853646,3838,3838,1 hr 25 min,2019,68
+P Storm,"Apr 4, 2019",Action|Crime,Not Rated,CMC Pictures,117991727,326711,117665016,104071,30,30,1 hr 36 min,2019,69
+Detective Conan: The Fist of Blue Sapphire,,,,,115448200,,115448200,,,,,2019,70
+The Gentlemen,"Jan 24, 2020",Action|Comedy|Crime,R,STX Entertainment,115171795,36471795,78700000,10651884,2165,2675,1 hr 53 min,2019,71
+Pet Sematary,"Apr 5, 2019",Horror|Mystery|Thriller,R,Paramount Pictures,113118226,54724696,58393530,24502775,3585,3585,1 hr 40 min,2019,72
+Boonie Bears: Blast Into the Past,,,,,112367881,,112367881,,,,,2019,73
+Good Boys,"Aug 16, 2019",Adventure|Comedy,R,Universal Pictures,111173598,83140306,28033292,21402605,3204,3458,1 hr 30 min,2019,74
+Scary Stories to Tell in the Dark,"Aug 9, 2019",Adventure|Horror|Mystery,PG-13,Lionsgate,104545505,68947075,35598430,20915346,3135,3135,1 hr 48 min,2019,75
+Line Walker 2: Invisible Spy,"Aug 16, 2019",Action|Crime|Thriller,,Well Go USA Entertainment,99482027,296751,99185276,96991,17,17,1 hr 38 min,2019,76
+The Hustle,"May 10, 2019",Comedy|Crime,PG-13,United Artists Releasing,97409779,35417038,61992741,13007709,3007,3077,1 hr 33 min,2019,77
+The New King of Comedy,,,,,95618308,,95618308,,,,,2019,78
+Adoring,,,,,94975692,,94975692,,,,,2019,79
+Five Feet Apart,"Mar 15, 2019",Drama|Romance,PG-13,Lionsgate,92554209,45729221,46824988,13190286,2803,2866,1 hr 56 min,2019,80
+Crawl,"Jul 12, 2019",Action|Horror|Thriller,R,Paramount Pictures,91542097,39014193,52527904,12005210,3170,3170,1 hr 27 min,2019,81
+Rambo: Last Blood,"Sep 20, 2019",Action|Crime|Thriller,R,Lionsgate,91490353,44819352,46671001,18872919,3618,3618,1 hr 29 min,2019,82
+Jojo Rabbit,"Oct 18, 2019",Comedy|Drama|War,PG-13,Fox Searchlight Pictures,90335025,33370906,56964119,349555,5,1173,1 hr 48 min,2019,83
+Serial (Bad) Weddings 2,,,,,87761988,,87761988,,,,,2019,84
+One Piece: Stampede,"Oct 24, 2019",Action|Adventure|Animation|Fantasy,,FUNimation Entertainment,81562741,1298528,80264213,357740,541,541,1 hr 41 min,2019,85
+A Dog's Way Home,"Jan 11, 2019",Adventure|Drama|Family,PG,Sony Pictures Releasing,80708134,42004346,38703788,11251263,3090,3090,1 hr 36 min,2019,86
+A Dog's Journey,"May 17, 2019",Adventure|Comedy|Drama|Family|Fantasy,PG,Universal Pictures,78870908,22782371,56088537,8030085,3267,3279,1 hr 49 min,2019,87
+Cold Pursuit,"Feb 8, 2019",Action|Comedy|Crime|Drama|Thriller,R,Lionsgate,76419755,32138862,44280893,11030233,2630,2630,1 hr 59 min,2019,88
+Cats,"Dec 20, 2019",Comedy|Drama|Family|Fantasy|Musical,PG,Universal Pictures,75558925,27166770,48392155,6619870,3380,3380,1 hr 50 min,2019,89
+A Madea Family Funeral,"Mar 1, 2019",Comedy|Drama,PG-13,Lionsgate,74747725,73257045,1490680,27062332,2442,2442,1 hr 49 min,2019,90
+Charlie's Angels,"Nov 15, 2019",Action|Adventure|Comedy,PG-13,Sony Pictures Releasing,73279888,17803077,55476811,8351109,3452,3452,1 hr 58 min,2019,91
+Doctor Sleep,"Nov 8, 2019",Drama|Fantasy|Horror|Thriller,R,Warner Bros.,72381712,31581712,40800000,14114124,3855,3855,2 hr 32 min,2019,92
+What Men Want,"Feb 8, 2019",Comedy|Fantasy|Romance,R,Paramount Pictures,72216294,54611903,17604391,18232087,2912,2912,1 hr 57 min,2019,93
+Exit,"Aug 2, 2019",Action|Comedy,,CJ Entertainment,69501772,470699,69031073,32441,2,19,1 hr 43 min,2019,94
+After,"Apr 12, 2019",Drama|Romance,PG-13,Aviron Pictures,69497587,12138565,57359022,6002349,2138,2138,1 hr 45 min,2019,95
+Playing with Fire,"Nov 8, 2019",Comedy|Family,PG,Paramount Pictures,69412425,44451847,24960578,12723781,3125,3185,1 hr 36 min,2019,96
+A Beautiful Day in the Neighborhood,"Nov 22, 2019",Biography|Drama|Family,PG,Sony Pictures Releasing,67925733,61704055,6221678,13251238,3235,3491,1 hr 49 min,2019,97
+War,"Oct 2, 2019",Action|Adventure|Thriller,,Yash Raj Films,67179155,4654000,62525155,1607627,305,305,2 hr 31 min,2019,98
+Doraemon: Nobita's Chronicle of the Moon Exploration,,,,,65406606,,65406606,,,,,2019,99
+Happy Death Day 2U,"Feb 13, 2019",Comedy|Horror|Mystery|Sci-Fi|Thriller,PG-13,Universal Pictures,64600152,28148130,36452022,9497665,3207,3212,1 hr 40 min,2019,100

@@ -1,0 +1,76 @@
+# Source Record
+
+## Current Backbone Source
+- Source: Box Office Mojo Domestic Release Schedule
+- Monthly schedule pattern:
+  - `https://www.boxofficemojo.com/calendar/YYYY-MM-01/`
+- Release group pattern:
+  - `https://www.boxofficemojo.com/releasegroup/{id}/`
+- Domestic release pattern:
+  - `https://www.boxofficemojo.com/release/{id}/`
+- Title summary pattern:
+  - `https://www.boxofficemojo.com/title/{imdb_title_id}/`
+- Title credits pattern:
+  - `https://www.boxofficemojo.com/title/{imdb_title_id}/credits/`
+
+## Collection Scope
+- Market: United States theatrical releases
+- Years collected: `2016-2025`
+- Backbone rows after dedupe: `7605`
+- General-movie rows after filtering: `7368`
+
+## Backbone Fields Collected From Box Office Mojo
+- movie name
+- open date
+- distributor
+- release scale
+- genre
+- MPAA rating
+- worldwide gross
+- domestic gross
+- foreign gross
+- opening gross
+- opening theaters
+- widest release theaters
+- running time
+- release-group links
+- domestic release links
+
+## Additional Fields Collected From Box Office Mojo Title Pages
+- budget
+- brand name
+- franchise name
+- title-page gross fallback values
+- director
+- writer
+- producer
+
+## Supplementary Source
+- Source: Wikidata Query Service
+- Endpoint:
+  - `https://query.wikidata.org/sparql`
+- Match key:
+  - IMDb title ID extracted from Box Office Mojo release-group or release HTML
+- Attempted target fields:
+  - production company
+  - production country
+  - original language
+
+## Collection Notes
+- Monthly schedule pages overlap across months, so release URLs are deduplicated after parsing
+- The schedule pages can include out-of-range next-year releases, so final collector output trims rows outside the configured year range
+- General-movie filtering removes obvious re-releases, concert films, event cinema, serial/event programming, and short-form titles
+
+## Outcome
+- Box Office Mojo provided a strong backbone for theatrical release timing, distributor, gross, and theater-count analysis
+- Box Office Mojo title and credits pages were the most useful enrichment source
+- Wikidata matched many IMDb IDs, but the production-company / country / language fields were not reliable enough to improve the final dataset
+
+## Still Unavailable
+- audience count
+- show count
+- a true KOBIS-style screen-count equivalent
+
+## Preserved Legacy Sample
+- The earlier yearly worldwide top-100 sample remains in the project for comparison and reproducibility
+- It was not overwritten by the full U.S. theatrical pipeline

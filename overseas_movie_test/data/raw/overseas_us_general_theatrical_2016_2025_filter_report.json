@@ -1,0 +1,301 @@
+{
+  "input_full_file": "C:\\Dev\\study\\python\\DS_PBL\\overseas_movie_test\\data\\analysis_ready\\overseas_us_release_schedule_full_2016_2025.csv",
+  "input_analysis_file": "C:\\Dev\\study\\python\\DS_PBL\\overseas_movie_test\\data\\analysis_ready\\overseas_us_release_schedule_full_2016_2025_analysis_ready.csv",
+  "output_full_file": "C:\\Dev\\study\\python\\DS_PBL\\overseas_movie_test\\data\\analysis_ready\\overseas_us_general_theatrical_2016_2025.csv",
+  "output_analysis_file": "C:\\Dev\\study\\python\\DS_PBL\\overseas_movie_test\\data\\analysis_ready\\overseas_us_general_theatrical_2016_2025_analysis_ready.csv",
+  "total_rows": 7605,
+  "included_rows": 7368,
+  "excluded_rows": 237,
+  "inclusion_rate_pct": 96.88,
+  "filter_rules": {
+    "title_patterns": [
+      "re_release_or_anniversary",
+      "event_or_serial_programming"
+    ],
+    "event_distributors": [
+      "trafalgar releasing",
+      "shortstv",
+      "iconic events releasing",
+      "imax"
+    ],
+    "minimum_runtime_minutes": 40
+  },
+  "excluded_by_reason": {
+    "event_cinema_distributor": 168,
+    "event_or_serial_programming": 71,
+    "short_form_runtime": 17,
+    "re_release_or_anniversary": 9
+  },
+  "excluded_examples": [
+    {
+      "chart_year": "2016",
+      "movie_name": "A Beautiful Planet",
+      "distributor": "IMAX",
+      "running_time": "46 min",
+      "exclusion_reasons": [
+        "event_cinema_distributor"
+      ]
+    },
+    {
+      "chart_year": "2016",
+      "movie_name": "The Oscar Nominated Short Films 2016: Live Action",
+      "distributor": "Shorts International",
+      "running_time": "2 hr 21 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2016",
+      "movie_name": "Harry Potter IMAX Marathon",
+      "distributor": "IMAX",
+      "running_time": "19 hr 39 min",
+      "exclusion_reasons": [
+        "event_cinema_distributor"
+      ]
+    },
+    {
+      "chart_year": "2016",
+      "movie_name": "Voyage of Time",
+      "distributor": "IMAX",
+      "running_time": "44 min",
+      "exclusion_reasons": [
+        "event_cinema_distributor"
+      ]
+    },
+    {
+      "chart_year": "2017",
+      "movie_name": "The Bolshoi Ballet: Live From Moscow - A Hero of Our Time",
+      "distributor": "Fathom Events",
+      "running_time": "2 hr 45 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2017",
+      "movie_name": "The Oscar Nominated Short Films 2017: Live Action",
+      "distributor": "Shorts International",
+      "running_time": "2 hr 12 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2017",
+      "movie_name": "The Paris Opera",
+      "distributor": "Film Movement",
+      "running_time": "1 hr 50 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2017",
+      "movie_name": "Inhumans",
+      "distributor": "IMAX",
+      "running_time": "45 min",
+      "exclusion_reasons": [
+        "event_cinema_distributor"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Bolshoi Ballet: Live from Moscow - Giselle",
+      "distributor": "Fathom Events",
+      "running_time": "2 hr 20 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Bolshoi Ballet: Live From Moscow - Don Quixote",
+      "distributor": "Fathom Events",
+      "running_time": "2 hr 55 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Bolshoi Ballet: Live From Moscow - The Nutcracker",
+      "distributor": "Fathom Events",
+      "running_time": "2 hr 20 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "Concert for George",
+      "distributor": "Abramorama",
+      "running_time": "2 hr 20 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Bolshoi Ballet: Live From Moscow - The Lady of the Camellias",
+      "distributor": "Fathom Events",
+      "running_time": "3 hr 5 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Oscar Nominated Short Films 2018: Live Action",
+      "distributor": "Shorts International",
+      "running_time": "1 hr 36 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Opera House",
+      "distributor": "Fathom Events",
+      "running_time": "1 hr 51 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Bolshoi Ballet: Live From Moscow - Romeo and Juliet",
+      "distributor": "Fathom Events",
+      "running_time": "2 hr 30 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "Smoke Signal",
+      "distributor": "FUNimation Entertainment",
+      "running_time": "24 min",
+      "exclusion_reasons": [
+        "short_form_runtime"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "Bolshoi Ballet: Swan Lake",
+      "distributor": "Fathom Events",
+      "running_time": "2 hr 40 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "Out on Stage",
+      "distributor": "Fathom Events",
+      "running_time": "36 min",
+      "exclusion_reasons": [
+        "short_form_runtime"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Bolshoi Ballet: Live From Moscow - Coppélia",
+      "distributor": "Fathom Events",
+      "running_time": "2 hr 45 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "Doctor Who",
+      "distributor": "Fathom Events",
+      "running_time": "25 min",
+      "exclusion_reasons": [
+        "short_form_runtime"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "Reign of Judges: Title of Liberty - Concept Short",
+      "distributor": "Darin Southam Endeavor",
+      "running_time": "14 min",
+      "exclusion_reasons": [
+        "short_form_runtime"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Bolshoi Ballet: Live From Moscow - The Flames of Paris",
+      "distributor": "Fathom Events",
+      "running_time": "2 hr 15 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Bolshoi Ballet: Live From Moscow - La Sylphide",
+      "distributor": "Fathom Events",
+      "running_time": "2 hr",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "Burn the Stage: The Movie",
+      "distributor": "Trafalgar Releasing",
+      "running_time": "1 hr 24 min",
+      "exclusion_reasons": [
+        "event_cinema_distributor"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "Hymn: Sarah Brightman in Concert",
+      "distributor": "Fathom Events",
+      "running_time": null,
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "Yuri!!! On Ice",
+      "distributor": "Fathom Events",
+      "running_time": "20 min",
+      "exclusion_reasons": [
+        "short_form_runtime"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "Argus Limited",
+      "distributor": "Fathom Events",
+      "running_time": "22 min",
+      "exclusion_reasons": [
+        "short_form_runtime"
+      ]
+    },
+    {
+      "chart_year": "2018",
+      "movie_name": "The Transformers",
+      "distributor": "Fathom Events",
+      "running_time": "30 min",
+      "exclusion_reasons": [
+        "short_form_runtime"
+      ]
+    },
+    {
+      "chart_year": "2019",
+      "movie_name": "Monty Python's Life of Brian",
+      "distributor": "Trafalgar Releasing",
+      "running_time": "1 hr 34 min",
+      "exclusion_reasons": [
+        "event_cinema_distributor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "source_backbone": "Box Office Mojo",
+  "supplementary_source": "Wikidata",
+  "input_rows": 1000,
+  "unique_imdb_title_ids": 997,
+  "title_enrichment_rows": 997,
+  "wikidata_rows": 912,
+  "nonempty_counts": {
+    "budget_usd": 322,
+    "brand_name": 199,
+    "franchise_name": 281,
+    "director": 998,
+    "production_company": 0,
+    "production_country": 0,
+    "original_language": 0
+  },
+  "missing_counts": {
+    "imdb_title_id": 0,
+    "genre": 0,
+    "rating": 262,
+    "distributor": 165,
+    "brand_name": 801,
+    "franchise_name": 719,
+    "director": 2,
+    "production_company": 1000,
+    "production_country": 1000,
+    "original_language": 1000,
+    "running_time": 0,
+    "budget_usd": 678
+  },
+  "notes": [
+    "Audience count and show count remain unavailable from the selected trustworthy public sources.",
+    "Theaters are kept from Box Office Mojo and are not equivalent to KOBIS screen count.",
+    "Brand and franchise labels come from Box Office Mojo title pages and are helpful proxies for studio IP grouping.",
+    "Wikidata successfully matched many IMDb IDs to item pages, but production company, country, and original language were not populated consistently enough to improve this sample."
+  ],
+  "generated_at": "2026-04-14T16:53:59.356Z"
+}

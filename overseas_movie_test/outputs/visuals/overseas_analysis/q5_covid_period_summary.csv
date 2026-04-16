@@ -1,0 +1,4 @@
+covid_period,movie_count,total_worldwide_gross_usd,average_worldwide_gross_usd,average_domestic_gross_usd,average_opening_gross_usd,average_opening_theaters,average_widest_release_theaters
+pre_covid_2016_2019,399,120654904128,302393243,107715229,33276537,2857,2994
+covid_2020_2022,293,43565796402,148688725,64088067,21284377,2581,2683
+post_covid_2023_2025,293,68421359454,233519998,92884762,29554918,2942,3059

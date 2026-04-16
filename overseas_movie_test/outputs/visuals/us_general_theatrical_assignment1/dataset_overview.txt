@@ -1,0 +1,13 @@
+﻿dataset=overseas_movies_general_only_2016_2025_analysis_ready.csv
+row_count=7368
+year_range=2016-2025
+general_movie_only=true
+analysis_subject=distributor
+objective_1=Identify which genre and rating combinations are more favorable for distributors.
+objective_2=Understand which release months and seasons are more favorable for distributor timing.
+objective_3=Check how strongly theater expansion connects to box-office outcome.
+objective_4=Compare pre, during, and post COVID periods to update distributor strategy.
+unique_distributors=579
+unique_ratings=8
+budget_available_count=671
+notes=This file keeps general movies only and excludes obvious re-releases and event cinema. Theaters are not the same as KOBIS screen counts. Audience count and show count are unavailable.

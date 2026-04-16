@@ -1,0 +1,158 @@
+{
+  "input_full_file": "C:\\Dev\\study\\python\\DS_PBL\\overseas_movie_test\\data\\analysis_ready\\overseas_movies_complete_2016_2025.csv",
+  "input_analysis_file": "C:\\Dev\\study\\python\\DS_PBL\\overseas_movie_test\\data\\analysis_ready\\overseas_movies_complete_2016_2025_analysis_ready.csv",
+  "output_full_file": "C:\\Dev\\study\\python\\DS_PBL\\overseas_movie_test\\data\\analysis_ready\\overseas_movies_general_only_2016_2025.csv",
+  "output_analysis_file": "C:\\Dev\\study\\python\\DS_PBL\\overseas_movie_test\\data\\analysis_ready\\overseas_movies_general_only_2016_2025_analysis_ready.csv",
+  "total_rows": 1000,
+  "included_rows": 985,
+  "excluded_rows": 15,
+  "inclusion_rate_pct": 98.5,
+  "filter_rules": {
+    "title_patterns": [
+      "re_release_or_anniversary",
+      "event_or_serial_programming"
+    ],
+    "event_distributors": [
+      "trafalgar releasing",
+      "shortstv",
+      "iconic events releasing",
+      "imax"
+    ],
+    "minimum_runtime_minutes": 40
+  },
+  "excluded_by_reason": {
+    "re_release_or_anniversary": 11,
+    "event_or_serial_programming": 3,
+    "event_cinema_distributor": 2
+  },
+  "excluded_examples": [
+    {
+      "chart_year": "2020",
+      "movie_name": "Harry Potter and the Sorcerer's Stone 2020 Re-release",
+      "distributor": "Warner Bros.",
+      "running_time": "2 hr 32 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    },
+    {
+      "chart_year": "2020",
+      "movie_name": "Interstellar 2020 Re-release",
+      "distributor": "Paramount Pictures",
+      "running_time": "2 hr 49 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    },
+    {
+      "chart_year": "2020",
+      "movie_name": "The Post 2020 Re-release",
+      "distributor": "Twentieth Century Fox",
+      "running_time": "1 hr 56 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    },
+    {
+      "chart_year": "2021",
+      "movie_name": "Avatar 2021 Re-release",
+      "distributor": "Twentieth Century Fox",
+      "running_time": "2 hr 42 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    },
+    {
+      "chart_year": "2021",
+      "movie_name": "Arashi Anniversary Tour 5 x 20 Film: Record of Memories",
+      "distributor": null,
+      "running_time": "2 hr 27 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    },
+    {
+      "chart_year": "2022",
+      "movie_name": "Avatar 2022 Re-release",
+      "distributor": "Walt Disney Pictures",
+      "running_time": "2 hr 42 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    },
+    {
+      "chart_year": "2022",
+      "movie_name": "BTS Permission to Dance on Stage - Seoul: Live Viewing",
+      "distributor": "Trafalgar Releasing",
+      "running_time": "3 hr 15 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming",
+        "event_cinema_distributor"
+      ]
+    },
+    {
+      "chart_year": "2023",
+      "movie_name": "Taylor Swift: The Eras Tour",
+      "distributor": "AMC Theatres",
+      "running_time": "2 hr 49 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming"
+      ]
+    },
+    {
+      "chart_year": "2023",
+      "movie_name": "Titanic 25 Year Anniversary",
+      "distributor": "Paramount Pictures",
+      "running_time": "3 hr 14 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    },
+    {
+      "chart_year": "2023",
+      "movie_name": "BTS: Yet to Come in Cinemas",
+      "distributor": "Trafalgar Releasing",
+      "running_time": "1 hr 44 min",
+      "exclusion_reasons": [
+        "event_or_serial_programming",
+        "event_cinema_distributor"
+      ]
+    },
+    {
+      "chart_year": "2024",
+      "movie_name": "Coraline 15th Anniversary",
+      "distributor": "Fathom Events",
+      "running_time": "1 hr 40 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    },
+    {
+      "chart_year": "2024",
+      "movie_name": "Interstellar 2024 Re-release",
+      "distributor": "Paramount Pictures",
+      "running_time": "2 hr 49 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    },
+    {
+      "chart_year": "2025",
+      "movie_name": "The Twilight Saga: Eclipse 2025 Re-release",
+      "distributor": "Fathom Entertainment",
+      "running_time": "2 hr 4 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    },
+    {
+      "chart_year": "2025",
+      "movie_name": "Star Wars: Episode III - Revenge of the Sith 20th anniversary",
+      "distributor": "Walt Disney Studios Motion Pictures",
+      "running_time": "2 hr 20 min",
+      "exclusion_reasons": [
+        "re_release_or_anniversary"
+      ]
+    }
+  ]
+}

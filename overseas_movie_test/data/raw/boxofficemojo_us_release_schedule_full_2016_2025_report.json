@@ -1,0 +1,276 @@
+{
+  "dataset_id": "overseas_us_general_theatrical_2016_2025",
+  "source": {
+    "backbone": "Box Office Mojo Domestic Release Schedule",
+    "market": "United States theatrical"
+  },
+  "collected_at": "2026-04-14T20:15:09.817Z",
+  "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "month_page_count": 120,
+  "parsed_schedule_rows_before_dedupe": 9269,
+  "out_of_range_rows_removed": 3,
+  "unique_release_rows": 7605,
+  "duplicate_schedule_rows_removed": 1661,
+  "release_fetch_failure_count": 0,
+  "year_counts": {
+    "2016": 824,
+    "2017": 843,
+    "2018": 943,
+    "2019": 845,
+    "2020": 419,
+    "2021": 557,
+    "2022": 652,
+    "2023": 770,
+    "2024": 858,
+    "2025": 894
+  },
+  "missing_summary": {
+    "open_date": {
+      "missing_count": 0,
+      "missing_pct": 0
+    },
+    "genre": {
+      "missing_count": 81,
+      "missing_pct": 1.07
+    },
+    "rating": {
+      "missing_count": 4213,
+      "missing_pct": 55.4
+    },
+    "distributor": {
+      "missing_count": 110,
+      "missing_pct": 1.45
+    },
+    "opening_theaters": {
+      "missing_count": 2187,
+      "missing_pct": 28.76
+    },
+    "widest_release_theaters": {
+      "missing_count": 1659,
+      "missing_pct": 21.81
+    },
+    "source_release_group_url": {
+      "missing_count": 0,
+      "missing_pct": 0
+    },
+    "source_domestic_release_url": {
+      "missing_count": 0,
+      "missing_pct": 0
+    }
+  },
+  "release_failures_sample": [],
+  "out_of_range_sample": [
+    {
+      "chart_year": 2026,
+      "movie_name": "Kidz Bop Live: The Concert Movie",
+      "open_date": "January 2, 2026",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl821198849/"
+    },
+    {
+      "chart_year": 2026,
+      "movie_name": "Lupin the IIIrd: The Movie - The Immortal Bloodline",
+      "open_date": "January 2, 2026",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl1115717633/"
+    },
+    {
+      "chart_year": 2026,
+      "movie_name": "We Bury the Dead",
+      "open_date": "January 2, 2026",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl2491842561/"
+    }
+  ],
+  "duplicate_sample": [
+    {
+      "movie_name": "Rams",
+      "open_date": "February 3, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl260015617/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "Pride and Prejudice and Zombies",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl2154530305/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "The Choice",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl3145500161/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "Hail, Caesar!",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl3579282945/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "Regression",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl3161294337/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "The Monkey King 2",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl75466241/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "Sanam Teri Kasam",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl2021623297/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "Southbound",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl897549825/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "Eisenstein in Guanajuato",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl2860287489/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "Tumbledown",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl964658689/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "The Club",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl92243457/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "I Knew Her Well",
+      "open_date": "February 5, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl310347265/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-02-01/"
+    },
+    {
+      "movie_name": "Songs My Brothers Taught Me",
+      "open_date": "March 2, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl3145696769/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "Zootopia",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl4031743489/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "London Has Fallen",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl1801553409/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "Whiskey Tango Foxtrot",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl2776401409/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "The Other Side of the Door",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl3715991041/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "The Boy and the Beast",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl1182762497/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "The Wave",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl847218177/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "Born to Be Blue",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl3900671489/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "Knight of Cups",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl2220656129/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "Colliding Dreams",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl2977924609/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "Trapped",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl3112142337/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "They Will Have to Kill Us First: Malian Music In Exile",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl3128919553/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "Cemetery of Splendor",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl1283425793/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "White Lies",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl2826929665/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "Late Spring",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl3179251201/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "Mekong Hotel",
+      "open_date": "March 4, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl1535084033/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "Eye in the Sky",
+      "open_date": "April 1, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl2608629249/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    },
+    {
+      "movie_name": "I Saw the Light",
+      "open_date": "April 1, 2016",
+      "source_domestic_release_url": "https://www.boxofficemojo.com/release/rl2088601089/",
+      "duplicate_month_url": "https://www.boxofficemojo.com/calendar/2016-03-01/"
+    }
+  ],
+  "generated_at": "2026-04-14T20:15:17.076Z"
+}

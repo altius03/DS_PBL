@@ -1,0 +1,39 @@
+{
+  "datasetId": "overseas_us_general_theatrical_2024_smoketest",
+  "years": {
+    "start": 2024,
+    "end": 2024
+  },
+  "source": {
+    "backbone": "Box Office Mojo Domestic Release Schedule",
+    "market": "United States theatrical"
+  },
+  "collector": {
+    "mode": "full_us_release_schedule",
+    "status": "smoketest",
+    "planOutput": "data/raw/plans/boxofficemojo_us_release_schedule_full_2024_smoketest_plan.json",
+    "rawOutputCsv": "data/raw/boxofficemojo_us_release_schedule_full_2024_smoketest.csv",
+    "analysisOutputCsv": "data/analysis_ready/boxofficemojo_us_release_schedule_full_2024_smoketest_analysis_ready.csv"
+  },
+  "enrichment": {
+    "inputCsv": "data/raw/boxofficemojo_us_release_schedule_full_2024_smoketest.csv",
+    "outputPrefix": "overseas_us_release_schedule_full_2024_smoketest"
+  },
+  "generalMovieFilter": {
+    "inputFullCsv": "data/analysis_ready/overseas_us_release_schedule_full_2024_smoketest.csv",
+    "inputAnalysisCsv": "data/analysis_ready/overseas_us_release_schedule_full_2024_smoketest_analysis_ready.csv",
+    "outputFullCsv": "data/analysis_ready/overseas_us_general_theatrical_2024_smoketest.csv",
+    "outputAnalysisCsv": "data/analysis_ready/overseas_us_general_theatrical_2024_smoketest_analysis_ready.csv",
+    "reportFile": "data/raw/overseas_us_general_theatrical_2024_smoketest_filter_report.json",
+    "minimumRuntimeMinutes": 40
+  },
+  "analysis": {
+    "inputFile": "data/analysis_ready/overseas_us_general_theatrical_2024_smoketest_analysis_ready.csv",
+    "outputDir": "outputs/visuals/us_general_theatrical_2024_smoketest_analysis",
+    "summaryTitle": "US General Theatrical 2024 Smoketest Summary"
+  },
+  "assignment1Visuals": {
+    "inputFile": "data/analysis_ready/overseas_us_general_theatrical_2024_smoketest_analysis_ready.csv",
+    "outputDir": "outputs/visuals/us_general_theatrical_2024_smoketest_assignment1"
+  }
+}

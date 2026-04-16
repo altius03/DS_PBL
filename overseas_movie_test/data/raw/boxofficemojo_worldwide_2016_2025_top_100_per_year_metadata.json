@@ -1,0 +1,24 @@
+{
+  "source": "Box Office Mojo",
+  "collected_at": "2026-04-14T16:06:15.862Z",
+  "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "requested_limit_per_year": 100,
+  "collected_rows": 1000,
+  "missing_domestic_detail_rows": 169,
+  "notes": [
+    "Each year contributes up to the requested top-N rows from the yearly worldwide chart.",
+    "This is a top-per-year sample, not the full population of all released movies.",
+    "The dataset includes distributor, MPAA rating, opening theaters, and widest release theaters when a domestic release detail page exists."
+  ]
+}

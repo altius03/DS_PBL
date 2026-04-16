@@ -1,0 +1,18 @@
+{
+  "widest_release_vs_worldwide_gross": {
+    "pair_count": 5815,
+    "pearson_correlation": 0.4966
+  },
+  "opening_theaters_vs_worldwide_gross": {
+    "pair_count": 5307,
+    "pearson_correlation": 0.4968
+  },
+  "widest_release_vs_domestic_gross": {
+    "pair_count": 5734,
+    "pearson_correlation": 0.5407
+  },
+  "opening_theaters_vs_domestic_gross": {
+    "pair_count": 5239,
+    "pearson_correlation": 0.5428
+  }
+}

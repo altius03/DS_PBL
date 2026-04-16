@@ -1,0 +1,14 @@
+{
+  "source": "Box Office Mojo",
+  "chart_url": "https://www.boxofficemojo.com/year/world/2019/",
+  "collected_at": "2026-04-14T16:06:15.862Z",
+  "chart_year": 2019,
+  "requested_limit": 100,
+  "collected_rows": 100,
+  "missing_domestic_detail_rows": 9,
+  "notes": [
+    "Data was collected from the yearly worldwide chart and domestic release detail pages.",
+    "Some titles do not have a domestic release page, so distributor/rating/genre/theater fields may be blank.",
+    "Box Office Mojo provides theaters but not show-count, so this dataset cannot reproduce show-count analysis."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "source": "Box Office Mojo",
+  "chart_url": "https://www.boxofficemojo.com/year/world/2024/",
+  "collected_at": "2026-04-14T15:27:23.988Z",
+  "chart_year": 2024,
+  "requested_limit": 20,
+  "collected_rows": 20,
+  "notes": [
+    "Data was collected from the yearly worldwide chart and domestic release detail pages.",
+    "Some titles do not have a domestic release page, so distributor/rating/genre/theater fields may be blank.",
+    "Box Office Mojo provides theaters but not show-count, so this test dataset cannot reproduce show-count analysis."
+  ]
+}

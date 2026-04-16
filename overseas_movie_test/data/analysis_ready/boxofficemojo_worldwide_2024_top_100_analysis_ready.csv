@@ -1,0 +1,101 @@
+movie_name,open_date,genre,rating,distributor,worldwide_gross_usd,domestic_gross_usd,foreign_gross_usd,opening_gross_usd,opening_theaters,widest_release_theaters,running_time,chart_year,rank
+Inside Out 2,"Jun 14, 2024",Adventure|Animation|Comedy|Drama|Family|Fantasy|Sport,PG,Walt Disney Studios Motion Pictures,1698863816,652980194,1045883622,154201673,4440,4440,1 hr 36 min,2024,1
+Deadpool & Wolverine,"Jul 26, 2024",Action|Adventure|Comedy|Sci-Fi,R,Walt Disney Studios Motion Pictures,1338073645,636745858,701327787,211435291,4210,4330,2 hr 8 min,2024,2
+Moana 2,"Nov 27, 2024",Adventure|Animation|Comedy|Family|Fantasy|Musical,PG,Walt Disney Studios Motion Pictures,1059242164,460405297,598836867,139787385,4200,4200,1 hr 40 min,2024,3
+Despicable Me 4,"Jul 3, 2024",Adventure|Animation|Comedy|Crime|Family|Sci-Fi,PG,Universal Pictures,972021410,361004205,611017205,75009210,4428,4449,1 hr 34 min,2024,4
+Wicked,"Nov 22, 2024",Fantasy|Musical|Romance,PG,Universal Pictures,758790057,474983975,283806082,112508890,3888,3888,2 hr 40 min,2024,5
+Mufasa: The Lion King,"Dec 20, 2024",Adventure|Animation|Drama|Family|Musical,PG,Walt Disney Studios Motion Pictures,722631756,254567693,468064063,35409365,4100,4100,1 hr 58 min,2024,6
+Dune: Part Two,"Mar 1, 2024",Action|Adventure|Drama|Sci-Fi,PG-13,Warner Bros.,714844358,282144358,432700000,82505391,4071,4074,2 hr 46 min,2024,7
+Godzilla x Kong: The New Empire,"Mar 29, 2024",Action|Adventure|Fantasy|Sci-Fi|Thriller,PG-13,Warner Bros.,572050016,196350016,375700000,80006561,3861,3948,1 hr 55 min,2024,8
+Kung Fu Panda 4,"Mar 8, 2024",Action|Adventure|Animation|Comedy|Family|Fantasy,PG,Universal Pictures,547946428,193590620,354355808,57989905,4035,4067,1 hr 34 min,2024,9
+Sonic the Hedgehog 3,"Dec 20, 2024",Action|Adventure|Comedy|Family|Fantasy|Sci-Fi,PG,Paramount Pictures,492162604,236115100,256047504,60102146,3761,3769,1 hr 50 min,2024,10
+Venom: The Last Dance,"Oct 25, 2024",Action|Fantasy|Horror|Sci-Fi|Thriller,PG-13,Sony Pictures Releasing,478937618,139755882,339181736,51012404,4131,4131,1 hr 50 min,2024,11
+Gladiator II,"Nov 22, 2024",Action|Adventure|Drama,R,Paramount Pictures,462180717,172438016,289742701,55034715,3573,3580,2 hr 28 min,2024,12
+Beetlejuice Beetlejuice,"Sep 6, 2024",Comedy|Fantasy|Horror,PG-13,Warner Bros.,452000435,294100435,157900000,111003345,4575,4575,1 hr 45 min,2024,13
+Yolo,"Mar 8, 2024",Action|Comedy|Drama|Sport,PG-13,Sony Pictures Releasing,433606094,2001584,431604510,827632,200,200,2 hr 9 min,2024,14
+Pegasus 2,,,,,422878491,,422878491,,,,,2024,15
+Successor,,,,,422307398,,422307398,,,,,2024,16
+Bad Boys: Ride or Die,"Jun 7, 2024",Action|Adventure|Comedy|Crime|Thriller,R,Sony Pictures Releasing,404550184,193573217,210976967,56527324,3885,3885,1 hr 55 min,2024,17
+Kingdom of the Planet of the Apes,"May 10, 2024",Action|Adventure|Drama|Sci-Fi|Thriller,PG-13,20th Century Studios,397378150,171130165,226247985,58400788,4075,4075,2 hr 25 min,2024,18
+Twisters,"Jul 19, 2024",Action|Adventure|Thriller,PG-13,Universal Pictures,372262265,267762265,104500000,81251415,4151,4170,2 hr 2 min,2024,19
+It Ends with Us,"Aug 9, 2024",Drama|Romance,PG-13,Sony Pictures Releasing,351441044,148518266,202922778,50016652,3611,3839,2 hr 10 min,2024,20
+Alien: Romulus,"Aug 16, 2024",Horror|Sci-Fi|Thriller,R,20th Century Studios,350865342,105313091,245552251,42003361,3885,3915,1 hr 59 min,2024,21
+The Wild Robot,"Sep 27, 2024",Adventure|Animation|Family|Sci-Fi,PG,Universal Pictures,334500404,143901945,190598459,35790150,3962,3997,1 hr 42 min,2024,22
+Article 20,,,,,306899794,,306899794,,,,,2024,23
+A Quiet Place: Day One,"Jun 28, 2024",Drama|Horror|Sci-Fi|Thriller,PG-13,Paramount Pictures,261907653,139051884,122855769,52202495,3707,3708,1 hr 39 min,2024,24
+Boonie Bears: Time Twist,"Jan 24, 2025",Animation,PG,Viva Pictures,250921235,,250921235,,,,1 hr 45 min,2024,25
+The Garfield Movie,"May 24, 2024",Adventure|Animation|Comedy|Family|Fantasy,PG,Sony Pictures Releasing,234748692,91956547,142792145,24006629,4035,4108,1 hr 41 min,2024,26
+Paddington in Peru,"Feb 14, 2025",Adventure|Comedy|Family|Mystery,PG,Sony Pictures Releasing,211000000,45800000,165200000,12761398,3890,3890,1 hr 46 min,2024,27
+Joker: Folie à Deux,"Oct 4, 2024",Drama|Musical|Thriller,R,Warner Bros.,207500287,58300287,149200000,37678467,4102,4102,2 hr 18 min,2024,28
+Ghostbusters: Frozen Empire,"Mar 22, 2024",Adventure|Comedy|Fantasy|Sci-Fi,PG-13,Sony Pictures Releasing,201967521,113376590,88590931,45004673,4345,4345,1 hr 55 min,2024,29
+IF,"May 17, 2024",Animation|Comedy|Drama|Family|Fantasy,PG,Paramount Pictures,190535708,111375918,79159790,33715801,4041,4068,1 hr 44 min,2024,30
+Red One,"Nov 15, 2024",Action|Adventure|Comedy|Fantasy|Mystery,PG-13,Amazon MGM Studios,186000759,97000759,89000000,32106112,4032,4032,2 hr 3 min,2024,31
+Nosferatu,"Dec 25, 2024",Fantasy|Horror|Mystery,R,Focus Features,181954339,95608235,86346104,21652560,2992,3132,2 hr 12 min,2024,32
+The Fall Guy,"May 3, 2024",Action|Comedy|Drama|Romance,PG-13,Universal Pictures,181073291,92900355,88172936,27747035,4002,4008,2 hr 6 min,2024,33
+Bob Marley: One Love,"Feb 14, 2024",Biography|Drama|Music,PG-13,Paramount Pictures,180971146,96981216,83989930,28659004,3539,3597,1 hr 47 min,2024,34
+Pushpa: The Rule - Part 2,"Dec 5, 2024",Action|Crime|Drama|Thriller,,AA Films,175399684,13000000,162399684,9300000,1245,1245,3 hr 21 min,2024,35
+Furiosa: A Mad Max Saga,"May 24, 2024",Action|Adventure|Sci-Fi,R,Warner Bros.,174375791,67475791,106900000,26326462,3804,3864,2 hr 28 min,2024,36
+A Place Called Silence,,,,,174308156,,174308156,,,,,2024,37
+The Beekeeper,"Jan 12, 2024",Action|Crime|Thriller,R,Metro-Goldwyn-Mayer (MGM),162619535,66220535,96399000,16576007,3303,3337,1 hr 45 min,2024,38
+The Volunteers: The Battle of Life and Death,,,,,153429899,,153429899,,,,,2024,39
+A Complete Unknown,"Dec 25, 2024",Biography|Drama|Music,R,Searchlight Pictures,140508652,75001720,65506932,11655553,2835,2835,2 hr 21 min,2024,40
+Smile 2,"Oct 18, 2024",Horror|Mystery|Thriller,R,Paramount Pictures,138128854,69012586,69116268,23021692,3619,3624,2 hr 7 min,2024,41
+Transformers One,"Sep 20, 2024",Action|Adventure|Animation|Family|Fantasy|Sci-Fi,PG,Paramount Pictures,129408392,59098421,70309971,24613970,3978,3978,1 hr 44 min,2024,42
+Longlegs,"Jul 12, 2024",Crime|Horror|Mystery|Thriller,R,Neon,127961936,74346140,53615796,22400119,2510,2850,1 hr 41 min,2024,43
+Conclave,"Oct 25, 2024",Drama|Thriller,PG,Focus Features,127848258,32580655,95267603,6601995,1753,2377,2 hr,2024,44
+Civil War,"Apr 12, 2024",Action|Thriller|War,R,A24,127268065,68756072,58511993,25537368,3838,3929,1 hr 49 min,2024,45
+Kalki 2898 AD,"Jun 27, 2024",Action|Adventure|Sci-Fi,,Prathyangira Cinemas,125857438,18289575,107567863,5668275,1049,1049,3 hr,2024,46
+Detective Conan: The Million-Dollar Pentagram,,,,,108136957,,108136957,,,,,2024,47
+Mean Girls,"Jan 12, 2024",Comedy|Musical,PG-13,Paramount Pictures,104970953,72581770,32389183,28635307,3791,3826,1 hr 52 min,2024,48
+Madame Web,"Feb 14, 2024",Action|Thriller,PG-13,Columbia Pictures,100498764,43817106,56681658,15335860,4013,4013,1 hr 56 min,2024,49
+Haikyu!! The Dumpster Battle,"May 31, 2024",Animation|Comedy|Drama|Sport,PG-13,Crunchyroll,100050498,7071622,92978876,3645301,1119,1119,1 hr 25 min,2024,50
+Argylle,"Feb 2, 2024",Action|Comedy|Thriller,PG-13,Universal Pictures,96221061,45207275,51013786,17473540,3605,3647,2 hr 19 min,2024,51
+Challengers,"Apr 26, 2024",Comedy|Drama|Romance|Sport,R,Amazon MGM Studios,96119408,50119408,46000000,15011061,3477,3477,2 hr 11 min,2024,52
+Exhuma,"Mar 15, 2024",Horror|Mystery,,Well Go USA Entertainment,93874846,2310900,91563946,60512,3,70,2 hr 14 min,2024,53
+Terrifier 3,"Oct 11, 2024",Horror,,Cineverse,89169769,53981071,35188698,18928113,2514,2762,2 hr 5 min,2024,54
+The Count of Monte Cristo,"Dec 20, 2024",Action|Adventure|Drama|Romance|Thriller,,The Samuel Goldwyn Company,85865841,529830,85336011,17426,4,93,2 hr 58 min,2024,55
+A Little Something Extra,,,,,84359076,,84359076,,,,,2024,56
+Trap,"Aug 2, 2024",Crime|Horror|Mystery|Thriller,PG-13,Warner Bros.,83677281,42777281,40900000,15454146,3181,3181,1 hr 45 min,2024,57
+The Roundup: Punishment,"Apr 26, 2024",Action|Crime|Thriller,,Capelight Pictures,80426848,1154475,79272373,55684,2,74,1 hr 49 min,2024,58
+The Substance,"Sep 20, 2024",Drama|Horror|Sci-Fi,R,MUBI,77316812,17584795,59732017,3205212,1949,1949,2 hr 21 min,2024,59
+Speak No Evil,"Sep 13, 2024",Drama|Horror|Thriller,R,Universal Pictures,76756109,36931420,39824689,11397595,3375,3375,1 hr 50 min,2024,60
+Babygirl,"Dec 25, 2024",Drama|Romance|Thriller,R,A24,64716399,28196732,36519667,4490145,2115,2164,1 hr 54 min,2024,61
+Kraven the Hunter,"Dec 13, 2024",Action|Adventure|Thriller,R,Sony Pictures Releasing,62076533,25026310,37050223,11001109,3211,3211,2 hr 7 min,2024,62
+Heretic,"Nov 8, 2024",Horror|Thriller,R,A24,59777970,27986380,31791590,10829810,3221,3230,1 hr 51 min,2024,63
+We Live in Time,"Oct 11, 2024",Drama|Romance,R,A24,58486338,24692924,33793414,232615,5,2964,1 hr 48 min,2024,64
+Anora,"Oct 18, 2024",Comedy|Drama|Romance,R,Neon,57395612,20474295,36921317,550503,6,1938,2 hr 19 min,2024,65
+Night Swim,"Jan 5, 2024",Horror|Mystery|Thriller,PG-13,Universal Pictures,54768317,32494740,22273577,11797155,3250,3257,1 hr 38 min,2024,66
+Kingdom 4: Return of the Great General,,,,,54114815,,54114815,,,,,2024,67
+The First Omen,"Apr 5, 2024",Horror,R,20th Century Studios,53845880,20092802,33753078,8353710,3375,3375,1 hr 59 min,2024,68
+"I, the Executioner","Sep 27, 2024",Action|Adventure|Comedy|Crime|Thriller,,Blue Fox Entertainment,53480861,388067,53092794,124099,53,53,1 hr 58 min,2024,69
+Coraline 15th Anniversary,"Aug 15, 2024",Animation|Drama|Family|Fantasy,PG,Fathom Events,52371887,33626425,18745462,9832281,1535,1564,1 hr 40 min,2024,70
+Back to Black,"May 17, 2024",Biography|Drama|Music,R,Focus Features,51026731,6178165,44848566,2835720,2010,2013,2 hr 2 min,2024,71
+The Brutalist,"Dec 20, 2024",Drama,R,A24,50450120,16279129,34170991,266791,6,1612,3 hr 36 min,2024,72
+Tarot,"May 3, 2024",Horror,PG-13,Screen Gems,49371152,18771004,30600148,6503012,3104,3104,1 hr 32 min,2024,73
+The Strangers: Chapter 1,"May 17, 2024",Horror,R,Lionsgate,48166448,35202562,12963886,11825058,2856,2856,1 hr 31 min,2024,74
+Blink Twice,"Aug 23, 2024",Mystery|Thriller,R,Amazon MGM Studios,48093906,23093906,25000000,7301894,3067,3067,1 hr 42 min,2024,75
+Demon Slayer: Kimetsu No Yaiba - To the Hashira Training,"Feb 23, 2024",Action|Adventure|Animation|Fantasy|Thriller,R,Sony Pictures Releasing,44354825,17657658,26697167,11505414,1949,1949,1 hr 44 min,2024,76
+Imaginary,"Mar 8, 2024",Horror|Mystery|Thriller,PG-13,Lionsgate,43778760,28009161,15769599,9912713,3118,3118,1 hr 44 min,2024,77
+Abigail,"Apr 19, 2024",Action|Comedy|Crime|Drama|Horror|Thriller,R,Universal Pictures,42791449,25867515,16923934,10297110,3384,3393,1 hr 49 min,2024,78
+Fly Me to the Moon,"Jul 12, 2024",Comedy|Romance,PG-13,Columbia Pictures,42260534,20532222,21728312,9402176,3356,3356,2 hr 12 min,2024,79
+Arthur the King,"Mar 15, 2024",Adventure|Drama|Sport,PG-13,Lionsgate,40861764,25049006,15812758,7633898,3003,3003,1 hr 47 min,2024,80
+The Forge,"Aug 23, 2024",Drama|Family,PG,Affirm Films,40395051,29123632,11271419,6659508,1818,1921,2 hr 4 min,2024,81
+The Best Christmas Pageant Ever,"Nov 8, 2024",Adventure|Comedy|Drama|Fantasy|Mystery|Romance,PG,Lionsgate,40262167,40048808,213359,10773559,3020,3020,1 hr 39 min,2024,82
+Cells at Work!,,,,,39618125,,39618125,,,,,2024,83
+Horizon: An American Saga - Chapter 1,"Jun 28, 2024",Drama|Western,R,Warner Bros.,38835702,29035702,9800000,11052561,3334,3334,3 hr 1 min,2024,84
+Interstellar 2024 Re-release,"Dec 6, 2024",Adventure|Drama|Sci-Fi,PG-13,Paramount Pictures,38669781,15207563,23462218,4602149,165,321,2 hr 49 min,2024,85
+I'm Still Here,"Jan 17, 2025",Biography|Drama|History,PG-13,Sony Pictures Classics,36425634,6233517,30192117,113706,5,762,2 hr 17 min,2024,86
+Beating Hearts,,,,,36261644,,36261644,,,,,2024,87
+The Bikeriders,"Jun 21, 2024",Crime|Drama,R,Focus Features,36159144,21746895,14412249,9698275,2642,2692,1 hr 56 min,2024,88
+Mobile Suit Gundam SEED Freedom,"May 7, 2024",Action|Adventure|Animation|Drama|Sci-Fi,,Fathom Events,36041159,,36041159,,,,2 hr 4 min,2024,89
+Monkey Man,"Apr 5, 2024",Action|Crime|Thriller,R,Universal Pictures,35383733,25116955,10266778,10119435,3029,3037,2 hr 1 min,2024,90
+Immaculate,"Mar 22, 2024",Horror|Thriller,R,Neon,34853031,15671307,19181724,5338921,2354,2362,1 hr 29 min,2024,91
+Harbin,"Dec 25, 2024",Action|Biography|Crime|History|Thriller,,Well Go USA Entertainment,33469148,951874,32517274,27923,2,70,1 hr 48 min,2024,92
+Doraemon the Movie: Nobita's Earth Symphony,,,,,33399912,,33399912,,,,,2024,93
+The Watchers,"Jun 7, 2024",Fantasy|Horror|Mystery|Thriller,PG-13,Warner Bros.,33371404,19071404,14300000,7003537,3351,3351,1 hr 42 min,2024,94
+Borderlands,"Aug 9, 2024",Action|Adventure|Comedy|Sci-Fi|Thriller,PG-13,Lionsgate,33017367,15482668,17534699,8601572,3125,3125,1 hr 41 min,2024,95
+Harold and the Purple Crayon,"Aug 2, 2024",Adventure|Animation|Comedy|Family|Fantasy,PG,Columbia Pictures,32227855,17640924,14586931,6003197,3325,3325,1 hr 30 min,2024,96
+My Hero Academia: You're Next,"Oct 11, 2024",Action|Adventure|Animation|Sci-Fi,PG-13,Toho International,32224616,5041781,27182835,3007027,1845,1845,1 hr 50 min,2024,97
+A Strange House,,,,,31023268,,31023268,,,,,2024,98
+Pilot,,,,,30917972,,30917972,,,,,2024,99
+Flow,"Nov 22, 2024",Adventure|Animation|Family|Fantasy,PG,Janus Films,30898615,4844117,26054498,50811,2,377,1 hr 25 min,2024,100
