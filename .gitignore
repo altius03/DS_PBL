@@ -5,3 +5,5 @@ __pycache__/
 venv/
 .uv-cache/
 .idea/
+overseas_movie_test/data/source_original/*
+!overseas_movie_test/data/source_original/.gitkeep

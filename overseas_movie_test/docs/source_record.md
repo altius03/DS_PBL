@@ -60,6 +60,7 @@
 - Monthly schedule pages overlap across months, so release URLs are deduplicated after parsing
 - The schedule pages can include out-of-range next-year releases, so final collector output trims rows outside the configured year range
 - General-movie filtering removes obvious re-releases, concert films, event cinema, serial/event programming, and short-form titles
+- Large raw HTML and JSON cache files are excluded from version control after consolidation; the canonical CSV rollups are kept instead
 
 ## Outcome
 - Box Office Mojo provided a strong backbone for theatrical release timing, distributor, gross, and theater-count analysis

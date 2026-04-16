@@ -70,6 +70,13 @@
 - Wrote a direct domestic-vs-overseas evaluation memo:
   - `docs/domestic_vs_overseas_evaluation.md`
 
+## 2026-04-16 / repository compaction
+- Reorganized the overseas artifact strategy around canonical combined CSV files
+- Removed tracked `source_original` HTML/JSON cache files from version control
+- Removed duplicate year-by-year top-100 sample CSV and metadata files because the combined `2016_2025` versions already exist
+- Added `data/raw/overseas_canonical_csv_index.csv` as the retained CSV inventory
+- Added `.gitignore` rules so future raw source cache files do not get staged again
+
 ## Current Final Status
 - Main overseas dataset now covers the full U.S. theatrical release schedule, not just a top-grossing sample
 - The legacy top-100 sample remains preserved for comparison

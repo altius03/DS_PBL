@@ -10,6 +10,7 @@ This workspace mirrors the main `DS_PBL` project, but adds an overseas movie pip
 - Backbone source: `Box Office Mojo`
 - Supplementary sources: `Box Office Mojo title/credits pages`, `Wikidata`
 - Legacy yearly top-100 sample is still preserved for comparison
+- Raw source HTML/JSON cache is intentionally excluded from version control; canonical CSV rollups are kept instead
 
 ## Main Output Files
 - Raw backbone CSV:
@@ -30,6 +31,8 @@ This workspace mirrors the main `DS_PBL` project, but adds an overseas movie pip
   - `data/raw/overseas_us_release_schedule_full_2016_2025_report.json`
 - Domestic vs overseas evaluation:
   - `docs/domestic_vs_overseas_evaluation.md`
+- CSV file index:
+  - `data/raw/overseas_canonical_csv_index.csv`
 
 ## Overseas Analysis Outputs
 - Question summaries:
@@ -78,6 +81,7 @@ This workspace mirrors the main `DS_PBL` project, but adds an overseas movie pip
 - `opening_theaters` and `widest_release_theaters` are not direct KOBIS screen-count equivalents
 - `rating` still has heavy missingness in the overseas dataset
 - `production_company`, `production_country`, and `original_language` were not recovered reliably enough from the chosen public sources
+- If GitHub repository size itself needs to shrink, history rewrite is still required because old large cache files already exist in past commits
 
 ## Re-run Commands
 ```powershell
