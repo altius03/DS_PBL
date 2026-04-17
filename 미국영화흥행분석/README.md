@@ -1,103 +1,53 @@
-﻿# Overseas Movie Test
+﻿# 미국영화흥행분석
 
-This workspace mirrors the main `DS_PBL` project, but adds an overseas movie pipeline built from trustworthy public sources.
+미국 극장 개봉 영화 데이터를 중심으로 흥행 성과와 관련 피처를 분석하는 프로젝트다.
+한국 영화 데이터는 비교와 해석 보강을 위한 참고 자료로 함께 보관한다.
 
-## Current Status
-- Main overseas dataset: full U.S. theatrical release schedule, `2016-2025`
-- Final analysis subset: general movies only
-- Raw backbone rows after dedupe: `7605`
-- Final general-movie rows: `7368`
-- Backbone source: `Box Office Mojo`
-- Supplementary sources: `Box Office Mojo title/credits pages`, `Wikidata`
-- Legacy yearly top-100 sample is still preserved for comparison
-- Raw source HTML/JSON cache is intentionally excluded from version control; canonical CSV rollups are kept instead
+## 현재 기준 데이터
+- 메인 분석 파일:
+  - `data/분석데이터/미국영화_분석데이터_2016_2025.csv`
+- 한국 참고 파일:
+  - `data/참고데이터/한국영화_참고데이터_2016_2025.csv`
 
-## Main Output Files
-- Raw backbone CSV:
-  - `data/수집자료/boxofficemojo_us_release_schedule_full_2016_2025.csv`
-- Backbone collection report:
-  - `data/수집자료/boxofficemojo_us_release_schedule_full_2016_2025_report.json`
-- Enriched full CSV:
-  - `data/분석데이터/overseas_us_release_schedule_full_2016_2025.csv`
-- Enriched analysis-ready CSV:
-  - `data/분석데이터/overseas_us_release_schedule_full_2016_2025_analysis_ready.csv`
-- General-movie-only full CSV:
-  - `data/분석데이터/overseas_us_general_theatrical_2016_2025.csv`
-- General-movie-only analysis-ready CSV:
-  - `data/분석데이터/overseas_us_general_theatrical_2016_2025_analysis_ready.csv`
-- General movie filter report:
-  - `data/수집자료/overseas_us_general_theatrical_2016_2025_filter_report.json`
-- Enrichment report:
-  - `data/수집자료/overseas_us_release_schedule_full_2016_2025_report.json`
-- Domestic vs overseas evaluation:
-  - `docs/援?궡_?댁쇅_鍮꾧탳_?됯?.md`
-- CSV file index:
-  - `data/수집자료/overseas_canonical_csv_index.csv`
+## 데이터 개요
+- 미국 메인 데이터 범위: `2016-2025` 미국 극장 개봉 영화
+- 미국 메인 데이터 행 수: `7368`
+- 한국 참고 데이터 구성: 매칭 완료 데이터와 미매칭 확인 데이터를 합친 참고용 정리본
+- 미국 메인 데이터 보강 항목:
+  - IMDb 평점, 투표수, 작품 기본 정보
+  - TMDB 미국 등급, 제작사, 제작국가, 원어
 
-## Overseas Analysis Outputs
-- Question summaries:
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_遺꾩꽍/遺꾩꽍_吏덈Ц_?붿빟.md`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_遺꾩꽍/吏덈Ц1_?λⅤ_?붿빟.csv`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_遺꾩꽍/吏덈Ц2_媛쒕큺?쒓린_?붿빟.csv`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_遺꾩꽍/吏덈Ц3_愿?뚮벑湲??붿빟.csv`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_遺꾩꽍/吏덈Ц4_洹뱀옣??援ш컙_?붿빟.csv`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_遺꾩꽍/吏덈Ц4_洹뱀옣???곴?_?붿빟.json`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_遺꾩꽍/吏덈Ц5_肄붾줈?섏떆湲??붿빟.csv`
-- Assignment 1 visuals:
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??01_寃곗륫移?媛쒖닔.png`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??02_?꾩꽭怨꾨ℓ異?遺꾪룷.png`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??03_遺곷?留ㅼ텧_遺꾪룷.png`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??04_理쒕?洹뱀옣??遺꾪룷.png`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??05_媛쒕큺洹뱀옣??遺꾪룷.png`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??06_愿?뚮벑湲됰퀎_?곹솕??png`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??07_吏묎퀎?곕룄蹂??곹솕??png`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??08_?λⅤ_?곸쐞10媛?png`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??09_諛곌툒???곸쐞10媛?png`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??湲곗큹?듦퀎.csv`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??寃곗륫移??붿빟.csv`
-  - `outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵???곗씠?곗뀑_媛쒖슂.txt`
+## 폴더 구조
+- `data/분석데이터/`
+  - 분석에 바로 사용하는 데이터
+- `data/수집자료/`
+  - 수집 과정에서 나온 CSV, 리포트, 인덱스 파일
+- `data/원본자료/`
+  - 원본 보관 폴더
+- `data/참고데이터/`
+  - 한국 영화 참고 데이터
+- `docs/`
+  - 과제 요구사항, 비교 메모, 작업 기록, 출처 기록
+- `outputs/visuals/`
+  - 시각화와 질문별 요약 결과
+- `src/`
+  - 수집, 정리, 필터링, 분석용 스크립트
 
-## Preserved Legacy Sample
-- Full merged sample:
-  - `data/분석데이터/overseas_movies_complete_2016_2025.csv`
-- Sample analysis-ready CSV:
-  - `data/분석데이터/overseas_movies_complete_2016_2025_analysis_ready.csv`
-- Sample general-movie CSV:
-  - `data/분석데이터/overseas_movies_general_only_2016_2025.csv`
-- Sample general-movie analysis-ready CSV:
-  - `data/분석데이터/overseas_movies_general_only_2016_2025_analysis_ready.csv`
+## 핵심 파일
+- 메인 분석 데이터:
+  - `data/분석데이터/미국영화_분석데이터_2016_2025.csv`
+- 한국 참고 데이터:
+  - `data/참고데이터/한국영화_참고데이터_2016_2025.csv`
+- 미국 질문 요약:
+  - `outputs/visuals/미국_일반극장_분석/분석_질문_요약.md`
+- 국내외 비교 메모:
+  - `docs/국내_해외_비교_평가.md`
 
-## Main Improvements
-- Moved from a yearly worldwide top-100 sample to the full U.S. theatrical release schedule
-- Kept the old sample files separate instead of overwriting them
-- Added monthly schedule collection and release-page enrichment
-- Recovered `director` for most rows and reduced `genre` / `distributor` gaps
-- Added `budget_usd`, `brand_name`, and `franchise_name` where available
-- Generated overseas-only EDA outputs and a domestic-vs-overseas comparison memo
+## 남겨둔 레거시 파일
+- 예전 해외 샘플 파이프라인 산출물은 재현성과 비교를 위해 유지했다.
+- 이 파일들은 이름에 `overseas_`가 남아 있을 수 있지만, 현재 메인 분석 파일은 아니다.
 
-## Remaining Limits
-- `audience_count` is unavailable
-- `show_count` is unavailable
-- `opening_theaters` and `widest_release_theaters` are not direct KOBIS screen-count equivalents
-- `rating` still has heavy missingness in the overseas dataset
-- `production_company`, `production_country`, and `original_language` were not recovered reliably enough from the chosen public sources
-- If GitHub repository size itself needs to shrink, history rewrite is still required because old large cache files already exist in past commits
-
-## Re-run Commands
-```powershell
-node 미국영화흥행분석\src\collect_boxofficemojo_us_release_schedule_full.mjs --config configs\us_general_theatrical_full_2016_2025.json --execute --concurrency 2
-node 미국영화흥행분석\src\build_complete_overseas_dataset.mjs --input-csv data\raw\boxofficemojo_us_release_schedule_full_2016_2025.csv --output-prefix overseas_us_release_schedule_full_2016_2025 --concurrency 2
-node 미국영화흥행분석\src\filter_overseas_general_movies.mjs --input-full-csv data\analysis_ready\overseas_us_release_schedule_full_2016_2025.csv --input-analysis-csv data\analysis_ready\overseas_us_release_schedule_full_2016_2025_analysis_ready.csv --output-full-csv data\analysis_ready\overseas_us_general_theatrical_2016_2025.csv --output-analysis-csv data\analysis_ready\overseas_us_general_theatrical_2016_2025_analysis_ready.csv --report-file data\raw\overseas_us_general_theatrical_2016_2025_filter_report.json --minimum-runtime-minutes 40
-node 미국영화흥행분석\src\build_overseas_analysis_summaries.mjs --input-file data\analysis_ready\overseas_us_general_theatrical_2016_2025_analysis_ready.csv --output-dir outputs\visuals\誘멸뎅_?쇰컲洹뱀옣_遺꾩꽍 --summary-title "誘멸뎅 ?쇰컲洹뱀옣 遺꾩꽍 ?붿빟"
-powershell -NoProfile -ExecutionPolicy Bypass -File 미국영화흥행분석\src\build_overseas_assignment1_visuals.ps1 -InputFile C:\Dev\study\python\DS_PBL\미국영화흥행분석\data\analysis_ready\overseas_us_general_theatrical_2016_2025_analysis_ready.csv -OutputDir C:\Dev\study\python\DS_PBL\미국영화흥행분석\outputs\visuals\誘멸뎅_?쇰컲洹뱀옣_1李④낵??```
-
-## Main Scripts
-- `src/collect_boxofficemojo_sample.mjs`
-- `src/collect_boxofficemojo_us_release_schedule_full.mjs`
-- `src/build_complete_overseas_dataset.mjs`
-- `src/filter_overseas_general_movies.mjs`
-- `src/build_overseas_analysis_summaries.mjs`
-- `src/build_overseas_assignment1_visuals.ps1`
-- `src/prepare_us_general_theatrical_pipeline.mjs`
-
-
+## 현재 해석상 주의점
+- 미국 데이터에는 정확한 관객 수와 총 상영 횟수가 없다.
+- 미국의 `opening_theaters`, `widest_release_theaters`는 KOBIS의 스크린 수와 완전히 같은 개념이 아니다.
+- 한국 데이터는 참고 자료이며, 현재 프로젝트의 메인 분석 대상은 미국 데이터다.
