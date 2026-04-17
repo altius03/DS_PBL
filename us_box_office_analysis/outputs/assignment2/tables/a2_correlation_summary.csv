@@ -1,0 +1,3 @@
+﻿feature,pair_count,pearson_r_raw,pearson_r_log
+최대 상영 극장수,5815,0.4966,0.7624
+오픈 극장수,5307,0.4968,0.6777

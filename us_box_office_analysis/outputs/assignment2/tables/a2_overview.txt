@@ -1,0 +1,9 @@
+assignment=2차 과제
+source_file=C:\Dev\study\python\DS_PBL\미국영화흥행분석\data\분석데이터\미국영화_분석데이터_2016_2025.csv
+target=전세계_흥행수익_USD
+features=최대_상영극장수, 오픈_극장수, 대표장르, 개봉시기
+release_timing_definition=여름 성수기(5~8월), 연말 성수기(11~12월), 일반기(그 외)
+
+[correlation_summary]
+최대 상영 극장수: pair_count=5815, pearson_r_raw=0.4966, pearson_r_log=0.7624
+오픈 극장수: pair_count=5307, pearson_r_raw=0.4968, pearson_r_log=0.6777
