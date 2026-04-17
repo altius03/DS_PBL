@@ -1,0 +1,47 @@
+﻿{
+  "dataset_id": "overseas_us_general_theatrical_2016_2025",
+  "status": "executing",
+  "source": {
+    "backbone": "Box Office Mojo Domestic Release Schedule",
+    "market": "United States theatrical"
+  },
+  "years": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "month_page_count": 120,
+  "first_five_urls": [
+    "https://www.boxofficemojo.com/calendar/2016-01-01/",
+    "https://www.boxofficemojo.com/calendar/2016-02-01/",
+    "https://www.boxofficemojo.com/calendar/2016-03-01/",
+    "https://www.boxofficemojo.com/calendar/2016-04-01/",
+    "https://www.boxofficemojo.com/calendar/2016-05-01/"
+  ],
+  "last_five_urls": [
+    "https://www.boxofficemojo.com/calendar/2025-08-01/",
+    "https://www.boxofficemojo.com/calendar/2025-09-01/",
+    "https://www.boxofficemojo.com/calendar/2025-10-01/",
+    "https://www.boxofficemojo.com/calendar/2025-11-01/",
+    "https://www.boxofficemojo.com/calendar/2025-12-01/"
+  ],
+  "planned_outputs": {
+    "raw_csv": "C:\\Dev\\study\\python\\DS_PBL\\미국영화흥행분석\\data\\수집자료\\boxofficemojo_us_release_schedule_full_2016_2025.csv",
+    "analysis_csv": "C:\\Dev\\study\\python\\DS_PBL\\미국영화흥행분석\\data\\분석데이터\\boxofficemojo_us_release_schedule_full_2016_2025_analysis_ready.csv"
+  },
+  "notes": [
+    "The calendar collector works at monthly schedule pages, not daily pages.",
+    "Monthly pages overlap, so release URLs are deduplicated after parsing.",
+    "Execution mode fetches monthly schedule pages and domestic release pages, then writes a unique raw backbone CSV."
+  ],
+  "generated_at": "2026-04-14T20:15:09.815Z"
+}
+
+

@@ -1,0 +1,40 @@
+﻿{
+  "datasetId": "overseas_us_general_theatrical_2016_2025",
+  "years": {
+    "start": 2016,
+    "end": 2025
+  },
+  "source": {
+    "backbone": "Box Office Mojo Domestic Release Schedule",
+    "market": "United States theatrical"
+  },
+  "collector": {
+    "mode": "full_us_release_schedule",
+    "status": "completed",
+    "planOutput": "data/수집자료/plans/boxofficemojo_us_release_schedule_full_2016_2025_plan.json",
+    "rawOutputCsv": "data/수집자료/boxofficemojo_us_release_schedule_full_2016_2025.csv",
+    "analysisOutputCsv": "data/분석데이터/boxofficemojo_us_release_schedule_full_2016_2025_analysis_ready.csv"
+  },
+  "enrichment": {
+    "inputCsv": "data/수집자료/boxofficemojo_us_release_schedule_full_2016_2025.csv",
+    "outputPrefix": "overseas_us_release_schedule_full_2016_2025"
+  },
+  "generalMovieFilter": {
+    "inputFullCsv": "data/분석데이터/overseas_us_release_schedule_full_2016_2025.csv",
+    "inputAnalysisCsv": "data/분석데이터/overseas_us_release_schedule_full_2016_2025_analysis_ready.csv",
+    "outputFullCsv": "data/분석데이터/overseas_us_general_theatrical_2016_2025.csv",
+    "outputAnalysisCsv": "data/분석데이터/overseas_us_general_theatrical_2016_2025_analysis_ready.csv",
+    "reportFile": "data/수집자료/overseas_us_general_theatrical_2016_2025_filter_report.json",
+    "minimumRuntimeMinutes": 40
+  },
+  "analysis": {
+    "inputFile": "data/분석데이터/overseas_us_general_theatrical_2016_2025_analysis_ready.csv",
+    "outputDir": "outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_遺꾩꽍",
+    "summaryTitle": "誘멸뎅 ?쇰컲洹뱀옣 遺꾩꽍 ?붿빟"
+  },
+  "assignment1Visuals": {
+    "inputFile": "data/분석데이터/overseas_us_general_theatrical_2016_2025_analysis_ready.csv",
+    "outputDir": "outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??
+  }
+}
+
