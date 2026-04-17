@@ -29,11 +29,11 @@
   },
   "analysis": {
     "inputFile": "data/analysis_ready/overseas_us_general_theatrical_2024_smoketest_analysis_ready.csv",
-    "outputDir": "outputs/visuals/us_general_theatrical_2024_smoketest_analysis",
-    "summaryTitle": "US General Theatrical 2024 Smoketest Summary"
+    "outputDir": "outputs/visuals/미국_일반극장_2024_스모크테스트_분석",
+    "summaryTitle": "미국 일반극장 2024 스모크테스트 요약"
   },
   "assignment1Visuals": {
     "inputFile": "data/analysis_ready/overseas_us_general_theatrical_2024_smoketest_analysis_ready.csv",
-    "outputDir": "outputs/visuals/us_general_theatrical_2024_smoketest_assignment1"
+    "outputDir": "outputs/visuals/미국_일반극장_2024_스모크테스트_1차과제"
   }
 }

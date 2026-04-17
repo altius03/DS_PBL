@@ -32,12 +32,12 @@
     },
     {
       "step": "build_analysis_summaries",
-      "command": "node overseas_movie_test/src/build_overseas_analysis_summaries.mjs --input-file data/analysis_ready/overseas_us_general_theatrical_2016_2025_analysis_ready.csv --output-dir outputs/visuals/us_general_theatrical_analysis --summary-title \"US General Theatrical Analysis Summary\"",
+      "command": "node overseas_movie_test/src/build_overseas_analysis_summaries.mjs --input-file data/analysis_ready/overseas_us_general_theatrical_2016_2025_analysis_ready.csv --output-dir outputs/visuals/미국_일반극장_분석 --summary-title \"미국 일반극장 분석 요약\"",
       "status": "completed"
     },
     {
       "step": "build_assignment1_visuals",
-      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File overseas_movie_test/src/build_overseas_assignment1_visuals.ps1 -InputFile data/analysis_ready/overseas_us_general_theatrical_2016_2025_analysis_ready.csv -OutputDir outputs/visuals/us_general_theatrical_assignment1",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File overseas_movie_test/src/build_overseas_assignment1_visuals.ps1 -InputFile data/analysis_ready/overseas_us_general_theatrical_2016_2025_analysis_ready.csv -OutputDir outputs/visuals/미국_일반극장_1차과제",
       "status": "completed"
     }
   ],
@@ -46,8 +46,8 @@
     "raw_backbone_csv": "data/raw/boxofficemojo_us_release_schedule_full_2016_2025.csv",
     "enriched_analysis_csv": "data/analysis_ready/overseas_us_release_schedule_full_2016_2025_analysis_ready.csv",
     "filtered_analysis_csv": "data/analysis_ready/overseas_us_general_theatrical_2016_2025_analysis_ready.csv",
-    "analysis_output_dir": "outputs/visuals/us_general_theatrical_analysis",
-    "assignment1_output_dir": "outputs/visuals/us_general_theatrical_assignment1"
+    "analysis_output_dir": "outputs/visuals/미국_일반극장_분석",
+    "assignment1_output_dir": "outputs/visuals/미국_일반극장_1차과제"
   },
   "notes": [
     "This manifest tracks the completed full U.S. theatrical general-movie pipeline.",

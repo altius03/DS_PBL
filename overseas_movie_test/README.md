@@ -30,32 +30,32 @@ This workspace mirrors the main `DS_PBL` project, but adds an overseas movie pip
 - Enrichment report:
   - `data/raw/overseas_us_release_schedule_full_2016_2025_report.json`
 - Domestic vs overseas evaluation:
-  - `docs/domestic_vs_overseas_evaluation.md`
+  - `docs/국내_해외_비교_평가.md`
 - CSV file index:
   - `data/raw/overseas_canonical_csv_index.csv`
 
 ## Overseas Analysis Outputs
 - Question summaries:
-  - `outputs/visuals/us_general_theatrical_analysis/analysis_question_summary.md`
-  - `outputs/visuals/us_general_theatrical_analysis/q1_genre_summary.csv`
-  - `outputs/visuals/us_general_theatrical_analysis/q2_release_month_summary.csv`
-  - `outputs/visuals/us_general_theatrical_analysis/q3_rating_summary.csv`
-  - `outputs/visuals/us_general_theatrical_analysis/q4_theater_band_summary.csv`
-  - `outputs/visuals/us_general_theatrical_analysis/q4_theater_correlation_summary.json`
-  - `outputs/visuals/us_general_theatrical_analysis/q5_covid_period_summary.csv`
+  - `outputs/visuals/미국_일반극장_분석/분석_질문_요약.md`
+  - `outputs/visuals/미국_일반극장_분석/질문1_장르_요약.csv`
+  - `outputs/visuals/미국_일반극장_분석/질문2_개봉시기_요약.csv`
+  - `outputs/visuals/미국_일반극장_분석/질문3_관람등급_요약.csv`
+  - `outputs/visuals/미국_일반극장_분석/질문4_극장수_구간_요약.csv`
+  - `outputs/visuals/미국_일반극장_분석/질문4_극장수_상관_요약.json`
+  - `outputs/visuals/미국_일반극장_분석/질문5_코로나시기_요약.csv`
 - Assignment 1 visuals:
-  - `outputs/visuals/us_general_theatrical_assignment1/01_null_counts.png`
-  - `outputs/visuals/us_general_theatrical_assignment1/02_worldwide_gross_distribution.png`
-  - `outputs/visuals/us_general_theatrical_assignment1/03_domestic_gross_distribution.png`
-  - `outputs/visuals/us_general_theatrical_assignment1/04_widest_release_theaters_distribution.png`
-  - `outputs/visuals/us_general_theatrical_assignment1/05_opening_theaters_distribution.png`
-  - `outputs/visuals/us_general_theatrical_assignment1/06_rating_counts.png`
-  - `outputs/visuals/us_general_theatrical_assignment1/07_open_year_counts.png`
-  - `outputs/visuals/us_general_theatrical_assignment1/08_genre_top10_counts.png`
-  - `outputs/visuals/us_general_theatrical_assignment1/09_distributor_top10_counts.png`
-  - `outputs/visuals/us_general_theatrical_assignment1/basic_statistics.csv`
-  - `outputs/visuals/us_general_theatrical_assignment1/null_summary.csv`
-  - `outputs/visuals/us_general_theatrical_assignment1/dataset_overview.txt`
+  - `outputs/visuals/미국_일반극장_1차과제/01_결측치_개수.png`
+  - `outputs/visuals/미국_일반극장_1차과제/02_전세계매출_분포.png`
+  - `outputs/visuals/미국_일반극장_1차과제/03_북미매출_분포.png`
+  - `outputs/visuals/미국_일반극장_1차과제/04_최대극장수_분포.png`
+  - `outputs/visuals/미국_일반극장_1차과제/05_개봉극장수_분포.png`
+  - `outputs/visuals/미국_일반극장_1차과제/06_관람등급별_영화수.png`
+  - `outputs/visuals/미국_일반극장_1차과제/07_집계연도별_영화수.png`
+  - `outputs/visuals/미국_일반극장_1차과제/08_장르_상위10개.png`
+  - `outputs/visuals/미국_일반극장_1차과제/09_배급사_상위10개.png`
+  - `outputs/visuals/미국_일반극장_1차과제/기초통계.csv`
+  - `outputs/visuals/미국_일반극장_1차과제/결측치_요약.csv`
+  - `outputs/visuals/미국_일반극장_1차과제/데이터셋_개요.txt`
 
 ## Preserved Legacy Sample
 - Full merged sample:
@@ -88,8 +88,8 @@ This workspace mirrors the main `DS_PBL` project, but adds an overseas movie pip
 node overseas_movie_test\src\collect_boxofficemojo_us_release_schedule_full.mjs --config configs\us_general_theatrical_full_2016_2025.json --execute --concurrency 2
 node overseas_movie_test\src\build_complete_overseas_dataset.mjs --input-csv data\raw\boxofficemojo_us_release_schedule_full_2016_2025.csv --output-prefix overseas_us_release_schedule_full_2016_2025 --concurrency 2
 node overseas_movie_test\src\filter_overseas_general_movies.mjs --input-full-csv data\analysis_ready\overseas_us_release_schedule_full_2016_2025.csv --input-analysis-csv data\analysis_ready\overseas_us_release_schedule_full_2016_2025_analysis_ready.csv --output-full-csv data\analysis_ready\overseas_us_general_theatrical_2016_2025.csv --output-analysis-csv data\analysis_ready\overseas_us_general_theatrical_2016_2025_analysis_ready.csv --report-file data\raw\overseas_us_general_theatrical_2016_2025_filter_report.json --minimum-runtime-minutes 40
-node overseas_movie_test\src\build_overseas_analysis_summaries.mjs --input-file data\analysis_ready\overseas_us_general_theatrical_2016_2025_analysis_ready.csv --output-dir outputs\visuals\us_general_theatrical_analysis --summary-title "US General Theatrical Analysis Summary"
-powershell -NoProfile -ExecutionPolicy Bypass -File overseas_movie_test\src\build_overseas_assignment1_visuals.ps1 -InputFile C:\Dev\study\python\DS_PBL\overseas_movie_test\data\analysis_ready\overseas_us_general_theatrical_2016_2025_analysis_ready.csv -OutputDir C:\Dev\study\python\DS_PBL\overseas_movie_test\outputs\visuals\us_general_theatrical_assignment1
+node overseas_movie_test\src\build_overseas_analysis_summaries.mjs --input-file data\analysis_ready\overseas_us_general_theatrical_2016_2025_analysis_ready.csv --output-dir outputs\visuals\미국_일반극장_분석 --summary-title "미국 일반극장 분석 요약"
+powershell -NoProfile -ExecutionPolicy Bypass -File overseas_movie_test\src\build_overseas_assignment1_visuals.ps1 -InputFile C:\Dev\study\python\DS_PBL\overseas_movie_test\data\analysis_ready\overseas_us_general_theatrical_2016_2025_analysis_ready.csv -OutputDir C:\Dev\study\python\DS_PBL\overseas_movie_test\outputs\visuals\미국_일반극장_1차과제
 ```
 
 ## Main Scripts

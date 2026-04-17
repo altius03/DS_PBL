@@ -11,9 +11,22 @@ from matplotlib import font_manager
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_FILE = ROOT / "data" / "analysis_ready_audience_over_100" / "kobis_korean_movies_analysis_ready_2016_2025_audience_over_100.csv"
-OUTPUT_DIR = ROOT / "outputs" / "visuals" / "assignment1_audience_over_100"
+DATA_FILE = ROOT / "data" / "분석준비_관객100초과" / "한국영화_분석준비완료_2016_2025_관객100초과.csv"
+OUTPUT_DIR = ROOT / "outputs" / "visuals" / "1차_과제_관객100초과"
 FILTER_DESCRIPTION = "total_audience_count > 100"
+
+BASIC_STATISTICS_FILE = "기초통계.csv"
+NULL_SUMMARY_FILE = "결측치_요약.csv"
+DATASET_OVERVIEW_FILE = "데이터셋_개요.txt"
+NULL_CHART_FILE = "01_결측치_개수.png"
+AUDIENCE_DISTRIBUTION_FILE = "02_관객수_분포.png"
+SALES_DISTRIBUTION_FILE = "03_매출액_분포.png"
+SCREEN_DISTRIBUTION_FILE = "04_스크린수_분포.png"
+SHOW_DISTRIBUTION_FILE = "05_상영횟수_분포.png"
+RATING_COUNTS_FILE = "06_관람등급별_영화수.png"
+OPEN_YEAR_COUNTS_FILE = "07_개봉연도별_영화수.png"
+GENRE_TOP10_FILE = "08_대표장르_상위10개.png"
+NUMERIC_BOXPLOTS_FILE = "09_수치형변수_상자그림.png"
 
 NUMERIC_COLUMNS = [
     "total_sales_amount",
@@ -79,7 +92,7 @@ def ensure_output_dir() -> None:
 
 def save_basic_statistics(df: pd.DataFrame) -> pd.DataFrame:
     basic_stats = df[NUMERIC_COLUMNS].describe().T.round(2)
-    basic_stats.to_csv(OUTPUT_DIR / "basic_statistics.csv", encoding="utf-8-sig")
+    basic_stats.to_csv(OUTPUT_DIR / BASIC_STATISTICS_FILE, encoding="utf-8-sig")
     return basic_stats
 
 
@@ -90,7 +103,7 @@ def save_null_summary(df: pd.DataFrame) -> pd.DataFrame:
             "null_ratio_percent": (df.isnull().mean() * 100).round(2),
         }
     ).sort_values(["null_count", "null_ratio_percent"], ascending=False)
-    null_summary.to_csv(OUTPUT_DIR / "null_summary.csv", encoding="utf-8-sig")
+    null_summary.to_csv(OUTPUT_DIR / NULL_SUMMARY_FILE, encoding="utf-8-sig")
     return null_summary
 
 
@@ -117,7 +130,7 @@ def save_overview_text(df: pd.DataFrame, basic_stats: pd.DataFrame, null_summary
         ]
     )
 
-    (OUTPUT_DIR / "dataset_overview.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (OUTPUT_DIR / DATASET_OVERVIEW_FILE).write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def finalize_plot(title: str, subtitle: str | None = None) -> None:
@@ -156,7 +169,7 @@ def save_null_chart(null_summary: pd.DataFrame) -> None:
         )
 
     finalize_plot("컬럼별 결측값 개수", "데이터셋 전반의 결측 현황을 확인하는 기본 그래프")
-    plt.savefig(OUTPUT_DIR / "01_null_counts.png", dpi=200, bbox_inches="tight")
+    plt.savefig(OUTPUT_DIR / NULL_CHART_FILE, dpi=200, bbox_inches="tight")
     plt.close()
 
 
@@ -211,7 +224,7 @@ def save_rating_chart(df: pd.DataFrame) -> None:
         )
 
     finalize_plot("관람등급별 영화 수", "범주형 변수의 전체 분포를 확인")
-    plt.savefig(OUTPUT_DIR / "06_rating_counts.png", dpi=200, bbox_inches="tight")
+    plt.savefig(OUTPUT_DIR / RATING_COUNTS_FILE, dpi=200, bbox_inches="tight")
     plt.close()
 
 
@@ -236,7 +249,7 @@ def save_open_year_chart(df: pd.DataFrame) -> None:
         )
 
     finalize_plot("개봉연도별 영화 수", "2016~2025 분석 범위 내 연도별 분포")
-    plt.savefig(OUTPUT_DIR / "07_open_year_counts.png", dpi=200, bbox_inches="tight")
+    plt.savefig(OUTPUT_DIR / OPEN_YEAR_COUNTS_FILE, dpi=200, bbox_inches="tight")
     plt.close()
 
 
@@ -269,7 +282,7 @@ def save_genre_chart(df: pd.DataFrame) -> None:
         )
 
     finalize_plot("대표 장르 상위 10개", "다중 장르 컬럼에서 첫 번째 값을 대표 장르로 사용")
-    plt.savefig(OUTPUT_DIR / "08_genre_main_top10.png", dpi=200, bbox_inches="tight")
+    plt.savefig(OUTPUT_DIR / GENRE_TOP10_FILE, dpi=200, bbox_inches="tight")
     plt.close()
 
 
@@ -302,7 +315,7 @@ def save_boxplot_chart(df: pd.DataFrame) -> None:
     plt.xticks(rotation=10)
 
     finalize_plot("수치형 변수 분포 비교", "변수 간 규모 차이를 줄이기 위해 log1p 변환을 적용")
-    plt.savefig(OUTPUT_DIR / "09_numeric_boxplots.png", dpi=200, bbox_inches="tight")
+    plt.savefig(OUTPUT_DIR / NUMERIC_BOXPLOTS_FILE, dpi=200, bbox_inches="tight")
     plt.close()
 
 
@@ -320,7 +333,7 @@ def main() -> None:
         df["total_audience_count"],
         title="관객수 분포",
         xlabel="log1p(관객수)",
-        file_name="02_audience_distribution.png",
+        file_name=AUDIENCE_DISTRIBUTION_FILE,
         color=PLOT_COLORS["coral"],
         log_scale=True,
     )
@@ -328,7 +341,7 @@ def main() -> None:
         df["total_sales_amount"],
         title="매출액 분포",
         xlabel="log1p(매출액)",
-        file_name="03_sales_distribution.png",
+        file_name=SALES_DISTRIBUTION_FILE,
         color=PLOT_COLORS["gold"],
         log_scale=True,
     )
@@ -336,14 +349,14 @@ def main() -> None:
         df["screen_count_peak"],
         title="스크린수 분포",
         xlabel="스크린수",
-        file_name="04_screen_distribution.png",
+        file_name=SCREEN_DISTRIBUTION_FILE,
         color=PLOT_COLORS["teal"],
     )
     save_histogram(
         df["show_count_total"],
         title="상영횟수 분포",
         xlabel="상영횟수",
-        file_name="05_show_distribution.png",
+        file_name=SHOW_DISTRIBUTION_FILE,
         color=PLOT_COLORS["rose"],
     )
     save_rating_chart(df)
@@ -353,10 +366,11 @@ def main() -> None:
 
     print(f"saved_to={OUTPUT_DIR}")
     print(
-        "outputs=basic_statistics.csv,null_summary.csv,dataset_overview.txt,01_null_counts.png,"
-        "02_audience_distribution.png,03_sales_distribution.png,04_screen_distribution.png,"
-        "05_show_distribution.png,06_rating_counts.png,07_open_year_counts.png,"
-        "08_genre_main_top10.png,09_numeric_boxplots.png"
+        "outputs="
+        f"{BASIC_STATISTICS_FILE},{NULL_SUMMARY_FILE},{DATASET_OVERVIEW_FILE},{NULL_CHART_FILE},"
+        f"{AUDIENCE_DISTRIBUTION_FILE},{SALES_DISTRIBUTION_FILE},{SCREEN_DISTRIBUTION_FILE},"
+        f"{SHOW_DISTRIBUTION_FILE},{RATING_COUNTS_FILE},{OPEN_YEAR_COUNTS_FILE},"
+        f"{GENRE_TOP10_FILE},{NUMERIC_BOXPLOTS_FILE}"
     )
 
 

@@ -1,4 +1,4 @@
-source_file=C:\Dev\study\python\DS_PBL\data\analysis_ready_audience_over_100\kobis_korean_movies_analysis_ready_2016_2025_audience_over_100.csv
+source_file=C:\Dev\study\python\DS_PBL\data\분석준비_관객100초과\한국영화_분석준비완료_2016_2025_관객100초과.csv
 filter_condition=total_audience_count > 100
 row_count=1435
 column_count=24

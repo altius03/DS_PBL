@@ -1,12 +1,28 @@
-param(
+﻿param(
     [string]$InputFile = "C:\Dev\study\python\DS_PBL\overseas_movie_test\data\analysis_ready\overseas_movies_general_only_2016_2025_analysis_ready.csv",
-    [string]$OutputDir = "C:\Dev\study\python\DS_PBL\overseas_movie_test\outputs\visuals\assignment1"
+    [string]$OutputDir = "C:\Dev\study\python\DS_PBL\overseas_movie_test\outputs\visuals\1차_과제"
 )
 
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 $ErrorActionPreference = "Stop"
 
 Add-Type -AssemblyName System.Windows.Forms.DataVisualization
+
+$NullSummaryFile = "결측치_요약.csv"
+$BasicStatisticsFile = "기초통계.csv"
+$DatasetOverviewFile = "데이터셋_개요.txt"
+$NullCountsChartFile = "01_결측치_개수.png"
+$WorldwideGrossChartFile = "02_전세계매출_분포.png"
+$DomesticGrossChartFile = "03_북미매출_분포.png"
+$WidestReleaseChartFile = "04_최대극장수_분포.png"
+$OpeningTheatersChartFile = "05_개봉극장수_분포.png"
+$RatingCountsChartFile = "06_관람등급별_영화수.png"
+$OpenYearCountsChartFile = "07_집계연도별_영화수.png"
+$GenreTop10ChartFile = "08_장르_상위10개.png"
+$DistributorTop10ChartFile = "09_배급사_상위10개.png"
+
+$InputFile = $InputFile.Trim("'`"")
+$OutputDir = $OutputDir.Trim("'`"")
 
 function Ensure-Directory {
     param([string]$Path)
@@ -36,6 +52,15 @@ function Get-CompactLabel {
         return ("{0:N0}K" -f ($Value / 1000))
     }
     return ("{0:N0}" -f $Value)
+}
+
+function Save-CsvFile {
+    param(
+        [object[]]$Rows,
+        [string]$OutputPath
+    )
+
+    $Rows | ConvertTo-Csv -NoTypeInformation | Set-Content -LiteralPath $OutputPath -Encoding UTF8
 }
 
 function Get-Median {
@@ -216,7 +241,7 @@ $nullSummary = foreach ($column in $selectedColumns) {
         missing_pct = [Math]::Round(($missingCount / $rows.Count) * 100, 2)
     }
 }
-$nullSummary | Export-Csv -LiteralPath (Join-Path $OutputDir "null_summary.csv") -NoTypeInformation -Encoding UTF8
+Save-CsvFile -Rows $nullSummary -OutputPath (Join-Path $OutputDir $NullSummaryFile)
 
 $numericFields = @(
     "worldwide_gross_usd",
@@ -241,7 +266,7 @@ $basicStatistics = foreach ($field in $numericFields) {
         max = if ($values.Count -gt 0) { ($values | Measure-Object -Maximum).Maximum } else { $null }
     }
 }
-$basicStatistics | Export-Csv -LiteralPath (Join-Path $OutputDir "basic_statistics.csv") -NoTypeInformation -Encoding UTF8
+Save-CsvFile -Rows $basicStatistics -OutputPath (Join-Path $OutputDir $BasicStatisticsFile)
 
 $uniqueDistributors = ($rows | Where-Object { -not [string]::IsNullOrWhiteSpace($_.distributor) } | Select-Object -ExpandProperty distributor -Unique).Count
 $uniqueRatings = ($rows | Where-Object { -not [string]::IsNullOrWhiteSpace($_.rating) } | Select-Object -ExpandProperty rating -Unique).Count
@@ -261,7 +286,7 @@ $overview = @(
     "budget_available_count=$budgetCount"
     "notes=This file keeps general movies only and excludes obvious re-releases and event cinema. Theaters are not the same as KOBIS screen counts. Audience count and show count are unavailable."
 )
-$overview | Set-Content -LiteralPath (Join-Path $OutputDir "dataset_overview.txt") -Encoding UTF8
+$overview | Set-Content -LiteralPath (Join-Path $OutputDir $DatasetOverviewFile) -Encoding UTF8
 
 $worldwideValues = $rows | ForEach-Object { To-NullableDouble $_.worldwide_gross_usd } | Where-Object { $null -ne $_ }
 $domesticValues = $rows | ForEach-Object { To-NullableDouble $_.domestic_gross_usd } | Where-Object { $null -ne $_ }
@@ -269,19 +294,19 @@ $widestValues = $rows | ForEach-Object { To-NullableDouble $_.widest_release_the
 $openingTheaterValues = $rows | ForEach-Object { To-NullableDouble $_.opening_theaters } | Where-Object { $null -ne $_ }
 
 $nullChartRows = $nullSummary | Sort-Object -Property missing_count -Descending
-Save-ColumnChart -Rows $nullChartRows -LabelField "column" -ValueField "missing_count" -Title "Null Counts by Column" -OutputPath (Join-Path $OutputDir "01_null_counts.png") -AngleLabels
+Save-ColumnChart -Rows $nullChartRows -LabelField "column" -ValueField "missing_count" -Title "컬럼별 결측치 개수" -OutputPath (Join-Path $OutputDir $NullCountsChartFile) -AngleLabels
 
 $worldwideHistogram = Get-HistogramRows -Values $worldwideValues -BinCount 12
-Save-ColumnChart -Rows $worldwideHistogram -LabelField "Label" -ValueField "Count" -Title "Worldwide Gross Distribution" -OutputPath (Join-Path $OutputDir "02_worldwide_gross_distribution.png") -AngleLabels
+Save-ColumnChart -Rows $worldwideHistogram -LabelField "Label" -ValueField "Count" -Title "전세계 매출 분포" -OutputPath (Join-Path $OutputDir $WorldwideGrossChartFile) -AngleLabels
 
 $domesticHistogram = Get-HistogramRows -Values $domesticValues -BinCount 12
-Save-ColumnChart -Rows $domesticHistogram -LabelField "Label" -ValueField "Count" -Title "Domestic Gross Distribution" -OutputPath (Join-Path $OutputDir "03_domestic_gross_distribution.png") -AngleLabels
+Save-ColumnChart -Rows $domesticHistogram -LabelField "Label" -ValueField "Count" -Title "북미 매출 분포" -OutputPath (Join-Path $OutputDir $DomesticGrossChartFile) -AngleLabels
 
 $widestHistogram = Get-HistogramRows -Values $widestValues -BinCount 12
-Save-ColumnChart -Rows $widestHistogram -LabelField "Label" -ValueField "Count" -Title "Widest Release Theaters Distribution" -OutputPath (Join-Path $OutputDir "04_widest_release_theaters_distribution.png") -AngleLabels
+Save-ColumnChart -Rows $widestHistogram -LabelField "Label" -ValueField "Count" -Title "최대 극장수 분포" -OutputPath (Join-Path $OutputDir $WidestReleaseChartFile) -AngleLabels
 
 $openingHistogram = Get-HistogramRows -Values $openingTheaterValues -BinCount 12
-Save-ColumnChart -Rows $openingHistogram -LabelField "Label" -ValueField "Count" -Title "Opening Theaters Distribution" -OutputPath (Join-Path $OutputDir "05_opening_theaters_distribution.png") -AngleLabels
+Save-ColumnChart -Rows $openingHistogram -LabelField "Label" -ValueField "Count" -Title "개봉 극장수 분포" -OutputPath (Join-Path $OutputDir $OpeningTheatersChartFile) -AngleLabels
 
 $ratingCounts = $rows |
     Where-Object { -not [string]::IsNullOrWhiteSpace($_.rating) } |
@@ -293,7 +318,7 @@ $ratingCounts = $rows |
             movie_count = $_.Count
         }
     }
-Save-ColumnChart -Rows $ratingCounts -LabelField "rating" -ValueField "movie_count" -Title "Rating Counts" -OutputPath (Join-Path $OutputDir "06_rating_counts.png")
+Save-ColumnChart -Rows $ratingCounts -LabelField "rating" -ValueField "movie_count" -Title "관람등급별 영화 수" -OutputPath (Join-Path $OutputDir $RatingCountsChartFile)
 
 $openYearCounts = $rows |
     Group-Object -Property chart_year |
@@ -304,7 +329,7 @@ $openYearCounts = $rows |
             movie_count = $_.Count
         }
     }
-Save-ColumnChart -Rows $openYearCounts -LabelField "chart_year" -ValueField "movie_count" -Title "Chart Year Counts" -OutputPath (Join-Path $OutputDir "07_open_year_counts.png")
+Save-ColumnChart -Rows $openYearCounts -LabelField "chart_year" -ValueField "movie_count" -Title "집계연도별 영화 수" -OutputPath (Join-Path $OutputDir $OpenYearCountsChartFile)
 
 $genreCounts = $rows |
     ForEach-Object {
@@ -329,7 +354,7 @@ $genreCounts = $rows |
             movie_count = $_.Count
         }
     }
-Save-BarChart -Rows $genreCounts -LabelField "genre" -ValueField "movie_count" -Title "Top 10 Genre Counts" -OutputPath (Join-Path $OutputDir "08_genre_top10_counts.png")
+Save-BarChart -Rows $genreCounts -LabelField "genre" -ValueField "movie_count" -Title "장르 상위 10개" -OutputPath (Join-Path $OutputDir $GenreTop10ChartFile)
 
 $distributorCounts = $rows |
     Where-Object { -not [string]::IsNullOrWhiteSpace($_.distributor) } |
@@ -342,6 +367,6 @@ $distributorCounts = $rows |
             movie_count = $_.Count
         }
     }
-Save-BarChart -Rows $distributorCounts -LabelField "distributor" -ValueField "movie_count" -Title "Top 10 Distributor Counts" -OutputPath (Join-Path $OutputDir "09_distributor_top10_counts.png")
+Save-BarChart -Rows $distributorCounts -LabelField "distributor" -ValueField "movie_count" -Title "배급사 상위 10개" -OutputPath (Join-Path $OutputDir $DistributorTop10ChartFile)
 
 Write-Output "Saved assignment1 visuals to $OutputDir"

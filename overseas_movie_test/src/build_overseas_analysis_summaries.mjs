@@ -11,7 +11,16 @@ const DEFAULT_INPUT_FILE = path.join(
   "analysis_ready",
   "overseas_movies_general_only_2016_2025_analysis_ready.csv",
 );
-const DEFAULT_OUTPUT_DIR = path.join(PROJECT_ROOT, "outputs", "visuals", "overseas_analysis");
+const DEFAULT_OUTPUT_DIR = path.join(PROJECT_ROOT, "outputs", "visuals", "해외_분석");
+const OUTPUT_FILES = {
+  genreSummary: "질문1_장르_요약.csv",
+  releaseMonthSummary: "질문2_개봉시기_요약.csv",
+  ratingSummary: "질문3_관람등급_요약.csv",
+  theaterBandSummary: "질문4_극장수_구간_요약.csv",
+  theaterCorrelationSummary: "질문4_극장수_상관_요약.json",
+  covidPeriodSummary: "질문5_코로나시기_요약.csv",
+  markdownSummary: "분석_질문_요약.md",
+};
 
 const INT_FIELDS = new Set([
   "chart_year",
@@ -47,7 +56,7 @@ function parseArgs(argv) {
   const args = {
     inputFile: DEFAULT_INPUT_FILE,
     outputDir: DEFAULT_OUTPUT_DIR,
-    summaryTitle: "Overseas Analysis Summary",
+    summaryTitle: "해외 분석 요약",
     extraNote: null,
   };
 
@@ -518,7 +527,7 @@ async function main() {
   );
 
   await mkdir(args.outputDir, { recursive: true });
-  await saveTextFile(path.join(args.outputDir, "q1_genre_summary.csv"), toCsv(genreRows, [
+  await saveTextFile(path.join(args.outputDir, OUTPUT_FILES.genreSummary), toCsv(genreRows, [
     "genre",
     "movie_count",
     "total_worldwide_gross_usd",
@@ -529,7 +538,7 @@ async function main() {
     "budget_count",
     "average_widest_release_theaters",
   ]));
-  await saveTextFile(path.join(args.outputDir, "q2_release_month_summary.csv"), toCsv(monthRows, [
+  await saveTextFile(path.join(args.outputDir, OUTPUT_FILES.releaseMonthSummary), toCsv(monthRows, [
     "release_month_code",
     "release_month_name",
     "release_quarter",
@@ -540,7 +549,7 @@ async function main() {
     "average_opening_gross_usd",
     "average_widest_release_theaters",
   ]));
-  await saveTextFile(path.join(args.outputDir, "q3_rating_summary.csv"), toCsv(ratingRows, [
+  await saveTextFile(path.join(args.outputDir, OUTPUT_FILES.ratingSummary), toCsv(ratingRows, [
     "rating",
     "movie_count",
     "total_worldwide_gross_usd",
@@ -549,7 +558,7 @@ async function main() {
     "average_opening_gross_usd",
     "average_widest_release_theaters",
   ]));
-  await saveTextFile(path.join(args.outputDir, "q4_theater_band_summary.csv"), toCsv(theaterBands, [
+  await saveTextFile(path.join(args.outputDir, OUTPUT_FILES.theaterBandSummary), toCsv(theaterBands, [
     "widest_release_band",
     "movie_count",
     "average_opening_theaters",
@@ -559,8 +568,8 @@ async function main() {
     "average_domestic_gross_usd",
     "average_opening_gross_usd",
   ]));
-  await saveJson(path.join(args.outputDir, "q4_theater_correlation_summary.json"), theaterCorrelation);
-  await saveTextFile(path.join(args.outputDir, "q5_covid_period_summary.csv"), toCsv(covidRows, [
+  await saveJson(path.join(args.outputDir, OUTPUT_FILES.theaterCorrelationSummary), theaterCorrelation);
+  await saveTextFile(path.join(args.outputDir, OUTPUT_FILES.covidPeriodSummary), toCsv(covidRows, [
     "covid_period",
     "movie_count",
     "total_worldwide_gross_usd",
@@ -570,7 +579,7 @@ async function main() {
     "average_opening_theaters",
     "average_widest_release_theaters",
   ]));
-  await saveTextFile(path.join(args.outputDir, "analysis_question_summary.md"), markdown);
+  await saveTextFile(path.join(args.outputDir, OUTPUT_FILES.markdownSummary), markdown);
 
   console.log(`Saved outputs to: ${args.outputDir}`);
 }

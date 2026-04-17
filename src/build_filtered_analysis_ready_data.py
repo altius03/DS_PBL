@@ -5,9 +5,9 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_FILE = ROOT / "data" / "analysis_ready" / "kobis_korean_movies_analysis_ready_2016_2025.csv"
-OUTPUT_DIR = ROOT / "data" / "analysis_ready_audience_over_100"
-OUTPUT_FILE = OUTPUT_DIR / "kobis_korean_movies_analysis_ready_2016_2025_audience_over_100.csv"
-SUMMARY_FILE = OUTPUT_DIR / "filter_summary.txt"
+OUTPUT_DIR = ROOT / "data" / "분석준비_관객100초과"
+OUTPUT_FILE = OUTPUT_DIR / "한국영화_분석준비완료_2016_2025_관객100초과.csv"
+SUMMARY_FILE = OUTPUT_DIR / "필터_요약.txt"
 MIN_AUDIENCE_COUNT = 100
 
 

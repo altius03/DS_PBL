@@ -22,7 +22,9 @@
 - `data/source_original/`: KOBIS 원본 다운로드 파일 보관
 - `data/raw/`: 작업용 CSV 원본 정리본
 - `data/analysis_ready/`: 최종 분석용 CSV
-- `outputs/visuals/assignment1/`: 1차 과제용 통계표와 시각화 초안 생성 완료
+- `data/분석준비_관객100초과/`: 관객수 100 초과 기준 파생 분석용 CSV와 요약 파일
+- `outputs/visuals/1차_과제/`: 초기 1차 과제용 통계표와 시각화 초안
+- `outputs/visuals/1차_과제_관객100초과/`: 관객수 100 초과 기준 1차 과제용 통계표와 시각화
 - 코드 기준 파일은 `main.py`, `src/load_analysis_ready_data.py`
 
 ## 데이터 흐름
@@ -53,16 +55,22 @@
 - 미매칭: `5`
 
 ## 생성된 산출물
-- `outputs/visuals/assignment1/null_summary.csv`
-- `outputs/visuals/assignment1/basic_statistics.csv`
-- `outputs/visuals/assignment1/dataset_overview.txt`
-- `outputs/visuals/assignment1/01_null_counts.png` ~ `09_numeric_boxplots.png`
+- `data/분석준비_관객100초과/필터_요약.txt`
+- `data/분석준비_관객100초과/한국영화_분석준비완료_2016_2025_관객100초과.csv`
+- `outputs/visuals/1차_과제/결측치_요약.csv`
+- `outputs/visuals/1차_과제/기초통계.csv`
+- `outputs/visuals/1차_과제/데이터셋_개요.txt`
+- `outputs/visuals/1차_과제/01_결측치_개수.png` ~ `09_수치형변수_상자그림.png`
+- `outputs/visuals/1차_과제_관객100초과/결측치_요약.csv`
+- `outputs/visuals/1차_과제_관객100초과/기초통계.csv`
+- `outputs/visuals/1차_과제_관객100초과/데이터셋_개요.txt`
+- `outputs/visuals/1차_과제_관객100초과/01_결측치_개수.png` ~ `09_수치형변수_상자그림.png`
 
 ## 문서
-- `docs/project_plan.md`: 프로젝트 방향과 1차 분석 계획
-- `docs/assignment_requirements.md`: 1차/2차 요구사항 정리
-- `docs/worklog.md`: 결정 로그, 출처 기록, 작업 기록
-- `docs/learning_notes.md`: 대화 기반 학습 내용 정리
+- `docs/프로젝트_계획.md`: 프로젝트 방향과 1차 분석 계획
+- `docs/과제_요구사항.md`: 1차/2차 요구사항 정리
+- `docs/작업_기록.md`: 결정 로그, 출처 기록, 작업 기록
+- `docs/학습_노트.md`: 대화 기반 학습 내용 정리
 
 ## 저장소 구조
 ```text
