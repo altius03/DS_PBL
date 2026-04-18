@@ -12,29 +12,29 @@
     "mode": "full_us_release_schedule",
     "status": "completed",
     "planOutput": "data/수집자료/plans/boxofficemojo_us_release_schedule_full_2016_2025_plan.json",
-    "rawOutputCsv": "data/수집자료/boxofficemojo_us_release_schedule_full_2016_2025.csv",
-    "analysisOutputCsv": "data/분석데이터/boxofficemojo_us_release_schedule_full_2016_2025_analysis_ready.csv"
+    "rawOutputCsv": "data/수집자료/미국극장개봉일정_BoxOfficeMojo원본_2016_2025.csv",
+    "analysisOutputCsv": "data/분석데이터/미국극장개봉일정_BoxOfficeMojo원본_분석데이터_2016_2025.csv"
   },
   "enrichment": {
-    "inputCsv": "data/수집자료/boxofficemojo_us_release_schedule_full_2016_2025.csv",
-    "outputPrefix": "overseas_us_release_schedule_full_2016_2025"
+    "inputCsv": "data/수집자료/미국극장개봉일정_BoxOfficeMojo원본_2016_2025.csv",
+    "outputPrefix": "us_general_theatrical_2016_2025"
   },
   "generalMovieFilter": {
-    "inputFullCsv": "data/분석데이터/overseas_us_release_schedule_full_2016_2025.csv",
-    "inputAnalysisCsv": "data/분석데이터/overseas_us_release_schedule_full_2016_2025_analysis_ready.csv",
-    "outputFullCsv": "data/분석데이터/overseas_us_general_theatrical_2016_2025.csv",
-    "outputAnalysisCsv": "data/분석데이터/overseas_us_general_theatrical_2016_2025_analysis_ready.csv",
-    "reportFile": "data/수집자료/overseas_us_general_theatrical_2016_2025_filter_report.json",
+    "inputFullCsv": "data/분석데이터/미국극장개봉일정_보강전체데이터_2016_2025.csv",
+    "inputAnalysisCsv": "data/분석데이터/미국극장개봉일정_보강분석데이터_2016_2025.csv",
+    "outputFullCsv": "data/분석데이터/미국일반극장영화_전체데이터_2016_2025.csv",
+    "outputAnalysisCsv": "data/분석데이터/미국일반극장영화_분석데이터_2016_2025.csv",
+    "reportFile": "data/수집자료/미국일반극장영화_필터링리포트_2016_2025.json",
     "minimumRuntimeMinutes": 40
   },
   "analysis": {
-    "inputFile": "data/분석데이터/overseas_us_general_theatrical_2016_2025_analysis_ready.csv",
-    "outputDir": "outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_遺꾩꽍",
-    "summaryTitle": "誘멸뎅 ?쇰컲洹뱀옣 遺꾩꽍 ?붿빟"
+    "inputFile": "data/분석데이터/미국일반극장영화_분석데이터_2016_2025.csv",
+    "outputDir": "outputs/legacy/us_general_theatrical_analysis",
+    "summaryTitle": "미국 일반극장 분석 요약"
   },
   "assignment1Visuals": {
-    "inputFile": "data/분석데이터/overseas_us_general_theatrical_2016_2025_analysis_ready.csv",
-    "outputDir": "outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_1李④낵??
+    "inputFile": "data/분석데이터/미국일반극장영화_분석데이터_2016_2025.csv",
+    "outputDir": "outputs/legacy/us_general_theatrical_assignment1"
   }
 }
 

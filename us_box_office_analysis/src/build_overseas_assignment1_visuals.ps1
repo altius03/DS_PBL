@@ -1,10 +1,18 @@
 ﻿param(
-    [string]$InputFile = "C:\Dev\study\python\DS_PBL\미국영화흥행분석\data\analysis_ready\overseas_movies_general_only_2016_2025_analysis_ready.csv",
-    [string]$OutputDir = "C:\Dev\study\python\DS_PBL\미국영화흥행분석\outputs\visuals\1차_과제"
+    [string]$InputFile = "",
+    [string]$OutputDir = ""
 )
 
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 $ErrorActionPreference = "Stop"
+
+$ProjectRoot = Split-Path -Parent $PSScriptRoot
+if ([string]::IsNullOrWhiteSpace($InputFile)) {
+    $InputFile = Join-Path $ProjectRoot "data\분석데이터\미국일반극장영화_분석데이터_2016_2025.csv"
+}
+if ([string]::IsNullOrWhiteSpace($OutputDir)) {
+    $OutputDir = Join-Path $ProjectRoot "outputs\legacy\us_general_theatrical_assignment1"
+}
 
 Add-Type -AssemblyName System.Windows.Forms.DataVisualization
 
@@ -272,7 +280,7 @@ $uniqueDistributors = ($rows | Where-Object { -not [string]::IsNullOrWhiteSpace(
 $uniqueRatings = ($rows | Where-Object { -not [string]::IsNullOrWhiteSpace($_.rating) } | Select-Object -ExpandProperty rating -Unique).Count
 $budgetCount = ($rows | Where-Object { -not [string]::IsNullOrWhiteSpace($_.budget_usd) }).Count
 $overview = @(
-    "dataset=overseas_movies_general_only_2016_2025_analysis_ready.csv"
+    "dataset=미국일반극장영화_분석데이터_2016_2025.csv"
     "row_count=$($rows.Count)"
     "year_range=2016-2025"
     "general_movie_only=true"
@@ -370,5 +378,6 @@ $distributorCounts = $rows |
 Save-BarChart -Rows $distributorCounts -LabelField "distributor" -ValueField "movie_count" -Title "배급사 상위 10개" -OutputPath (Join-Path $OutputDir $DistributorTop10ChartFile)
 
 Write-Output "Saved assignment1 visuals to $OutputDir"
+
 
 

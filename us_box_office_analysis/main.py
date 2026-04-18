@@ -1,5 +1,8 @@
+from src.build_assignment2_visuals import main as build_assignment2_outputs
+
+
 def main() -> None:
-    print("Overseas movie test project scaffold is ready.")
+    build_assignment2_outputs()
 
 
 if __name__ == "__main__":

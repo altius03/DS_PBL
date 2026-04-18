@@ -150,8 +150,9 @@ const RELEASE_DIR = path.join(BOXOFFICEMOJO_DIR, "releases");
 const TITLE_DIR = path.join(BOXOFFICEMOJO_DIR, "titles");
 const CREDITS_DIR = path.join(BOXOFFICEMOJO_DIR, "title_credits");
 const WIKIDATA_DIR = path.join(SOURCE_DIR, "wikidata");
-const DEFAULT_INPUT_CSV = path.join(RAW_DIR, "boxofficemojo_worldwide_2016_2025_top_100_per_year.csv");
-const DEFAULT_OUTPUT_PREFIX = "overseas_movies_complete_2016_2025";
+const DEFAULT_INPUT_CSV = path.join(RAW_DIR, "미국극장개봉일정_BoxOfficeMojo원본_2016_2025.csv");
+const DEFAULT_OUTPUT_PREFIX = "us_general_theatrical_2016_2025";
+const SMOKETEST_OUTPUT_PREFIX = "us_general_theatrical_2024_smoketest";
 
 function parseArgs(argv) {
   const args = {
@@ -207,12 +208,23 @@ function parseArgs(argv) {
 function buildOutputTargets(outputPrefix) {
   if (outputPrefix === DEFAULT_OUTPUT_PREFIX) {
     return {
-      mappingCsv: path.join(RAW_DIR, "boxofficemojo_imdb_mapping_2016_2025.csv"),
-      titleEnrichmentCsv: path.join(RAW_DIR, "boxofficemojo_title_enrichment_2016_2025.csv"),
-      wikidataCsv: path.join(RAW_DIR, "wikidata_movie_metadata_2016_2025.csv"),
-      fullCsv: path.join(ANALYSIS_READY_DIR, "overseas_movies_complete_2016_2025.csv"),
-      analysisCsv: path.join(ANALYSIS_READY_DIR, "overseas_movies_complete_2016_2025_analysis_ready.csv"),
-      reportJson: path.join(RAW_DIR, "overseas_movies_complete_2016_2025_report.json"),
+      mappingCsv: path.join(RAW_DIR, "미국극장개봉일정_IMDb매핑_2016_2025.csv"),
+      titleEnrichmentCsv: path.join(RAW_DIR, "미국극장개봉일정_타이틀보강_2016_2025.csv"),
+      wikidataCsv: path.join(RAW_DIR, "미국극장개봉일정_Wikidata보강_2016_2025.csv"),
+      fullCsv: path.join(ANALYSIS_READY_DIR, "미국극장개봉일정_보강전체데이터_2016_2025.csv"),
+      analysisCsv: path.join(ANALYSIS_READY_DIR, "미국극장개봉일정_보강분석데이터_2016_2025.csv"),
+      reportJson: path.join(RAW_DIR, "미국극장개봉일정_보강리포트_2016_2025.json"),
+    };
+  }
+
+  if (outputPrefix === SMOKETEST_OUTPUT_PREFIX) {
+    return {
+      mappingCsv: path.join(RAW_DIR, "미국극장개봉일정_IMDb매핑_2024_스모크테스트.csv"),
+      titleEnrichmentCsv: path.join(RAW_DIR, "미국극장개봉일정_타이틀보강_2024_스모크테스트.csv"),
+      wikidataCsv: path.join(RAW_DIR, "미국극장개봉일정_Wikidata보강_2024_스모크테스트.csv"),
+      fullCsv: path.join(ANALYSIS_READY_DIR, "미국극장개봉일정_보강전체데이터_2024_스모크테스트.csv"),
+      analysisCsv: path.join(ANALYSIS_READY_DIR, "미국극장개봉일정_보강분석데이터_2024_스모크테스트.csv"),
+      reportJson: path.join(RAW_DIR, "미국극장개봉일정_보강리포트_2024_스모크테스트.json"),
     };
   }
 

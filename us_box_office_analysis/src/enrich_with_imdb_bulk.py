@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_INPUT = PROJECT_ROOT / "data" / "분석데이터" / "overseas_us_general_theatrical_2016_2025_analysis_ready.csv"
+DEFAULT_INPUT = PROJECT_ROOT / "data" / "분석데이터" / "미국일반극장영화_분석데이터_2016_2025.csv"
 DEFAULT_RATINGS = (
     PROJECT_ROOT / "data" / "원본자료" / "imdb" / "title.ratings.tsv.gz"
 )
@@ -19,10 +19,10 @@ DEFAULT_BASICS = (
     PROJECT_ROOT / "data" / "원본자료" / "imdb" / "title.basics.tsv.gz"
 )
 DEFAULT_OUTPUT = (
-    PROJECT_ROOT / "data" / "분석데이터" / "overseas_us_general_theatrical_2016_2025_analysis_ready_imdb_enriched.csv"
+    PROJECT_ROOT / "data" / "분석데이터" / "미국일반극장영화_IMDb보강_분석데이터_2016_2025.csv"
 )
 DEFAULT_REPORT = (
-    PROJECT_ROOT / "data" / "수집자료" / "overseas_us_general_theatrical_2016_2025_imdb_enrichment_report.json"
+    PROJECT_ROOT / "data" / "수집자료" / "미국일반극장영화_IMDb보강리포트_2016_2025.json"
 )
 
 NULL_TOKENS = {"", "\\N", "N/A", "NA", "null", None}

@@ -1,8 +1,8 @@
-﻿{
-  "input_full_file": "C:\\Dev\\study\\python\\DS_PBL\\미국영화흥행분석\\data\\분석데이터\\overseas_us_release_schedule_full_2016_2025.csv",
-  "input_analysis_file": "C:\\Dev\\study\\python\\DS_PBL\\미국영화흥행분석\\data\\분석데이터\\overseas_us_release_schedule_full_2016_2025_analysis_ready.csv",
-  "output_full_file": "C:\\Dev\\study\\python\\DS_PBL\\미국영화흥행분석\\data\\분석데이터\\overseas_us_general_theatrical_2016_2025.csv",
-  "output_analysis_file": "C:\\Dev\\study\\python\\DS_PBL\\미국영화흥행분석\\data\\분석데이터\\overseas_us_general_theatrical_2016_2025_analysis_ready.csv",
+{
+  "input_full_file": "C:\\Dev\\study\\python\\DS_PBL\\us_box_office_analysis\\data\\분석데이터\\미국극장개봉일정_보강전체데이터_2016_2025.csv",
+  "input_analysis_file": "C:\\Dev\\study\\python\\DS_PBL\\us_box_office_analysis\\data\\분석데이터\\미국극장개봉일정_보강분석데이터_2016_2025.csv",
+  "output_full_file": "C:\\Dev\\study\\python\\DS_PBL\\us_box_office_analysis\\data\\분석데이터\\미국일반극장영화_전체데이터_2016_2025.csv",
+  "output_analysis_file": "C:\\Dev\\study\\python\\DS_PBL\\us_box_office_analysis\\data\\분석데이터\\미국일반극장영화_분석데이터_2016_2025.csv",
   "total_rows": 7605,
   "included_rows": 7368,
   "excluded_rows": 237,
@@ -299,5 +299,7 @@
     }
   ]
 }
+
+
 
 

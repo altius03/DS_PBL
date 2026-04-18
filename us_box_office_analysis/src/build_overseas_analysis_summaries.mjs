@@ -9,9 +9,9 @@ const DEFAULT_INPUT_FILE = path.join(
   PROJECT_ROOT,
   "data",
   "분석데이터",
-  "overseas_movies_general_only_2016_2025_analysis_ready.csv",
+  "미국일반극장영화_분석데이터_2016_2025.csv",
 );
-const DEFAULT_OUTPUT_DIR = path.join(PROJECT_ROOT, "outputs", "visuals", "?댁쇅_遺꾩꽍");
+const DEFAULT_OUTPUT_DIR = path.join(PROJECT_ROOT, "outputs", "legacy", "us_general_theatrical_analysis");
 const OUTPUT_FILES = {
   genreSummary: "吏덈Ц1_?λⅤ_?붿빟.csv",
   releaseMonthSummary: "吏덈Ц2_媛쒕큺?쒓린_?붿빟.csv",
@@ -56,7 +56,7 @@ function parseArgs(argv) {
   const args = {
     inputFile: DEFAULT_INPUT_FILE,
     outputDir: DEFAULT_OUTPUT_DIR,
-    summaryTitle: "?댁쇅 遺꾩꽍 ?붿빟",
+    summaryTitle: "미국 일반극장 분석 요약",
     extraNote: null,
   };
 

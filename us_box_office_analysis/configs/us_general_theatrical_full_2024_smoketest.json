@@ -12,29 +12,29 @@
     "mode": "full_us_release_schedule",
     "status": "smoketest",
     "planOutput": "data/수집자료/plans/boxofficemojo_us_release_schedule_full_2024_smoketest_plan.json",
-    "rawOutputCsv": "data/수집자료/boxofficemojo_us_release_schedule_full_2024_smoketest.csv",
-    "analysisOutputCsv": "data/분석데이터/boxofficemojo_us_release_schedule_full_2024_smoketest_analysis_ready.csv"
+    "rawOutputCsv": "data/수집자료/미국극장개봉일정_BoxOfficeMojo원본_2024_스모크테스트.csv",
+    "analysisOutputCsv": "data/분석데이터/미국극장개봉일정_BoxOfficeMojo원본_분석데이터_2024_스모크테스트.csv"
   },
   "enrichment": {
-    "inputCsv": "data/수집자료/boxofficemojo_us_release_schedule_full_2024_smoketest.csv",
-    "outputPrefix": "overseas_us_release_schedule_full_2024_smoketest"
+    "inputCsv": "data/수집자료/미국극장개봉일정_BoxOfficeMojo원본_2024_스모크테스트.csv",
+    "outputPrefix": "us_general_theatrical_2024_smoketest"
   },
   "generalMovieFilter": {
-    "inputFullCsv": "data/분석데이터/overseas_us_release_schedule_full_2024_smoketest.csv",
-    "inputAnalysisCsv": "data/분석데이터/overseas_us_release_schedule_full_2024_smoketest_analysis_ready.csv",
-    "outputFullCsv": "data/분석데이터/overseas_us_general_theatrical_2024_smoketest.csv",
-    "outputAnalysisCsv": "data/분석데이터/overseas_us_general_theatrical_2024_smoketest_analysis_ready.csv",
-    "reportFile": "data/수집자료/overseas_us_general_theatrical_2024_smoketest_filter_report.json",
+    "inputFullCsv": "data/분석데이터/미국극장개봉일정_보강전체데이터_2024_스모크테스트.csv",
+    "inputAnalysisCsv": "data/분석데이터/미국극장개봉일정_보강분석데이터_2024_스모크테스트.csv",
+    "outputFullCsv": "data/분석데이터/미국일반극장영화_전체데이터_2024_스모크테스트.csv",
+    "outputAnalysisCsv": "data/분석데이터/미국일반극장영화_분석데이터_2024_스모크테스트.csv",
+    "reportFile": "data/수집자료/미국일반극장영화_필터링리포트_2024_스모크테스트.json",
     "minimumRuntimeMinutes": 40
   },
   "analysis": {
-    "inputFile": "data/분석데이터/overseas_us_general_theatrical_2024_smoketest_analysis_ready.csv",
-    "outputDir": "outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_2024_?ㅻえ?ы뀒?ㅽ듃_遺꾩꽍",
-    "summaryTitle": "誘멸뎅 ?쇰컲洹뱀옣 2024 ?ㅻえ?ы뀒?ㅽ듃 ?붿빟"
+    "inputFile": "data/분석데이터/미국일반극장영화_분석데이터_2024_스모크테스트.csv",
+    "outputDir": "outputs/smoketest/us_general_theatrical_2024_analysis",
+    "summaryTitle": "미국 일반극장 2024 스모크테스트 요약"
   },
   "assignment1Visuals": {
-    "inputFile": "data/분석데이터/overseas_us_general_theatrical_2024_smoketest_analysis_ready.csv",
-    "outputDir": "outputs/visuals/誘멸뎅_?쇰컲洹뱀옣_2024_?ㅻえ?ы뀒?ㅽ듃_1李④낵??
+    "inputFile": "data/분석데이터/미국일반극장영화_분석데이터_2024_스모크테스트.csv",
+    "outputDir": "outputs/smoketest/us_general_theatrical_2024_assignment1"
   }
 }
 

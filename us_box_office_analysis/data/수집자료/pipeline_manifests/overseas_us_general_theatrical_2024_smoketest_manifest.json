@@ -1,0 +1,58 @@
+{
+  "dataset_id": "overseas_us_general_theatrical_2024_smoketest",
+  "status": "smoketest",
+  "source": {
+    "backbone": "Box Office Mojo Domestic Release Schedule",
+    "market": "United States theatrical"
+  },
+  "years": {
+    "start": 2024,
+    "end": 2024
+  },
+  "commands": [
+    {
+      "step": "plan_collection",
+      "command": "node src/collect_boxofficemojo_us_release_schedule_full.mjs --config configs/us_general_theatrical_full_2024_smoketest.json",
+      "status": "ready"
+    },
+    {
+      "step": "collect_raw_backbone",
+      "command": "node src/collect_boxofficemojo_us_release_schedule_full.mjs --config configs/us_general_theatrical_full_2024_smoketest.json --execute",
+      "status": "manual_gate"
+    },
+    {
+      "step": "enrich_metadata",
+      "command": "node src/build_complete_overseas_dataset.mjs --input-csv data/수집자료/미국극장개봉일정_BoxOfficeMojo원본_2024_스모크테스트.csv --output-prefix us_general_theatrical_2024_smoketest",
+      "status": "ready_after_collection"
+    },
+    {
+      "step": "filter_general_movies",
+      "command": "node src/filter_overseas_general_movies.mjs --input-full-csv data/분석데이터/미국극장개봉일정_보강전체데이터_2024_스모크테스트.csv --input-analysis-csv data/분석데이터/미국극장개봉일정_보강분석데이터_2024_스모크테스트.csv --output-full-csv data/분석데이터/미국일반극장영화_전체데이터_2024_스모크테스트.csv --output-analysis-csv data/분석데이터/미국일반극장영화_분석데이터_2024_스모크테스트.csv --report-file data/수집자료/미국일반극장영화_필터링리포트_2024_스모크테스트.json --minimum-runtime-minutes 40",
+      "status": "ready_after_enrichment"
+    },
+    {
+      "step": "build_analysis_summaries",
+      "command": "node src/build_overseas_analysis_summaries.mjs --input-file data/분석데이터/미국일반극장영화_분석데이터_2024_스모크테스트.csv --output-dir outputs/smoketest/us_general_theatrical_2024_analysis --summary-title \"미국 일반극장 2024 스모크테스트 요약\"",
+      "status": "ready_after_filter"
+    },
+    {
+      "step": "build_assignment1_visuals",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File src/build_overseas_assignment1_visuals.ps1 -InputFile data/분석데이터/미국일반극장영화_분석데이터_2024_스모크테스트.csv -OutputDir outputs/smoketest/us_general_theatrical_2024_assignment1",
+      "status": "ready_after_filter"
+    }
+  ],
+  "planned_outputs": {
+    "collector_plan": "data/수집자료/plans/boxofficemojo_us_release_schedule_full_2024_smoketest_plan.json",
+    "raw_backbone_csv": "data/수집자료/미국극장개봉일정_BoxOfficeMojo원본_2024_스모크테스트.csv",
+    "enriched_analysis_csv": "data/분석데이터/미국극장개봉일정_보강분석데이터_2024_스모크테스트.csv",
+    "filtered_analysis_csv": "data/분석데이터/미국일반극장영화_분석데이터_2024_스모크테스트.csv",
+    "analysis_output_dir": "outputs/smoketest/us_general_theatrical_2024_analysis",
+    "assignment1_output_dir": "outputs/smoketest/us_general_theatrical_2024_assignment1"
+  },
+  "notes": [
+    "This manifest records the current U.S. theatrical general-movie pipeline configuration.",
+    "Collector status from config: smoketest.",
+    "Run these commands from the us_box_office_analysis project root."
+  ],
+  "generated_at": "2026-04-18T10:42:11.343Z"
+}

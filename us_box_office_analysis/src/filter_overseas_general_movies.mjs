@@ -8,17 +8,17 @@ const PROJECT_ROOT = path.resolve(__dirname, "..");
 const ANALYSIS_READY_DIR = path.join(PROJECT_ROOT, "data", "분석데이터");
 const RAW_DIR = path.join(PROJECT_ROOT, "data", "수집자료");
 
-const DEFAULT_INPUT_FULL_FILE = path.join(ANALYSIS_READY_DIR, "overseas_movies_complete_2016_2025.csv");
+const DEFAULT_INPUT_FULL_FILE = path.join(ANALYSIS_READY_DIR, "미국극장개봉일정_보강전체데이터_2016_2025.csv");
 const DEFAULT_INPUT_ANALYSIS_FILE = path.join(
   ANALYSIS_READY_DIR,
-  "overseas_movies_complete_2016_2025_analysis_ready.csv",
+  "미국극장개봉일정_보강분석데이터_2016_2025.csv",
 );
-const DEFAULT_OUTPUT_FULL_FILE = path.join(ANALYSIS_READY_DIR, "overseas_movies_general_only_2016_2025.csv");
+const DEFAULT_OUTPUT_FULL_FILE = path.join(ANALYSIS_READY_DIR, "미국일반극장영화_전체데이터_2016_2025.csv");
 const DEFAULT_OUTPUT_ANALYSIS_FILE = path.join(
   ANALYSIS_READY_DIR,
-  "overseas_movies_general_only_2016_2025_analysis_ready.csv",
+  "미국일반극장영화_분석데이터_2016_2025.csv",
 );
-const DEFAULT_REPORT_FILE = path.join(RAW_DIR, "overseas_movies_general_only_2016_2025_filter_report.json");
+const DEFAULT_REPORT_FILE = path.join(RAW_DIR, "미국일반극장영화_필터링리포트_2016_2025.json");
 const DEFAULT_MINIMUM_RUNTIME_MINUTES = 40;
 
 const EVENT_DISTRIBUTORS = new Set([

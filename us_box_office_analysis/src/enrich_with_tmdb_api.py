@@ -16,10 +16,10 @@ from typing import Any
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_INPUT = PROJECT_ROOT / "data" / "분석데이터" / "overseas_us_general_theatrical_2016_2025_analysis_ready_imdb_enriched.csv"
-DEFAULT_OUTPUT = PROJECT_ROOT / "data" / "분석데이터" / "overseas_us_general_theatrical_2016_2025_analysis_ready_imdb_tmdb_enriched.csv"
-DEFAULT_REPORT = PROJECT_ROOT / "data" / "수집자료" / "overseas_us_general_theatrical_2016_2025_tmdb_enrichment_report.json"
-DEFAULT_CACHE = PROJECT_ROOT / "data" / "수집자료" / "overseas_us_general_theatrical_2016_2025_tmdb_cache.json"
+DEFAULT_INPUT = PROJECT_ROOT / "data" / "분석데이터" / "미국일반극장영화_IMDb보강_분석데이터_2016_2025.csv"
+DEFAULT_OUTPUT = PROJECT_ROOT / "data" / "분석데이터" / "미국일반극장영화_IMDbTMDb보강_분석데이터_2016_2025.csv"
+DEFAULT_REPORT = PROJECT_ROOT / "data" / "수집자료" / "미국일반극장영화_TMDb보강리포트_2016_2025.json"
+DEFAULT_CACHE = PROJECT_ROOT / "data" / "수집자료" / "미국일반극장영화_TMDb보강캐시_2016_2025.json"
 
 
 def parse_args() -> argparse.Namespace:

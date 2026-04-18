@@ -1,4 +1,4 @@
-﻿{
+{
   "dataset_id": "overseas_us_general_theatrical_2016_2025",
   "status": "executing",
   "source": {
@@ -33,8 +33,8 @@
     "https://www.boxofficemojo.com/calendar/2025-12-01/"
   ],
   "planned_outputs": {
-    "raw_csv": "C:\\Dev\\study\\python\\DS_PBL\\미국영화흥행분석\\data\\수집자료\\boxofficemojo_us_release_schedule_full_2016_2025.csv",
-    "analysis_csv": "C:\\Dev\\study\\python\\DS_PBL\\미국영화흥행분석\\data\\분석데이터\\boxofficemojo_us_release_schedule_full_2016_2025_analysis_ready.csv"
+    "raw_csv": "C:\\Dev\\study\\python\\DS_PBL\\us_box_office_analysis\\data\\수집자료\\미국극장개봉일정_BoxOfficeMojo원본_2016_2025.csv",
+    "analysis_csv": "C:\\Dev\\study\\python\\DS_PBL\\us_box_office_analysis\\data\\분석데이터\\미국극장개봉일정_BoxOfficeMojo원본_분석데이터_2016_2025.csv"
   },
   "notes": [
     "The calendar collector works at monthly schedule pages, not daily pages.",
@@ -43,5 +43,7 @@
   ],
   "generated_at": "2026-04-14T20:15:09.815Z"
 }
+
+
 
 

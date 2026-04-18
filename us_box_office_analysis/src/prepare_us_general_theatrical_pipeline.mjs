@@ -26,7 +26,8 @@ function parseArgs(argv) {
 }
 
 async function readJson(targetPath) {
-  return JSON.parse(await readFile(targetPath, "utf8"));
+  const raw = await readFile(targetPath, "utf8");
+  return JSON.parse(raw.replace(/^\uFEFF/, ""));
 }
 
 async function saveJson(targetPath, payload) {
@@ -37,6 +38,7 @@ async function saveJson(targetPath, payload) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const config = await readJson(args.config);
+  const collectorStatus = config.collector?.status ?? "configured";
   const manifestPath = path.join(
     PROJECT_ROOT,
     "data",
@@ -48,29 +50,29 @@ async function main() {
   const configRelative = path.relative(PROJECT_ROOT, args.config).replace(/\\/g, "/");
   const manifest = {
     dataset_id: config.datasetId,
-    status: "prepared_not_collected",
+    status: collectorStatus,
     source: config.source,
     years: config.years,
     commands: [
       {
         step: "plan_collection",
-        command: `node 미국영화흥행분석/src/collect_boxofficemojo_us_release_schedule_full.mjs --config ${configRelative}`,
+        command: `node src/collect_boxofficemojo_us_release_schedule_full.mjs --config ${configRelative}`,
         status: "ready",
       },
       {
         step: "collect_raw_backbone",
-        command: `node 미국영화흥행분석/src/collect_boxofficemojo_us_release_schedule_full.mjs --config ${configRelative} --execute`,
-        status: "intentionally_blocked",
+        command: `node src/collect_boxofficemojo_us_release_schedule_full.mjs --config ${configRelative} --execute`,
+        status: collectorStatus === "completed" ? "already_completed_in_repo" : "manual_gate",
       },
       {
         step: "enrich_metadata",
-        command: `node 미국영화흥행분석/src/build_complete_overseas_dataset.mjs --input-csv ${config.enrichment.inputCsv} --output-prefix ${config.enrichment.outputPrefix}`,
+        command: `node src/build_complete_overseas_dataset.mjs --input-csv ${config.enrichment.inputCsv} --output-prefix ${config.enrichment.outputPrefix}`,
         status: "ready_after_collection",
       },
       {
         step: "filter_general_movies",
         command:
-          `node 미국영화흥행분석/src/filter_overseas_general_movies.mjs ` +
+          `node src/filter_overseas_general_movies.mjs ` +
           `--input-full-csv ${config.generalMovieFilter.inputFullCsv} ` +
           `--input-analysis-csv ${config.generalMovieFilter.inputAnalysisCsv} ` +
           `--output-full-csv ${config.generalMovieFilter.outputFullCsv} ` +
@@ -82,7 +84,7 @@ async function main() {
       {
         step: "build_analysis_summaries",
         command:
-          `node 미국영화흥행분석/src/build_overseas_analysis_summaries.mjs ` +
+          `node src/build_overseas_analysis_summaries.mjs ` +
           `--input-file ${config.analysis.inputFile} ` +
           `--output-dir ${config.analysis.outputDir} ` +
           `--summary-title "${config.analysis.summaryTitle}"`,
@@ -91,7 +93,7 @@ async function main() {
       {
         step: "build_assignment1_visuals",
         command:
-          `powershell -NoProfile -ExecutionPolicy Bypass -File 미국영화흥행분석/src/build_overseas_assignment1_visuals.ps1 ` +
+          `powershell -NoProfile -ExecutionPolicy Bypass -File src/build_overseas_assignment1_visuals.ps1 ` +
           `-InputFile ${config.assignment1Visuals.inputFile} ` +
           `-OutputDir ${config.assignment1Visuals.outputDir}`,
         status: "ready_after_filter",
@@ -100,15 +102,15 @@ async function main() {
     planned_outputs: {
       collector_plan: config.collector.planOutput,
       raw_backbone_csv: config.collector.rawOutputCsv,
-      enriched_analysis_csv: `data/분석데이터/${config.enrichment.outputPrefix}_analysis_ready.csv`,
+      enriched_analysis_csv: config.generalMovieFilter.inputAnalysisCsv,
       filtered_analysis_csv: config.generalMovieFilter.outputAnalysisCsv,
       analysis_output_dir: config.analysis.outputDir,
       assignment1_output_dir: config.assignment1Visuals.outputDir,
     },
     notes: [
-      "This manifest prepares the full U.S. theatrical general-movie pipeline only.",
-      "No collection has been started.",
-      "The raw collector step remains intentionally blocked until we explicitly allow execution.",
+      "This manifest records the current U.S. theatrical general-movie pipeline configuration.",
+      `Collector status from config: ${collectorStatus}.`,
+      "Run these commands from the us_box_office_analysis project root.",
     ],
     generated_at: new Date().toISOString(),
   };
@@ -116,7 +118,7 @@ async function main() {
   await saveJson(manifestPath, manifest);
 
   console.log(`Saved pipeline manifest: ${manifestPath}`);
-  console.log(`Collection has not started. Raw collector step is still blocked by design.`);
+  console.log(`Collector status: ${collectorStatus}`);
 }
 
 main().catch((error) => {
